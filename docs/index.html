@@ -1,1 +1,198 @@
-<h1>Coming soon</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CISO Weekly Briefing</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 960px; margin: 0 auto; padding: 2rem 1rem; color: #1a1a1a; line-height: 1.6; }
+    h1 { font-size: 1.5rem; font-weight: 600; border-bottom: 2px solid #e5e5e5; padding-bottom: 0.5rem; }
+    h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em; color: #666; margin-top: 2rem; }
+    h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.25rem; }
+    .updated { font-size: 0.8rem; color: #9ca3af; margin-bottom: 2rem; }
+  </style>
+</head>
+<body>
+  <p class="updated">Last updated: April 10, 2026 at 03:33 UTC</p>
+  Now I have all the data needed to compile the full briefing. Let me produce the HTML output.
+
+<article style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 1100px; margin: 0 auto; color: #1a1a2e; background: #f4f6fa; padding: 0 0 40px 0;">
+
+<!-- ═══════════════════ HEADER ═══════════════════ -->
+<header style="background: linear-gradient(135deg, #0d1b2a 0%, #1b2a4a 60%, #22375e 100%); color: #fff; padding: 38px 44px 30px 44px; border-radius: 0 0 10px 10px;">
+  <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px;">
+    <div>
+      <div style="font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#7eb8e8; margin-bottom:6px;">CONFIDENTIAL — EXECUTIVE DISTRIBUTION ONLY</div>
+      <h1 style="margin:0; font-size:28px; font-weight:800; letter-spacing:-0.5px; line-height:1.15;">🛡 Weekly CISO Intelligence Briefing</h1>
+      <div style="margin-top:6px; font-size:15px; color:#a8c8e8;">Reporting Period: April 4–10, 2026 &nbsp;|&nbsp; Issued: Friday, April 10, 2026</div>
+    </div>
+    <div style="text-align:right;">
+      <div style="background:#e63946; color:#fff; font-size:11px; font-weight:700; letter-spacing:2px; padding:5px 14px; border-radius:4px; display:inline-block; margin-bottom:6px;">THREAT LEVEL: CRITICAL</div>
+      <div style="font-size:12px; color:#a8c8e8;">Items: 7 &nbsp;|&nbsp; ACT NOW: 3 &nbsp;|&nbsp; HEIGHTENED WATCH: 3 &nbsp;|&nbsp; STRATEGIC WATCH: 1</div>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════ RPS LEGEND ═══════════════════ -->
+<section style="background:#fff; margin: 24px 24px 0 24px; border-radius:8px; padding:16px 24px; border-left:4px solid #457b9d;">
+  <strong style="font-size:13px; color:#457b9d; letter-spacing:1px;">RPS FORMULA:</strong>
+  <span style="font-size:13px; color:#333;"> &nbsp;Risk Priority Score = (Severity × 0.45) + (Exploitability × 0.35) + (Exposure × 0.20) &nbsp;|&nbsp; Scale: 1–10 per dimension &nbsp;|&nbsp; Max RPS = 10.0</span>
+  <span style="float:right; font-size:12px; color:#888;">🔴 ACT NOW ≥ 7.5 &nbsp;|&nbsp; 🟠 HEIGHTENED WATCH 5.0–7.4 &nbsp;|&nbsp; 🟡 STRATEGIC WATCH &lt; 5.0</span>
+</section>
+
+<!-- ═══════════════════ EXECUTIVE SUMMARY ═══════════════════ -->
+<section style="background:#fff; margin: 18px 24px 0 24px; border-radius:8px; padding:22px 28px; border-left:6px solid #e63946;">
+  <h2 style="margin:0 0 12px 0; font-size:17px; color:#e63946; text-transform:uppercase; letter-spacing:1px;">📋 Executive Summary</h2>
+  <p style="margin:0; font-size:14px; line-height:1.75; color:#222;">
+    This week saw a convergence of nation-state aggression, high-velocity ransomware operations, and a watershed AI security moment that will reshape the threat landscape for years. Three developments demand immediate board-level attention. First, <strong>China-linked Storm-1175</strong> is deploying Medusa ransomware within <em>24 hours</em> of vulnerability disclosure, targeting healthcare, education, and finance across the US, UK, and Australia using zero-days in SmarterMail and GoAnywhere MFT. Second, a <strong>Fortinet FortiClient EMS zero-day (CVE-2026-35616, CVSS 9.1)</strong> was exploited over the Easter holiday weekend — a pattern attackers deliberately use — with nearly 2,000 publicly exposed instances and a full patch still pending. Third, <strong>Anthropic's Project Glasswing</strong> announced that its Claude Mythos Preview AI model autonomously discovered thousands of zero-day vulnerabilities across every major OS and browser, signaling that AI-accelerated exploit development is no longer theoretical.
+    Vulnerability exploits have now overtaken phishing as the primary initial access method, with Cisco Talos reporting nearly 40% of all intrusions in Q4 2025 driven by exploited flaws. Enterprise security programs must re-calibrate patch SLAs, AI infrastructure governance, and identity controls immediately.
+  </p>
+</section>
+
+<!-- ═══════════════════ TOP 3 ENTERPRISE RISKS ═══════════════════ -->
+<section style="background: linear-gradient(90deg,#1b2a4a,#22375e); color:#fff; margin: 18px 24px 0 24px; border-radius:8px; padding:22px 28px;">
+  <h2 style="margin:0 0 16px 0; font-size:17px; color:#7eb8e8; text-transform:uppercase; letter-spacing:1px;">🔝 Top 3 Enterprise Risks This Week</h2>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px;">
+    <div style="background:rgba(230,57,70,0.15); border:1px solid #e63946; border-radius:7px; padding:16px;">
+      <div style="font-size:11px; color:#e63946; font-weight:700; letter-spacing:1.5px; margin-bottom:6px;">RISK #1 — CRITICAL</div>
+      <div style="font-weight:700; font-size:14px; margin-bottom:6px;">24-Hour Ransomware Kill Chain (Storm-1175 / Medusa)</div>
+      <div style="font-size:12px; color:#cde0f4; line-height:1.6;">Attackers are compressing dwell time to under one day, eliminating the detection window for most enterprise IR programs. Healthcare and critical services face immediate and material risk of double-extortion.</div>
+    </div>
+    <div style="background:rgba(230,57,70,0.15); border:1px solid #e63946; border-radius:7px; padding:16px;">
+      <div style="font-size:11px; color:#e63946; font-weight:700; letter-spacing:1.5px; margin-bottom:6px;">RISK #2 — CRITICAL</div>
+      <div style="font-weight:700; font-size:14px; margin-bottom:6px;">Fortinet EMS Zero-Day Exploitation (CVE-2026-35616)</div>
+      <div style="font-size:12px; color:#cde0f4; line-height:1.6;">A second unauthenticated RCE flaw in FortiClient EMS in a matter of weeks, actively exploited with no full patch available. Any organization running EMS 7.4.5–7.4.6 is critically exposed until the hotfix is applied.</div>
+    </div>
+    <div style="background:rgba(255,165,0,0.12); border:1px solid #f4a261; border-radius:7px; padding:16px;">
+      <div style="font-size:11px; color:#f4a261; font-weight:700; letter-spacing:1.5px; margin-bottom:6px;">RISK #3 — HIGH</div>
+      <div style="font-weight:700; font-size:14px; margin-bottom:6px;">AI-Augmented Vulnerability Discovery (Project Glasswing / Adversary Parity)</div>
+      <div style="font-size:12px; color:#cde0f4; line-height:1.6;">Claude Mythos autonomously found thousands of zero-days in every major OS/browser. The same capability will proliferate to adversaries within months, fundamentally altering the vulnerability management paradigm.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ INTELLIGENCE ITEMS ═══════════════════ -->
+<section style="margin: 24px 24px 0 24px;">
+  <h2 style="font-size:17px; color:#1b2a4a; text-transform:uppercase; letter-spacing:1px; margin-bottom:16px; padding-left:4px; border-left:5px solid #457b9d; padding-left:12px;">🔍 Intelligence Items</h2>
+
+  <!-- ─── ITEM 1 ─── -->
+  <div style="background:#fff; border-radius:8px; margin-bottom:16px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,0.07);">
+    <div style="background:#e63946; padding:10px 22px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+      <div>
+        <span style="color:#fff; font-weight:800; font-size:15px;">🔴 ACT NOW &nbsp;|&nbsp; ITEM 1 OF 7</span>
+        <span style="color:#ffd6d9; font-size:13px; margin-left:16px;">RPS: <strong>9.2</strong> &nbsp;(S:10 × 0.45 + E:9 × 0.35 + X:8 × 0.20)</span>
+      </div>
+      <div style="color:#ffd6d9; font-size:12px;">April 8, 2026</div>
+    </div>
+    <div style="padding:18px 22px;">
+      <h3 style="margin:0 0 8px 0; font-size:16px; color:#1b2a4a;">Storm-1175 (China-Linked) Deploys Medusa Ransomware Within 24 Hours of Disclosure, Targeting Healthcare &amp; Critical Services</h3>
+      <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:12px; font-size:12px;">
+        <span style="background:#fef2f2; color:#e63946; padding:3px 10px; border-radius:12px; font-weight:600;">CVE-2026-23760 &nbsp;|&nbsp; CVE-2025-10035 &nbsp;|&nbsp; CVE-2026-1731</span>
+        <span style="background:#f0f4ff; color:#457b9d; padding:3px 10px; border-radius:12px;">🔗 Source: Microsoft Security Blog / Dark Reading</span>
+        <a href="https://www.microsoft.com/en-us/security/blog/2026/04/06/storm-1175-focuses-gaze-on-vulnerable-web-facing-assets-in-high-tempo-medusa-ransomware-operations/" style="background:#e8f5e9; color:#2e7d32; padding:3px 10px; border-radius:12px; text-decoration:none;">microsoft.com →</a>
+        <a href="https://www.darkreading.com/threat-intelligence/storm-1175-medusa-ransomware-high-velocity" style="background:#e8f5e9; color:#2e7d32; padding:3px 10px; border-radius:12px; text-decoration:none;">darkreading.com →</a>
+      </div>
+      <div style="background:#f8f9fa; border-radius:6px; padding:12px 16px; font-size:13px; line-height:1.75; color:#333; margin-bottom:10px;">
+        Storm-1175 operates high-velocity ransomware campaigns that weaponize N-days, targeting vulnerable, web-facing systems during the window between vulnerability disclosure and widespread patch adoption; following successful exploitation, it rapidly moves from initial access to data exfiltration and deployment of Medusa ransomware, often within a few days and, in some cases, within 24 hours. The threat actor's high operational tempo has heavily impacted healthcare organizations, as well as those in education, professional services, and finance in Australia, the United Kingdom, and the United States. The group has exploited at least three zero-day vulnerabilities, including CVE-2026-23760 in SmarterMail — weaponized a week before public disclosure — and CVE-2025-10035 in GoAnywhere Managed File Transfer, also exploited one week before public disclosure. Key TTPs include LOLBins (PowerShell, PsExec, Impacket) for lateral movement, PDQ Deployer for payload delivery, RDP policy modifications, credential dumping via Mimikatz, AV exclusion tampering, and Rclone for large-scale data exfiltration.
+      </div>
+      <div style="font-size:12px; color:#555;">
+        <strong>MITRE ATT&amp;CK:</strong> T1190 (Exploit Public-Facing App) · T1059.001 (PowerShell) · T1003 (Credential Dumping) · T1083 (File &amp; Directory Discovery) · T1486 (Data Encrypted for Impact) · T1048 (Exfiltration over Alt Protocol) · T1562.001 (Impair Defenses: AV Tamper)
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── ITEM 2 ─── -->
+  <div style="background:#fff; border-radius:8px; margin-bottom:16px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,0.07);">
+    <div style="background:#e63946; padding:10px 22px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+      <div>
+        <span style="color:#fff; font-weight:800; font-size:15px;">🔴 ACT NOW &nbsp;|&nbsp; ITEM 2 OF 7</span>
+        <span style="color:#ffd6d9; font-size:13px; margin-left:16px;">RPS: <strong>9.0</strong> &nbsp;(S:9 × 0.45 + E:10 × 0.35 + X:8 × 0.20)</span>
+      </div>
+      <div style="color:#ffd6d9; font-size:12px;">April 4–7, 2026</div>
+    </div>
+    <div style="padding:18px 22px;">
+      <h3 style="margin:0 0 8px 0; font-size:16px; color:#1b2a4a;">Fortinet FortiClient EMS Zero-Day CVE-2026-35616 (CVSS 9.1) Under Active Exploitation — Full Patch Pending</h3>
+      <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:12px; font-size:12px;">
+        <span style="background:#fef2f2; color:#e63946; padding:3px 10px; border-radius:12px; font-weight:600;">CVE-2026-35616 &nbsp;|&nbsp; CVSS 9.1 &nbsp;|&nbsp; CISA KEV</span>
+        <span style="background:#f0f4ff; color:#457b9d; padding:3px 10px; border-radius:12px;">🔗 Source: Help Net Security / CyberScoop / Tenable</span>
+        <a href="https://www.helpnetsecurity.com/2026/04/04/forticlient-ems-zero-day-cve-2026-35616/" style="background:#e8f5e9; color:#2e7d32; padding:3px 10px; border-radius:12px; text-decoration:none;">helpnetsecurity.com →</a>
+        <a href="https://cyberscoop.com/fortinet-forticlient-ems-zero-day-cve-2026-35616-hotfix-known-exploited/" style="background:#e8f5e9; color:#2e7d32; padding:3px 10px; border-radius:12px; text-decoration:none;">cyberscoop.com →</a>
+      </div>
+      <div style="background:#f8f9fa; border-radius:6px; padding:12px 16px; font-size:13px; line-height:1.75; color:#333; margin-bottom:10px;">
+        Fortinet released out-of-band patches for a critical security flaw impacting FortiClient EMS, tracked as CVE-2026-35616 (CVSS 9.1), described as a pre-authentication API access bypass leading to privilege escalation; an improper access control vulnerability in FortiClient EMS may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests. This is the second unauthenticated remote code execution vulnerability in FortiClient EMS disclosed within weeks, following CVE-2026-21643 — a separate critical SQL injection flaw in the same product actively exploited shortly prior. As of April 6, exploitation ramped up significantly following Fortinet's hotfix release, indicating growing attacker interest and likely broader targeting; Shadowserver scans found nearly 2,000 publicly exposed instances of FortiClient EMS. watchTowr CEO Benjamin Harris noted that "the timing of the ramp-up is likely not coincidental — attackers have shown repeatedly that holiday weekends are the best time to move; security teams are at half strength, on-call engineers are distracted, and the window between compromise and detection stretches from hours to days."
+      </div>
+      <div style="font-size:12px; color:#555;">
+        <strong>MITRE ATT&amp;CK:</strong> T1190 (Exploit Public-Facing App) · T1078 (Valid Accounts) · T1068 (Exploitation for Privilege Escalation) · T1133 (External Remote Services) · T1505.003 (Web Shell)
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── ITEM 3 ─── -->
+  <div style="background:#fff; border-radius:8px; margin-bottom:16px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,0.07);">
+    <div style="background:#e63946; padding:10px 22px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+      <div>
+        <span style="color:#fff; font-weight:800; font-size:15px;">🔴 ACT NOW &nbsp;|&nbsp; ITEM 3 OF 7</span>
+        <span style="color:#ffd6d9; font-size:13px; margin-left:16px;">RPS: <strong>8.6</strong> &nbsp;(S:9 × 0.45 + E:9 × 0.35 + X:7 × 0.20)</span>
+      </div>
+      <div style="color:#ffd6d9; font-size:12px;">April 7–9, 2026</div>
+    </div>
+    <div style="padding:18px 22px;">
+      <h3 style="margin:0 0 8px 0; font-size:16px; color:#1b2a4a;">APT28 / Forest Blizzard "FrostArmada" DNS Hijacking Campaign Disrupted — 18,000 Routers Compromised Across 120 Countries</h3>
+      <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:12px; font-size:12px;">
+        <span style="background:#fef2f2; color:#e63946; padding:3px 10px; border-radius:12px; font-weight:600;">Nation-State: Russia (GRU) &nbsp;|&nbsp; CVE-2023-50224</span>
+        <span style="background:#f0f4ff; color:#457b9d; padding:3px 10px; border-radius:12px;">🔗 Source: The Hacker News / BleepingComputer / SecurityWeek</span>
+        <a href="https://thehackernews.com/2026/04/russian-state-linked-apt28-exploits.html" style="background:#e8f5e9; color:#2e7d32; padding:3px 10px; border-radius:12px; text-decoration:none;">thehackernews.com →</a>
+        <a href="https://www.bleepingcomputer.com/news/security/authorities-disrupt-dns-hijacks-used-to-steal-microsoft-365-logins/" style="background:#e8f5e9; color:#2e7d32; padding:3px 10px; border-radius:12px; text-decoration:none;">bleepingcomputer.com →</a>
+      </div>
+      <div style="background:#f8f9fa; border-radius:6px; padding:12px 16px; font-size:13px; line-height:1.75; color:#333; margin-bottom:10px;">
+        APT28 (Forest Blizzard) compromised insecure MikroTik and TP-Link routers and modified their settings to turn them into malicious infrastructure as part of a cyber espionage campaign since at least May 2025, codenamed FrostArmada by Lumen's Black Lotus Labs. Their technique modified DNS settings on compromised routers to hijack local network traffic and capture authentication credentials; when targeted domains were requested, traffic was redirected to an attacker-in-the-middle (AitM) node where credentials were harvested and exfiltrated. At its peak in December 2025, FrostArmada infected approximately 18,000 devices across 120 countries, primarily targeting government agencies, law enforcement, and IT providers. An international law enforcement operation disrupted the campaign; the FBI carried out a court-authorized technical operation to secure compromised routers by removing APT28's resolvers through DNS resets, forcing devices to connect to legitimate ISP-provided DNS resolvers.
+      </div>
+      <div style="font-size:12px; color:#555;">
+        <strong>MITRE ATT&amp;CK:</strong> T1584.008 (Compromise Infrastructure: Network Devices) · T1557 (Adversary-in-the-Middle) · T1040 (Network Sniffing) · T1558 (Steal/Forge Kerberos Tickets) · T1550.001 (Use Alternate Auth: App Access Token)
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── ITEM 4 ─── -->
+  <div style="background:#fff; border-radius:8px; margin-bottom:16px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,0.07);">
+    <div style="background:#f4a261; padding:10px 22px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+      <div>
+        <span style="color:#fff; font-weight:800; font-size:15px;">🟠 HEIGHTENED WATCH &nbsp;|&nbsp; ITEM 4 OF 7</span>
+        <span style="color:#fff; font-size:13px; margin-left:16px;">RPS: <strong>7.4</strong> &nbsp;(S:8 × 0.45 + E:7 × 0.35 + X:7 × 0.20)</span>
+      </div>
+      <div style="color:#fff; font-size:12px;">April 7–8, 2026</div>
+    </div>
+    <div style="padding:18px 22px;">
+      <h3 style="margin:0 0 8px 0; font-size:16px; color:#1b2a4a;">North Korea "Contagious Interview" (UNC1069) Spreads 1,700+ Malicious Packages Across npm, PyPI, Go, Rust &amp; Packagist</h3>
+      <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:12px; font-size:12px;">
+        <span style="background:#fff3e0; color:#f4a261; padding:3px 10px; border-radius:12px; font-weight:600;">Nation-State: DPRK &nbsp;|&nbsp; Supply Chain &nbsp;|&nbsp; WAVESHAPER.V2</span>
+        <span style="background:#f0f4ff; color:#457b9d; padding:3px 10px; border-radius:12px;">🔗 Source: The Hacker News / Socket / Security Alliance (SEAL)</span>
+        <a href="https://thehackernews.com/2026/04/n-korean-hackers-spread-1700-malicious.html" style="background:#e8f5e9; color:#2e7d32; padding:3px 10px; border-radius:12px; text-decoration:none;">thehackernews.com →</a>
+        <a href="https://socket.dev/blog/contagious-interview-campaign-spreads-across-5-ecosystems" style="background:#e8f5e9; color:#2e7d32; padding:3px 10px; border-radius:12px; text-decoration:none;">socket.dev →</a>
+      </div>
+      <div style="background:#f8f9fa; border-radius:6px; padding:12px 16px; font-size:13px; line-height:1.75; color:#333; margin-bottom:10px;">
+        The North Korea-linked persistent campaign known as Contagious Interview has spread its tentacles by publishing malicious packages targeting the Go, Rust, and PHP ecosystems. Socket has been tracking this operation since 2024 and maintains a dedicated campaign page that now tracks more than 1,700 malicious packages linked to the activity. The campaign includes the poisoning of the popular Axios npm package to distribute an implant called WAVESHAPER.V2, achieved by taking control of the package maintainer's npm account via a tailored social engineering campaign; the attack is attributed to UNC1069, which overlaps with BlueNoroff and Stardust Chollima. UNC1069 operates multi-week, low-pressure social engineering campaigns across Telegram, LinkedIn, and Slack — either impersonating known contacts or credible brands or by leveraging access to previously compromised accounts — before delivering fraudulent Zoom or Microsoft Teams meeting links.
+      </div>
+      <div style="font-size:12px; color:#555;">
+        <strong>MITRE ATT&amp;CK:</strong> T1195.001 (Supply Chain: Software Dependencies) · T1566.002 (Phishing: Spearphishing Link) · T1554 (Compromise Client Software Binary) · T1059.007 (JS/NodeJS execution) · T1567 (Exfiltration over Web Service)
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── ITEM 5 ─── -->
+  <div style="background:#fff; border-radius:8px; margin-bottom:16px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,0.07);">
+    <div style="background:#f4a261; padding:10px 22px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+      <div>
+        <span style="color:#fff; font-weight:800; font-size:15px;">🟠 HEIGHTENED WATCH &nbsp;|&nbsp; ITEM 5 OF 7</span>
+        <span style="color:#fff; font-size:13px; margin-left:16px;">RPS: <strong>7.2</strong> &nbsp;(S:8 × 0.45 + E:7 × 0.35 + X:6 × 0.20)</span>
+      </div>
+      <div style="color:#fff; font-size:12px;">April 7, 2026</div>
+    </div>
+    <div style="padding:18px 22px;">
+      <h3 style="margin:0 0 8px 0; font-size:16px; color:#1b2a4a;">Flowise AI Platform CVSS 10.0 RCE (CVE-2025-59528) Under Active Exploitation — 12,000–15,000 Instances Exposed</h3>
+      <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:12px; font-size:12px;">
+        <span style="background:#fff3e0; color:#f4a261; padding:3px 10px; border-radius:12px; font-weight:600;">CVE-2025-59528 &nbsp;|&nbsp; CVSS 10.0 &nbsp;|&nbsp; AI/LLM Platform</span>
+        <span style="background:#f0f4ff; color:#457b9d; padding:3px 10px; border-radius:12px;">🔗 Source: The Hacker News / BleepingComputer / VulnCheck</span>
+        <a href="https://thehackernews.com/2026/04/flowise-ai-agent-builder-under-active.html" style="background:#e8f5e9; color:#2e7d32; padding:3px 10px; border-radius:12px; text-
+</body>
+</html>
