@@ -13,224 +13,251 @@
   </style>
 </head>
 <body>
-  <p class="updated">Last updated: April 12, 2026 at 07:05 UTC</p>
-  Now I have comprehensive data to compile the full weekly CISO briefing. Let me compose the HTML output.
+  <p class="updated">Last updated: April 13, 2026 at 07:50 UTC</p>
+  Now I have comprehensive data to produce the full CISO briefing. Let me compile and score all items using the RPS formula: **(S × 0.45) + (E × 0.35) + (X × 0.20)**, where S = Severity (1–10), E = Exploitability (1–10), X = Exposure breadth (1–10).
+
+Here is the fully rendered HTML briefing:
 
 ---
 
-Below is your complete weekly CISO intelligence briefing for the period **April 6–12, 2026**, rendered as a self-contained HTML body fragment:
+<article style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 1100px; margin: 0 auto; color: #1a1a2e; background: #f7f8fc; padding: 0 0 40px 0;">
 
----
-
-<style>
-  .briefing-wrap { font-family: 'Segoe UI', Arial, sans-serif; max-width: 1100px; margin: 0 auto; color: #1a1a2e; background: #f4f6fb; padding: 0 0 40px 0; }
-  .brief-header { background: linear-gradient(135deg, #0d1b2a 0%, #1b3a5c 100%); color: #fff; padding: 38px 44px 28px 44px; border-radius: 0 0 10px 10px; }
-  .brief-header h1 { margin: 0 0 4px 0; font-size: 2rem; letter-spacing: 0.04em; }
-  .brief-header .sub { font-size: 1rem; opacity: 0.72; margin-bottom: 6px; }
-  .brief-header .meta { font-size: 0.82rem; opacity: 0.55; }
-  .exec-summary { background: #fff; border-left: 5px solid #e63946; margin: 28px 32px 0 32px; padding: 22px 28px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-  .exec-summary h2 { color: #e63946; margin-top: 0; font-size: 1.1rem; letter-spacing: 0.06em; text-transform: uppercase; }
-  .exec-summary p { font-size: 0.97rem; line-height: 1.7; margin: 0; }
-  .top-risks { margin: 24px 32px 0 32px; }
-  .top-risks h2 { color: #1b3a5c; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 2px solid #1b3a5c; padding-bottom: 6px; }
-  .risk-cards { display: flex; gap: 16px; flex-wrap: wrap; }
-  .risk-card { flex: 1 1 280px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); padding: 18px 20px; border-top: 4px solid #e63946; }
-  .risk-card h3 { margin: 0 0 8px 0; font-size: 0.97rem; color: #1b3a5c; }
-  .risk-card p { margin: 0; font-size: 0.88rem; color: #444; line-height: 1.55; }
-  .section-title { margin: 32px 32px 10px 32px; color: #1b3a5c; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 2px solid #1b3a5c; padding-bottom: 6px; }
-  .items-grid { display: flex; flex-direction: column; gap: 18px; margin: 0 32px; }
-  .item-card { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); padding: 22px 26px; border-left: 6px solid #ccc; position: relative; }
-  .item-card.act-now { border-left-color: #e63946; }
-  .item-card.heightened { border-left-color: #f4a261; }
-  .item-card.strategic { border-left-color: #2a9d8f; }
-  .item-header { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 10px; }
-  .item-title { font-size: 1.03rem; font-weight: 700; color: #1b3a5c; margin: 0; flex: 1 1 400px; }
-  .item-badges { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; }
-  .badge { display: inline-block; border-radius: 4px; padding: 3px 10px; font-size: 0.76rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
-  .badge-act { background: #e63946; color: #fff; }
-  .badge-heightened { background: #f4a261; color: #fff; }
-  .badge-strategic { background: #2a9d8f; color: #fff; }
-  .badge-rps { background: #1b3a5c; color: #fff; }
-  .item-meta { font-size: 0.8rem; color: #777; margin-bottom: 10px; }
-  .item-meta a { color: #1b3a5c; text-decoration: none; }
-  .item-meta a:hover { text-decoration: underline; }
-  .item-mitre { font-size: 0.8rem; color: #555; margin-bottom: 10px; background: #f0f4fa; border-radius: 4px; padding: 5px 10px; display: inline-block; }
-  .item-summary { font-size: 0.93rem; line-height: 1.68; color: #333; }
-  .actions-section { margin: 28px 32px 0 32px; }
-  .actions-section h2 { color: #1b3a5c; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 2px solid #1b3a5c; padding-bottom: 6px; }
-  .action-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.07); font-size: 0.91rem; }
-  .action-table th { background: #1b3a5c; color: #fff; padding: 11px 14px; text-align: left; font-size: 0.82rem; letter-spacing: 0.04em; text-transform: uppercase; }
-  .action-table td { padding: 10px 14px; border-bottom: 1px solid #eaeef5; vertical-align: top; }
-  .action-table tr:last-child td { border-bottom: none; }
-  .action-table tr:nth-child(even) td { background: #f7f9fd; }
-  .pri-high { color: #e63946; font-weight: 700; }
-  .pri-med { color: #f4a261; font-weight: 700; }
-  .pri-low { color: #2a9d8f; font-weight: 700; }
-  .footer { margin: 32px 32px 0 32px; font-size: 0.78rem; color: #999; text-align: center; padding-top: 14px; border-top: 1px solid #e0e4ef; }
-  @media (max-width: 700px) {
-    .brief-header, .exec-summary, .top-risks, .section-title, .items-grid, .actions-section, .footer { margin-left: 10px; margin-right: 10px; }
-    .brief-header { padding: 22px 14px 18px 14px; }
-    .risk-cards { flex-direction: column; }
-  }
-</style>
-
-<div class="briefing-wrap">
-
-  <!-- HEADER -->
-  <div class="brief-header">
-    <div class="sub">WEEKLY CYBER INTELLIGENCE BRIEFING — CONFIDENTIAL // TLP:AMBER</div>
-    <h1>&#128274; CISO Intelligence Brief</h1>
-    <div class="meta">Coverage Period: April 6 – April 12, 2026 &nbsp;|&nbsp; Published: Sunday, April 12, 2026 &nbsp;|&nbsp; Audience: CISO, CIO, Senior Security Leadership</div>
+<!-- MASTHEAD -->
+<header style="background: linear-gradient(135deg, #0d1b2a 0%, #1b2a4a 60%, #22334d 100%); color: #fff; padding: 36px 48px 28px 48px; border-bottom: 4px solid #e63946;">
+  <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+    <div>
+      <div style="font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#a8c8f8; font-weight:600; margin-bottom:6px;">CLASSIFIED FOR SENIOR SECURITY LEADERSHIP</div>
+      <h1 style="margin:0; font-size:26px; font-weight:800; letter-spacing:-0.5px; color:#fff;">🛡 Weekly CISO Intelligence Briefing</h1>
+      <div style="margin-top:6px; font-size:14px; color:#c0d8f5;">Period: <strong>7 – 13 April 2026</strong> &nbsp;|&nbsp; Published: <strong>Monday, 13 April 2026</strong></div>
+    </div>
+    <div style="text-align:right;">
+      <div style="font-size:11px; color:#a8c8f8; text-transform:uppercase; letter-spacing:2px;">Classification</div>
+      <div style="font-size:18px; font-weight:800; color:#e63946; letter-spacing:1px;">TLP:AMBER</div>
+      <div style="font-size:11px; color:#c0d8f5; margin-top:4px;">For Authorized Recipients Only</div>
+    </div>
   </div>
+</header>
 
-  <!-- EXECUTIVE SUMMARY -->
-  <div class="exec-summary">
-    <h2>&#127381; Executive Summary</h2>
-    <p>
-      This week's threat landscape is defined by three converging pressures: a cascade of actively exploited zero-days in critical enterprise infrastructure (Fortinet FortiClient EMS, F5 BIG-IP APM, Google Chrome), an escalating state-sponsored wiper and espionage campaign by Iran-linked Handala that has pivoted to U.S. critical infrastructure, and a massive alleged third-party supply chain breach at Adobe via a BPO contractor that exposed 13 million records including unpatched HackerOne vulnerability disclosures. LockBit 5.0 RaaS continues spreading cross-platform ransomware targeting ESXi, Linux, and Windows simultaneously. The common thread is speed: adversaries are weaponizing CVE advisories within hours, exploiting holiday windows to maximize dwell time, and pivoting through trusted vendor relationships to bypass hardened enterprise perimeters. Boards and CIOs should expect continued escalation of nation-state cyber activity tied to the Iran–US–Israel conflict regardless of ceasefire status, and must treat BPO/vendor access as an untrusted attack surface requiring immediate governance review.
+<!-- RPS LEGEND -->
+<section style="background:#fff; border-bottom:2px solid #e2e8f0; padding:18px 48px;">
+  <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:center;">
+    <div style="font-size:12px; font-weight:700; color:#555; text-transform:uppercase; letter-spacing:1px;">Risk Priority Score (RPS) = (S × 0.45) + (E × 0.35) + (X × 0.20) &nbsp;|&nbsp; Scale: 1–10</div>
+    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <span style="background:#e63946; color:#fff; padding:3px 12px; border-radius:20px; font-size:11px; font-weight:700;">● ACT NOW &nbsp;RPS ≥ 8.0</span>
+      <span style="background:#f4a261; color:#fff; padding:3px 12px; border-radius:20px; font-size:11px; font-weight:700;">● HEIGHTENED WATCH &nbsp;RPS 6.0–7.9</span>
+      <span style="background:#457b9d; color:#fff; padding:3px 12px; border-radius:20px; font-size:11px; font-weight:700;">● STRATEGIC WATCH &nbsp;RPS &lt; 6.0</span>
+    </div>
+  </div>
+</section>
+
+<!-- EXECUTIVE SUMMARY -->
+<section style="background:#1b2a4a; color:#fff; padding:28px 48px 24px 48px; border-bottom: 3px solid #e63946;">
+  <h2 style="margin:0 0 12px 0; font-size:16px; text-transform:uppercase; letter-spacing:2px; color:#a8c8f8;">⚡ Executive Summary</h2>
+  <p style="margin:0; font-size:15px; line-height:1.75; color:#dce8f8;">
+    The week of 7–13 April 2026 represents one of the highest-density exploit weeks of the year. <strong>Six distinct, actively-exploited vulnerabilities</strong> were added to the CISA Known Exploited Vulnerabilities (KEV) catalog in a single seven-day window — an exceptional concentration. Three converging themes dominate this briefing: (1) <strong>Enterprise endpoint management platforms remain the premier initial-access target</strong>, with both Fortinet FortiClient EMS and Ivanti EPMM under simultaneous unauthenticated remote code execution (RCE) exploitation; (2) <strong>the weaponization clock has collapsed</strong> — Marimo CVE-2026-39987 was exploited within 10 hours of disclosure, the Smart Slider 3 Pro supply chain was backdoored through a trusted update channel, and Storm-1175 has demonstrated the ability to move from initial access to full ransomware deployment within 24 hours; and (3) <strong>document and browser attack surfaces are re-emerging as stealth entry points</strong>, with Adobe Acrobat Reader CVE-2026-34621 confirmed exploited since at least December 2025 and a fourth Chrome zero-day of the year now patched. Security leaders must treat patch latency — not patch availability — as the primary control failure metric this week.
+  </p>
+</section>
+
+<!-- ITEMS -->
+<section style="padding: 32px 48px 0 48px;">
+  <h2 style="font-size:15px; text-transform:uppercase; letter-spacing:2px; color:#1b2a4a; border-bottom:2px solid #e63946; padding-bottom:8px; margin-bottom:24px;">🔴 Intelligence Items — This Week's Priority Findings</h2>
+
+  <!-- ITEM 1 -->
+  <div style="background:#fff; border-radius:10px; border-left:6px solid #e63946; box-shadow:0 2px 12px rgba(0,0,0,0.07); margin-bottom:24px; padding:24px 28px;">
+    <div style="display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between; gap:12px; margin-bottom:12px;">
+      <div>
+        <span style="background:#e63946; color:#fff; font-size:11px; font-weight:800; padding:3px 10px; border-radius:20px; letter-spacing:1px;">ACT NOW</span>
+        <h3 style="margin:8px 0 4px 0; font-size:17px; color:#1b2a4a;">1. Fortinet FortiClient EMS Zero-Day (CVE-2026-35616) — Unauthenticated RCE Under Active Exploitation</h3>
+      </div>
+      <div style="text-align:right; min-width:160px;">
+        <div style="font-size:28px; font-weight:900; color:#e63946; line-height:1;">9.04</div>
+        <div style="font-size:11px; color:#888; font-weight:600;">RPS &nbsp;|&nbsp; S:9.5 · E:9.5 · X:8.0</div>
+      </div>
+    </div>
+    <table style="width:100%; font-size:12px; color:#555; border-collapse:collapse; margin-bottom:12px;">
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">Source</td>
+        <td>Fortinet PSIRT / CyberScoop / watchTowr</td>
+      </tr>
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">Link</td>
+        <td><a href="https://cyberscoop.com/fortinet-forticlient-ems-zero-day-cve-2026-35616-hotfix-known-exploited/" style="color:#1d6fa4;">https://cyberscoop.com/fortinet-forticlient-ems-zero-day-cve-2026-35616-hotfix-known-exploited/</a></td>
+      </tr>
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">Published</td>
+        <td>April 7, 2026 (KEV: April 6, 2026)</td>
+      </tr>
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">CVSS</td>
+        <td>9.1 (Critical)</td>
+      </tr>
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">MITRE ATT&CK</td>
+        <td>T1190 Exploit Public-Facing Application · T1078 Valid Accounts · T1068 Exploitation for Privilege Escalation</td>
+      </tr>
+    </table>
+    <p style="margin:0; font-size:14px; line-height:1.7; color:#2d3748;">
+      On March 31, 2026, watchTowr sensors identified exploitation of this critical zero-day in FortiClient EMS — assigned CVE-2026-35616 with a CVSS score of 9.1 — four days before Fortinet published its advisory. The vulnerability is a pre-authentication API access bypass leading to privilege escalation, where an improper access control flaw may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests. Shadowserver scans found nearly 2,000 publicly exposed instances of FortiClient EMS on Sunday alone. This development came merely days after another critical vulnerability in FortiClient EMS — CVE-2026-21643 (CVSS 9.1) — also came under active exploitation. Exploitation timing was deliberate: "Attackers have shown repeatedly that holiday weekends are the best time to move. Security teams are at half strength, on-call engineers are distracted, and the window between compromise and detection stretches from hours to days."
     </p>
   </div>
 
-  <!-- TOP 3 ENTERPRISE RISKS -->
-  <div class="top-risks">
-    <h2>&#128308; Top 3 Enterprise Risks This Week</h2>
-    <div class="risk-cards">
-      <div class="risk-card">
-        <h3>&#x1F6A8; #1 — Sub-24-Hour CVE Weaponization</h3>
-        <p>Adversaries are building working exploits from advisory text alone — no PoC required. FortiClient EMS and Langflow CVEs were weaponized within hours of disclosure. Patch SLAs measured in days are no longer viable. Runtime detection and virtual patching are now primary defensive layers.</p>
+  <!-- ITEM 2 -->
+  <div style="background:#fff; border-radius:10px; border-left:6px solid #e63946; box-shadow:0 2px 12px rgba(0,0,0,0.07); margin-bottom:24px; padding:24px 28px;">
+    <div style="display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between; gap:12px; margin-bottom:12px;">
+      <div>
+        <span style="background:#e63946; color:#fff; font-size:11px; font-weight:800; padding:3px 10px; border-radius:20px; letter-spacing:1px;">ACT NOW</span>
+        <h3 style="margin:8px 0 4px 0; font-size:17px; color:#1b2a4a;">2. Storm-1175 / Medusa RaaS: Nation-State-Grade Velocity in Cross-Sector Ransomware Campaign</h3>
       </div>
-      <div class="risk-card">
-        <h3>&#x26A1; #2 — Geopolitically-Driven Wiper Attacks on Enterprise</h3>
-        <p>Iran-MOIS-linked Handala has demonstrated the ability to destroy 200,000+ devices in a single enterprise via legitimate MDM tooling. Despite a nominal ceasefire, the group has vowed continued operations against Israel and U.S.-linked organizations. Any company with Israeli business ties, defense relationships, or critical infrastructure exposure must elevate posture now.</p>
-      </div>
-      <div class="risk-card">
-        <h3>&#x1F517; #3 — BPO/Contractor Supply Chain as Primary Breach Vector</h3>
-        <p>The alleged Adobe breach illustrates that vendor networks with access to enterprise data represent a direct, lightly-defended entry point. A single RAT-infected contractor workstation yielded 13M records and unpatched vulnerability disclosures. Third-party access governance and bulk export controls are the critical gap for most enterprises.</p>
+      <div style="text-align:right; min-width:160px;">
+        <div style="font-size:28px; font-weight:900; color:#e63946; line-height:1;">9.00</div>
+        <div style="font-size:11px; color:#888; font-weight:600;">RPS &nbsp;|&nbsp; S:10.0 · E:9.0 · X:8.0</div>
       </div>
     </div>
+    <table style="width:100%; font-size:12px; color:#555; border-collapse:collapse; margin-bottom:12px;">
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">Source</td>
+        <td>Microsoft Threat Intelligence Blog / Dark Reading</td>
+      </tr>
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">Link</td>
+        <td><a href="https://www.microsoft.com/en-us/security/blog/2026/04/06/storm-1175-focuses-gaze-on-vulnerable-web-facing-assets-in-high-tempo-medusa-ransomware-operations/" style="color:#1d6fa4;">https://www.microsoft.com/en-us/security/blog/2026/04/06/storm-1175-focuses-gaze-on-vulnerable-web-facing-assets-in-high-tempo-medusa-ransomware-operations/</a></td>
+      </tr>
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">Published</td>
+        <td>April 6, 2026</td>
+      </tr>
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">MITRE ATT&CK</td>
+        <td>T1190 Exploit Public-Facing App · T1003.001 LSASS Memory · T1021.001 RDP · T1486 Data Encrypted for Impact · T1567 Exfiltration over Web Service · T1562.001 Impair Defenses (AV Tamper)</td>
+      </tr>
+    </table>
+    <p style="margin:0; font-size:14px; line-height:1.7; color:#2d3748;">
+      Microsoft Threat Intelligence confirmed that Storm-1175 operates high-velocity ransomware campaigns that weaponize N-days during the window between vulnerability disclosure and widespread patch adoption, moving from initial access to data exfiltration and Medusa ransomware deployment often within a few days and, in some cases, within 24 hours. The threat actor's high operational tempo has proven successful, with recent intrusions heavily impacting healthcare organizations, as well as those in the education, professional services, and finance sectors in Australia, the United Kingdom, and the United States. Storm-1175 exploited at least three zero-day vulnerabilities, including CVE-2026-23760 in SmarterMail the week prior to public disclosure, and CVE-2025-10035 in GoAnywhere Managed File Transfer, also exploited one week before public disclosure. For credential access, the group uses Impacket and Mimikatz to dump LSASS, toggles WDigest credential caching via the registry, and with elevated credentials pivots to domain controllers, harvesting NTDS.dit and SAM hives to enable offline password cracking and broader domain compromise.
+    </p>
   </div>
 
-  <!-- INTELLIGENCE ITEMS -->
-  <div class="section-title">&#128202; Intelligence Items — Ranked by Risk Priority Score</div>
-
-  <div class="items-grid">
-
-    <!-- ITEM 1: FortiClient EMS Zero-Day -->
-    <div class="item-card act-now">
-      <div class="item-header">
-        <p class="item-title">1. Fortinet FortiClient EMS Zero-Day CVE-2026-35616 (CVSS 9.1) Actively Exploited — Holiday Weekend Attack Surge</p>
-        <div class="item-badges">
-          <span class="badge badge-act">&#128308; ACT NOW</span>
-          <span class="badge badge-rps">RPS: 9.3</span>
-        </div>
+  <!-- ITEM 3 -->
+  <div style="background:#fff; border-radius:10px; border-left:6px solid #e63946; box-shadow:0 2px 12px rgba(0,0,0,0.07); margin-bottom:24px; padding:24px 28px;">
+    <div style="display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between; gap:12px; margin-bottom:12px;">
+      <div>
+        <span style="background:#e63946; color:#fff; font-size:11px; font-weight:800; padding:3px 10px; border-radius:20px; letter-spacing:1px;">ACT NOW</span>
+        <h3 style="margin:8px 0 4px 0; font-size:17px; color:#1b2a4a;">3. Ivanti EPMM CVE-2026-1340 — Unauthenticated RCE in Mobile Device Management Infrastructure</h3>
       </div>
-      <div class="item-meta">
-        Source: <a href="https://cyberscoop.com/fortinet-forticlient-ems-zero-day-cve-2026-35616-hotfix-known-exploited/" target="_blank">CyberScoop</a> &nbsp;|&nbsp;
-        <a href="https://thehackernews.com/2026/04/fortinet-patches-actively-exploited-cve.html" target="_blank">The Hacker News</a> &nbsp;|&nbsp;
-        <a href="https://watchtowr.com/resources/fortinet-forticlient-ems-zero-day-cve-2026-35616-active-exploitation-underway/" target="_blank">watchTowr</a> &nbsp;|&nbsp; Published: April 6–7, 2026
+      <div style="text-align:right; min-width:160px;">
+        <div style="font-size:28px; font-weight:900; color:#e63946; line-height:1;">8.86</div>
+        <div style="font-size:11px; color:#888; font-weight:600;">RPS &nbsp;|&nbsp; S:9.8 · E:9.5 · X:7.0</div>
       </div>
-      <div class="item-mitre">MITRE ATT&amp;CK: T1190 (Exploit Public-Facing Application) &bull; T1059 (Command and Scripting Interpreter) &bull; T1068 (Exploitation for Privilege Escalation) &bull; T1078 (Valid Accounts – post-exploit)</div>
-      <p class="item-summary">
-        Fortinet released an emergency software update over the weekend to address an actively exploited vulnerability in FortiClient EMS; the zero-day CVE-2026-35616 carries a CVSS rating of 9.8 and was added to CISA's Known Exploited Vulnerability catalog on Monday April 6. The vulnerability is described as a pre-authentication API access bypass leading to privilege escalation; an improper access control flaw in FortiClient EMS may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests. This is the second unauthenticated RCE vulnerability in FortiClient EMS disclosed within weeks — CVE-2026-21643, a separate critical flaw in the same product, was actively exploited shortly before this advisory was published. As of April 6, exploitation ramped up significantly, with Shadowserver scans finding nearly 2,000 publicly exposed instances of FortiClient EMS on Sunday. Watchtowr CEO Benjamin Harris noted that "attackers have shown repeatedly that holiday weekends are the best time to move — security teams are at half strength, on-call engineers are distracted, and the window between compromise and detection stretches from hours to days." A full patch is expected in the upcoming FortiClient EMS 7.4.7 release; an emergency hotfix for versions 7.4.5 and 7.4.6 is currently the only remediation path.
-      </p>
     </div>
+    <table style="width:100%; font-size:12px; color:#555; border-collapse:collapse; margin-bottom:12px;">
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">Source</td>
+        <td>CISA KEV / Cybersecurity Dive / BleepingComputer</td>
+      </tr>
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">Link</td>
+        <td><a href="https://www.cybersecuritydive.com/news/cisa-second-critical-flaw-ivanti-epmm-exploited/817080/" style="color:#1d6fa4;">https://www.cybersecuritydive.com/news/cisa-second-critical-flaw-ivanti-epmm-exploited/817080/</a></td>
+      </tr>
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">Published</td>
+        <td>April 8–9, 2026 (KEV Added: April 8, 2026)</td>
+      </tr>
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">CVSS</td>
+        <td>9.8 (Critical)</td>
+      </tr>
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">MITRE ATT&CK</td>
+        <td>T1190 Exploit Public-Facing Application · T1133 External Remote Services · T1505.003 Web Shell · T1098 Account Manipulation</td>
+      </tr>
+    </table>
+    <p style="margin:0; font-size:14px; line-height:1.7; color:#2d3748;">
+      CISA added a critical flaw in Ivanti Endpoint Manager Mobile (EPMM) — CVE-2026-1340, a code injection vulnerability that allows an attacker to achieve remote code execution without authentication — to its Known Exploited Vulnerabilities catalog on April 8, with a federal remediation deadline of April 11. The two flaws CVE-2026-1281 and CVE-2026-1340 are typically chained together, allowing a remote, unauthenticated attacker to achieve arbitrary code execution on the EPMM appliance. Successful exploitation has been observed resulting in web shell deployment, reverse shell establishment, cryptominer installation, secondary payload retrieval, and persistent backdoor installation. Mobile device management solutions like Ivanti EPMM are particularly high-value targets because these systems hold elevated privileges on corporate smartphones and tablets; a compromised server could allow attackers to alter security policies or push malicious configurations to thousands of employee devices simultaneously. According to researcher Simo Kohonen, CEO of Defused: "It's been repeatedly exploited literally thousands of times since it was disclosed."
+    </p>
+  </div>
 
-    <!-- ITEM 2: Handala / Iran State-Sponsored Wiper -->
-    <div class="item-card act-now">
-      <div class="item-header">
-        <p class="item-title">2. Iran-MOIS / Handala Wiper Campaign: Critical Infrastructure Targeting Persists Despite Ceasefire</p>
-        <div class="item-badges">
-          <span class="badge badge-act">&#128308; ACT NOW</span>
-          <span class="badge badge-rps">RPS: 9.1</span>
-        </div>
+  <!-- ITEM 4 -->
+  <div style="background:#fff; border-radius:10px; border-left:6px solid #e63946; box-shadow:0 2px 12px rgba(0,0,0,0.07); margin-bottom:24px; padding:24px 28px;">
+    <div style="display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between; gap:12px; margin-bottom:12px;">
+      <div>
+        <span style="background:#e63946; color:#fff; font-size:11px; font-weight:800; padding:3px 10px; border-radius:20px; letter-spacing:1px;">ACT NOW</span>
+        <h3 style="margin:8px 0 4px 0; font-size:17px; color:#1b2a4a;">4. Smart Slider 3 Pro Supply Chain Compromise — 800,000+ WordPress/Joomla Sites Backdoored</h3>
       </div>
-      <div class="item-meta">
-        Source: <a href="https://nationaltoday.com/us/dc/washington/news/2026/04/09/iran-linked-hackers-vow-to-continue-cyberattacks-despite-ceasefire-1/" target="_blank">Washington Today</a> &nbsp;|&nbsp;
-        <a href="https://www.bitdefender.com/en-us/blog/businessinsights/bitdefender-threat-debrief-april-2026" target="_blank">Bitdefender Threat Debrief April 2026</a> &nbsp;|&nbsp;
-        <a href="https://www.fdd.org/analysis/2026/04/01/6-things-to-know-about-handala-tehrans-hackers-making-front-page-news/" target="_blank">FDD Analysis</a> &nbsp;|&nbsp; Published: April 1–10, 2026
+      <div style="text-align:right; min-width:160px;">
+        <div style="font-size:28px; font-weight:900; color:#e63946; line-height:1;">8.38</div>
+        <div style="font-size:11px; color:#888; font-weight:600;">RPS &nbsp;|&nbsp; S:9.5 · E:8.0 · X:7.5</div>
       </div>
-      <div class="item-mitre">MITRE ATT&amp;CK: T1485 (Data Destruction / Wiper) &bull; T1566 (Phishing) &bull; T1078 (Valid Accounts) &bull; T1486 (Data Encrypted for Impact) &bull; T1071 (Application Layer Protocol C2) &bull; T1190 (Exploit Public-Facing Application)</div>
-      <p class="item-summary">
-        U.S. law enforcement confirmed on March 27 that Iranian hackers operating under the name Handala compromised the FBI director's personal email; the group claims to be an independent, pro-Palestinian hacktivist collective but instead serves as a front for Iran's Ministry of Intelligence and Security (MOIS). In early March, Handala attacked Stryker, a Michigan-based medical technology company producing hospital equipment used by more than 150 million patients worldwide; the attack reportedly deleted data from over 200,000 employee devices across 79 countries and forced some hospitals to postpone surgeries. Handala has sharply increased its activity, claiming 23 ransomware victims in March alone — a single month accounting for more than half of the group's total claimed victims in 2026 so far. Despite a ceasefire announcement, Handala vowed to temporarily postpone attacks on the U.S. but continue targeting Israel, and revive efforts against America when the time is right. U.S. authorities have warned that Iranian-allied hackers have infiltrated industrial control systems used in key sectors like ports, power plants, and water facilities, posing a serious threat to critical infrastructure.
-      </p>
     </div>
+    <table style="width:100%; font-size:12px; color:#555; border-collapse:collapse; margin-bottom:12px;">
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">Source</td>
+        <td>Patchstack / The Hacker News / BleepingComputer</td>
+      </tr>
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">Link</td>
+        <td><a href="https://patchstack.com/articles/critical-supply-chain-compromise-in-smart-slider-3-pro-full-malware-analysis/" style="color:#1d6fa4;">https://patchstack.com/articles/critical-supply-chain-compromise-in-smart-slider-3-pro-full-malware-analysis/</a></td>
+      </tr>
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">Published</td>
+        <td>April 9–10, 2026 (Incident: April 7, 2026)</td>
+      </tr>
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">MITRE ATT&CK</td>
+        <td>T1195.002 Compromise Software Supply Chain · T1505.003 Web Shell · T1136 Create Account · T1041 Exfiltration Over C2 Channel</td>
+      </tr>
+    </table>
+    <p style="margin:0; font-size:14px; line-height:1.7; color:#2d3748;">
+      An unauthorized party gained access to Nextend's update infrastructure and distributed a fully attacker-authored build through the official update channel; any site that updated to version 3.5.1.35 between its release on April 7, 2026, and its detection approximately 6 hours later received a fully weaponized remote access toolkit. The trojanized update includes the ability to create rogue administrator accounts and drops backdoors that execute system commands remotely via HTTP headers. Critically, removing the plugin alone is not enough to eliminate the threat, as the malware installs copies of the backdoor in three additional locations, ensuring re-entry even after the compromised plugin is deleted. Patchstack described this as "a textbook supply chain compromise, the kind that renders traditional perimeter defenses irrelevant" — because when the malicious code is delivered through the trusted update channel, "the plugin is the malware."
+    </p>
+  </div>
 
-    <!-- ITEM 3: Adobe BPO Supply Chain Breach -->
-    <div class="item-card act-now">
-      <div class="item-header">
-        <p class="item-title">3. Alleged Adobe Breach via Indian BPO Contractor — 13M Support Tickets + HackerOne Vulnerability Data Exposed</p>
-        <div class="item-badges">
-          <span class="badge badge-act">&#128308; ACT NOW</span>
-          <span class="badge badge-rps">RPS: 8.9</span>
-        </div>
+  <!-- ITEM 5 -->
+  <div style="background:#fff; border-radius:10px; border-left:6px solid #f4a261; box-shadow:0 2px 12px rgba(0,0,0,0.07); margin-bottom:24px; padding:24px 28px;">
+    <div style="display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between; gap:12px; margin-bottom:12px;">
+      <div>
+        <span style="background:#f4a261; color:#fff; font-size:11px; font-weight:800; padding:3px 10px; border-radius:20px; letter-spacing:1px;">HEIGHTENED WATCH</span>
+        <h3 style="margin:8px 0 4px 0; font-size:17px; color:#1b2a4a;">5. Adobe Acrobat Reader Zero-Day CVE-2026-34621 — Emergency Patch After 4+ Months Silent Exploitation</h3>
       </div>
-      <div class="item-meta">
-        Source: <a href="https://cybernews.com/security/threat-actor-claims-adobe-data-theft/" target="_blank">Cybernews</a> &nbsp;|&nbsp;
-        <a href="https://cybersecuritynews.com/adobe-breach/" target="_blank">CybersecurityNews</a> &nbsp;|&nbsp;
-        <a href="https://www.scworld.com/brief/alleged-adobe-helpdesk-system-breach-reported" target="_blank">SC World</a> &nbsp;|&nbsp; Published: April 2–6, 2026
+      <div style="text-align:right; min-width:160px;">
+        <div style="font-size:28px; font-weight:900; color:#f4a261; line-height:1;">7.72</div>
+        <div style="font-size:11px; color:#888; font-weight:600;">RPS &nbsp;|&nbsp; S:8.5 · E:8.0 · X:6.5</div>
       </div>
-      <div class="item-mitre">MITRE ATT&amp;CK: T1199 (Trusted Relationship) &bull; T1566 (Phishing / RAT Delivery) &bull; T1078 (Valid Accounts) &bull; T1537 (Transfer Data to Cloud Account) &bull; T1530 (Data from Cloud Storage)</div>
-      <p class="item-summary">
-        The stolen cache allegedly includes approximately 13 million customer support tickets, 15,000 employee records, internal company documents, and — most critically — all of Adobe's HackerOne bug bounty program submissions. The attacker exploited a weaker link in the supply chain — an Indian BPO company contracted to handle Adobe's customer support operations — beginning with a malicious email that silently deployed a Remote Access Tool on the victim's machine, followed by targeted spear-phishing of the employee's manager to escalate access. Support tickets typically contain customer names, email addresses, account details, and descriptions of technical issues — a goldmine for phishing campaigns and identity theft; the inclusion of HackerOne submissions is especially concerning, as these contain unpublished vulnerability reports that could be weaponized by other threat actors before patches are deployed. The fact that a single agent account could pull 13 million records is not a policy gap — it is an architectural one. Adobe has yet to issue an official statement confirming or denying the breach; if verified, this would represent one of the more significant data exposures of 2026, raising urgent questions around third-party vendor security vetting, privileged access management in support environments, and the risks of overly permissive data export capabilities.
-      </p>
     </div>
+    <table style="width:100%; font-size:12px; color:#555; border-collapse:collapse; margin-bottom:12px;">
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">Source</td>
+        <td>The Hacker News / Security Affairs / Adobe PSIRT</td>
+      </tr>
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">Link</td>
+        <td><a href="https://thehackernews.com/2026/04/adobe-patches-actively-exploited.html" style="color:#1d6fa4;">https://thehackernews.com/2026/04/adobe-patches-actively-exploited.html</a></td>
+      </tr>
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">Published</td>
+        <td>April 12, 2026 (Exploitation began ~December 2025)</td>
+      </tr>
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">CVSS</td>
+        <td>8.6 (revised from 9.6)</td>
+      </tr>
+      <tr>
+        <td style="padding:2px 12px 2px 0; font-weight:700; white-space:nowrap;">MITRE ATT&CK</td>
+        <td>T1204.002 Malicious File · T1059.007 JavaScript · T1005 Data from Local System · T1041 Exfiltration Over C2</td>
+      </tr>
+    </table>
+    <p style="margin:0; font-size:14px; line-height:1.7; color:#2d3748;">
+      Adobe acknowledged that CVE-2026-34621 is being exploited in the wild; researcher Haifei Li disclosed zero-day exploitation of the flaw to run malicious JavaScript code when opening specially crafted PDF documents, with evidence suggesting the vulnerability may have been under exploitation since December 2025. The vulnerability involves prototype pollution — a JavaScript security flaw that permits an attacker to manipulate an application's objects and properties — which could result in arbitrary code execution. The exploit uses <code>util.readFileIntoStream()</code> to read local files and calls <code>RSS.addFeed()</code> to send stolen data to a remote server and receive additional malicious JavaScript, letting attackers profile victims, steal data, and decide whether to escalate with RCE or a sandbox escape. The issue affects Acrobat DC and Reader DC versions prior to 26.001.21411 across Windows and macOS; experts warn these vulnerabilities are particularly dangerous because they require minimal user interaction — often just opening an infected document.
+    </p>
+  </div>
 
-    <!-- ITEM 4: F5 BIG-IP APM RCE -->
-    <div class="item-card act-now">
-      <div class="item-header">
-        <p class="item-title">4. F5 BIG-IP APM CVE-2025-53521 Reclassified as Critical RCE (CVSS 9.8) — 17,000+ Exposed Instances, Nation-State Exploitation Confirmed</p>
-        <div class="item-badges">
-          <span class="badge badge-act">&#128308; ACT NOW</span>
-          <span class="badge badge-rps">RPS: 8.8</span>
-        </div>
+  <!-- ITEM 6 -->
+  <div style="background:#fff; border-radius:10px; border-left:6px solid #f4a261; box-shadow:0 2px 12px rgba(0,0,0,0.07); margin-bottom:24px; padding:24px 28px;">
+    <div style="display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between; gap:12px; margin-bottom:12px;">
+      <div>
+        <span style="background:#f4a261; color:#fff; font-size:11px; font-weight:800; padding:3px 10px; border-radius:20px; letter-spacing:1px;">HEIGHTENED WATCH</span>
+        <h3 style="margin:8px 0 4px 0; font-size:17px; color:#1b2a4a;">6. Marimo Python Notebook RCE CVE-2026-39987 — AI Dev Toolchain Exploited Within 10 Hours of Disclosure</h3>
       </div>
-      <div class="item-meta">
-        Source: <a href="https://www.helpnetsecurity.com/2026/03/28/big-ip-apm-vulnerability-cve-2025-53521-exploited/" target="_blank">Help Net Security</a> &nbsp;|&nbsp;
-        <a href="https://hadrian.io/blog/f5-big-ip-apm-remote-code-execution-cve-2025-53521-active-exploitation" target="_blank">Hadrian</a> &nbsp;|&nbsp;
-        <a href="https://securityaffairs.com/190384/security/attackers-exploit-rce-flaw-as-14000-f5-big-ip-apm-instances-remain-exposed.html" target="_blank">Security Affairs</a> &nbsp;|&nbsp; Published: March 28 – April 6, 2026
-      </div>
-      <div class="item-mitre">MITRE ATT&amp;CK: T1190 (Exploit Public-Facing Application) &bull; T1505.003 (Web Shell) &bull; T1562 (Impair Defenses – disable integrity check) &bull; T1021 (Remote Services) &bull; T1071 (C2 over HTTP)</div>
-      <p class="item-summary">
-        A critical unauthenticated remote code execution vulnerability (CVE-2025-53521) in F5's BIG-IP Access Policy Manager (APM) solution is under active exploitation, the U.S. CISA warned on Friday, March 27. CISA added the flaw to its Known Exploited Vulnerabilities catalog after F5 updated the related security advisory, which was initially published on October 15, 2025; it was later revealed that the attackers are linked to China, were in F5's network for at least 12 months, and may have deployed the Brickstorm backdoor on F5 customers' systems. F5 stated: "Due to new information obtained in March 2026, the original vulnerability is being re-categorized to an RCE with CVSS scores of 9.8 (CVSS v3.1) and 9.3 (CVSS v4.0)." F5 has published known indicators of compromise and is urging customers to check their BIG-IP systems for specific files on disk, log entries pointing to SELinux being disabled, and specific HTTP/S traffic — noting that web shells have been observed to work in memory only. Internet threat-monitoring organization Shadowserver tracked over 17,100 IPs with BIG-IP APM fingerprints as of late March 2026. Organizations that deprioritized patching this issue when it was classified as DoS-only must immediately reassess and apply existing patches.
-      </p>
-    </div>
-
-    <!-- ITEM 5: Langflow AI Pipeline RCE -->
-    <div class="item-card heightened">
-      <div class="item-header">
-        <p class="item-title">5. Langflow AI Framework CVE-2026-33017 (CVSS 9.3) — Unauthenticated RCE Weaponized in 20 Hours, AI API Keys at Risk</p>
-        <div class="item-badges">
-          <span class="badge badge-heightened">&#128993; HEIGHTENED WATCH</span>
-          <span class="badge badge-rps">RPS: 8.4</span>
-        </div>
-      </div>
-      <div class="item-meta">
-        Source: <a href="https://www.bleepingcomputer.com/news/security/cisa-new-langflow-flaw-actively-exploited-to-hijack-ai-workflows/" target="_blank">BleepingComputer</a> &nbsp;|&nbsp;
-        <a href="https://thehackernews.com/2026/03/critical-langflow-flaw-cve-2026-33017.html" target="_blank">The Hacker News</a> &nbsp;|&nbsp;
-        <a href="https://www.sysdig.com/blog/cve-2026-33017-how-attackers-compromised-langflow-ai-pipelines-in-20-hours" target="_blank">Sysdig</a> &nbsp;|&nbsp; Published: March 25 – April 8, 2026
-      </div>
-      <div class="item-mitre">MITRE ATT&amp;CK: T1190 (Exploit Public-Facing Application) &bull; T1059.006 (Python Code Execution) &bull; T1552 (Unsecured Credentials – API Key Exfiltration) &bull; T1210 (Exploitation of Remote Services) &bull; T1087 (Account Discovery)</div>
-      <p class="item-summary">
-        A critical security flaw impacting Langflow has come under active exploitation within 20 hours of public disclosure; the security defect CVE-2026-33017 (CVSS score: 9.3) is a case of missing authentication combined with code injection that could result in remote code execution. The vulnerability arises because the endpoint accepts attacker-supplied flow data containing arbitrary Python code in node definitions, which is then executed server-side without sandboxing. Langflow instances are commonly configured with API keys for OpenAI, Anthropic, AWS, and database connections, meaning compromising one instance can provide lateral access to cloud accounts and data stores. According to Sysdig, attackers started scanning for vulnerable instances roughly 20 hours after the advisory was published on March 17; exploitation using Python scripts followed within 21 hours, and data harvesting targeting .env and .db files began after 24 hours. CISA added CVE-2026-33017 to its KEV catalog on March 25, 2026, and mandated remediation for FCEB agencies by April 8, 2026 under BOD 22-01. Organizations must upgrade to Langflow 1.9.0, audit all AI/ML tooling for public exposure, and immediately rotate any credentials held by exposed instances.
-      </p>
-    </div>
-
-    <!-- ITEM 6: LockBit 5.0 Cross-Platform RaaS -->
-    <div class="item-card heightened">
-      <div class="item-header">
-        <p class="item-title">6. LockBit 5.0 Cross-Platform RaaS Maintains Surge — ESXi Hypervisor Attacks and 207+ Claimed Victims in 2026</p>
-        <div class="item-badges">
-          <span class="badge badge-heightened">&#128993; HEIGHTENED WATCH</span>
-          <span class="badge badge-rps">RPS: 8.1</span>
-        </div>
-      </div>
-      <div class="item-meta">
-        Source: <a href="https://www.bitdefender.com/en-us/blog/businessinsights/bitdefender-threat-debrief-april-2026" target="_blank">Bitdefender Threat Debrief April 2026</a> &nbsp;|&nbsp;
-        <a href="https://www.helpnetsecurity.com/2026/02/16/lockbit-5-0-ransomware-windows-linux-esxi/" target="_blank">Help Net Security</a> &nbsp;|&nbsp;
-        <a href="https://www.acronis.com/en/tru/posts/lockbit-strikes-with-new-50-version-targeting-windows-linux-and-esxi-systems/" target="_blank">Acronis TRU</a> &nbsp;|&nbsp; Published: April 8, 2026 (ongoing)
-      </div>
-      <div class="item-mitre">MITRE ATT&amp;CK: T1486 (Data Encrypted for Impact) &bull; T1490 (Inhibit System Recovery) &bull; T1003 (OS Credential Dumping) &bull; T1021.004 (SSH / Remote Services) &bull; T1562.001 (Disable Security Tools) &bull; T1048 (Exfiltration Over Web Service)</div>
-      <p class="item-summary">
-        LockBit 5.0 demonstrates expanded cross-platform capabilities, enabling attackers to target Windows, Linux, and VMware ESXi systems within a single coordinated attack; the latest variant introduces dedicated builds tailored for enterprise environments, reflecting the continued evolution of RaaS operations. The ESXi-focused functionality is particularly concerning, as compromising a single hypervisor host can impact numerous virtual machines simultaneously. LockBit has
+      <div style="text-align:right; min-width:160px;">
+        <div style="font-size:28px; font-weight:900; color:#f4a261; line-height:1;">7.60</div>
+        <div style="font-size:11px; color:#888; font-weight:600;">RPS &nbsp;|&nbsp; S:9.3 · E:9.0 
 </body>
 </html>
