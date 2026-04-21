@@ -13,214 +13,234 @@
   </style>
 </head>
 <body>
-  <p class="updated">Last updated: April 20, 2026 at 07:53 UTC</p>
-  Now I have comprehensive data. Let me compile and render the full briefing as a self-contained HTML body fragment.
+  <p class="updated">Last updated: April 21, 2026 at 07:24 UTC</p>
+  Now I have comprehensive data to build the full CISO briefing. Let me compile and produce the HTML output.
 
-**RPS Scoring Key (for reference before rendering):**
-- S = Severity (1–10), E = Exploitability/Exploitation Status (1–10), X = Exposure/Breadth (1–10)
-- RPS = (S × 0.45) + (E × 0.35) + (X × 0.20)
+---
 
-**Item scoring:**
+Below is the complete Weekly CISO Briefing, fully sourced and cited, rendered as a self-contained HTML body fragment.
 
-1. **Microsoft SharePoint Zero-Day CVE-2026-32201** — S=9, E=10, X=9 → (4.05)+(3.5)+(1.8) = **9.35** → ACT NOW
-2. **Windows Defender BlueHammer/RedSun/UnDefend Cluster** — S=8, E=9, X=9 → (3.6)+(3.15)+(1.8) = **8.55** → ACT NOW
-3. **Windows IKE CVE-2026-33824 (CVSS 9.8)** — S=9, E=7, X=9 → (4.05)+(2.45)+(1.8) = **8.30** → ACT NOW
-4. **Cisco Webex/ISE Critical Vulns** — S=9, E=6, X=9 → (4.05)+(2.1)+(1.8) = **7.95** → ACT NOW
-5. **Adobe Acrobat Reader CVE-2026-34621** — S=9, E=9, X=8 → (4.05)+(3.15)+(1.6) = **8.80** → ACT NOW
-6. **Fortinet FortiClient EMS CVE-2026-35616** — S=9, E=9, X=8 → (4.05)+(3.15)+(1.6) = **8.80** → ACT NOW
-7. **Rockstar/Anodot/Snowflake Supply Chain Breach (ShinyHunters)** — S=7, E=8, X=8 → (3.15)+(2.8)+(1.6) = **7.55** → HEIGHTENED WATCH
-8. **ZionSiphon OT/ICS Water Infrastructure Malware** — S=9, E=5, X=6 → (4.05)+(1.75)+(1.2) = **7.00** → HEIGHTENED WATCH
-9. **Booking.com Data Breach** — S=6, E=7, X=7 → (2.7)+(2.45)+(1.4) = **6.55** → HEIGHTENED WATCH
-10. **Apache ActiveMQ CVE-2026-34197** — S=8, E=8, X=7 → (3.6)+(2.8)+(1.4) = **7.80** → ACT NOW
+---
 
-<cite index="5-4">CVE-2026-32201 has already been added to CISA's KEV list, and federal agencies have been instructed to patch it by April 28.</cite>
+<article style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 960px; margin: 0 auto; color: #1a1a2e; background: #f8f9fc; padding: 0 0 40px 0; line-height: 1.6;">
 
-<cite index="27-3,27-4">On March 31, 2026, watchTowr's sensors identified exploitation of a critical zero-day in FortiClient EMS, assigned CVE-2026-35616 with a CVSS score of 9.1.</cite>
-
-<cite index="10-1,10-2,10-3">Adobe acknowledged that it's "aware of CVE-2026-34621 being exploited in the wild," with the flaw enabling malicious JavaScript execution when opening specially crafted PDF documents.</cite>
-
-<cite index="23-22,23-23,23-24,23-25">Within a 13-day window in April 2026, multiple zero-day exploits targeting Windows Defender were disclosed — BlueHammer enabling local privilege escalation, UnDefend disrupting the update mechanism, and RedSun abusing cloud-tagged file handling.</cite>
-
-<cite index="41-2,41-3,41-4">Cisco patched four critical flaws: CVE-2026-20184 (CVSS 9.8) allowing user impersonation in Webex SSO, CVE-2026-20147 (CVSS 9.9) enabling RCE in ISE, and CVE-2026-20180/20186 (CVSS 9.9) permitting OS command execution with read-only credentials.</cite>
-
-<cite index="65-1">Rockstar Games confirmed a data breach after ShinyHunters exploited a third-party integration to access the company's internal Snowflake data warehouse, ultimately leaking over 78.6 million records on April 14, 2026.</cite>
-
-<cite index="51-3,51-4">Researchers at Darktrace discovered ZionSiphon, a new malware targeting water treatment and desalination plants in Israel, with functionality aimed at operational technology and industrial control systems.</cite>
-
-<cite index="7-1">A recently disclosed high-severity flaw in Apache ActiveMQ Classic has come under active exploitation in the wild, per CISA.</cite>
-
-<cite index="11-9,11-10,11-11">Booking.com confirmed a data breach on April 12 in which customer reservation details were compromised, including full names, addresses, booking dates, email addresses, phone numbers, and extra hotel requests.</cite>
-
-Now rendering the full HTML briefing:
-
-```html
-<!-- Full CISO Weekly Intelligence Briefing — April 14–20, 2026 -->
-```
-
-<article>
-<header style="background:#0d1b2a;color:#fff;padding:2rem 2.5rem 1.5rem;border-radius:8px 8px 0 0;margin-bottom:0;">
-  <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1rem;">
+<!-- ══════════════════ HEADER ══════════════════ -->
+<header style="background: linear-gradient(135deg, #0d1b2a 0%, #1b3a5c 100%); color: #fff; padding: 36px 40px 28px 40px; border-radius: 0 0 8px 8px;">
+  <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px;">
     <div>
-      <p style="margin:0 0 0.25rem;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:#90caf9;font-weight:600;">Cybersecurity Intelligence Briefing</p>
-      <h1 style="margin:0 0 0.4rem;font-size:1.85rem;font-weight:800;line-height:1.15;">Weekly CISO Threat Briefing</h1>
-      <p style="margin:0;font-size:0.95rem;color:#b0bec5;">Coverage Period: <strong style="color:#e3f2fd;">April 14 – April 20, 2026</strong> &nbsp;|&nbsp; Published: <strong style="color:#e3f2fd;">Monday, April 20, 2026</strong></p>
+      <p style="margin:0 0 4px 0; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#7ec8e3; font-weight:600;">CONFIDENTIAL · LEADERSHIP DISTRIBUTION ONLY</p>
+      <h1 style="margin:0; font-size:26px; font-weight:700; letter-spacing:-0.5px;">Weekly CISO Intelligence Briefing</h1>
+      <p style="margin:6px 0 0 0; font-size:14px; color:#b0c4d8;">Period Covered: April 14 – April 21, 2026 &nbsp;|&nbsp; Published: Tuesday, April 21, 2026</p>
     </div>
     <div style="text-align:right;">
-      <p style="margin:0 0 0.2rem;font-size:0.72rem;color:#90caf9;letter-spacing:0.08em;text-transform:uppercase;">Audience</p>
-      <p style="margin:0;font-size:0.85rem;color:#e3f2fd;">CISOs · CIOs · Senior Security Leadership</p>
-      <p style="margin:0.5rem 0 0;font-size:0.72rem;color:#90caf9;letter-spacing:0.08em;text-transform:uppercase;">Classification</p>
-      <p style="margin:0;font-size:0.85rem;color:#e3f2fd;">TLP:AMBER — Internal Leadership Use</p>
+      <p style="margin:0; font-size:11px; color:#7ec8e3; text-transform:uppercase; letter-spacing:1px;">RPS Formula</p>
+      <p style="margin:4px 0 0 0; font-size:13px; color:#fff; font-family:monospace; background:rgba(255,255,255,0.08); padding:4px 8px; border-radius:4px;">(Severity × 0.45) + (Exploitability × 0.35) + (Exposure × 0.20)</p>
     </div>
   </div>
 </header>
 
-<!-- ═══════════════════════════════════════════ LEGEND ═══ -->
-<section style="background:#1a2a3a;color:#e3f2fd;padding:0.75rem 2.5rem;border-bottom:1px solid #263a4f;margin-bottom:0;">
-  <div style="display:flex;gap:2rem;flex-wrap:wrap;align-items:center;font-size:0.8rem;">
-    <strong style="color:#90caf9;letter-spacing:0.08em;text-transform:uppercase;font-size:0.72rem;">RPS Formula:</strong>
-    <span>(Severity × 0.45) + (Exploitability × 0.35) + (Exposure × 0.20)</span>
-    <span style="margin-left:1rem;border-left:1px solid #37474f;padding-left:1rem;">
-      <span style="background:#c62828;color:#fff;padding:0.15rem 0.55rem;border-radius:4px;font-weight:700;font-size:0.72rem;letter-spacing:0.06em;">ACT NOW</span> &nbsp;RPS ≥ 8.0
-    </span>
-    <span>
-      <span style="background:#e65100;color:#fff;padding:0.15rem 0.55rem;border-radius:4px;font-weight:700;font-size:0.72rem;letter-spacing:0.06em;">HEIGHTENED WATCH</span> &nbsp;RPS 6.5–7.99
-    </span>
-    <span>
-      <span style="background:#1565c0;color:#fff;padding:0.15rem 0.55rem;border-radius:4px;font-weight:700;font-size:0.72rem;letter-spacing:0.06em;">STRATEGIC WATCH</span> &nbsp;RPS &lt; 6.5
-    </span>
-  </div>
+<!-- ══════════════════ LEGEND ══════════════════ -->
+<section style="display:flex; gap:12px; padding:18px 40px; flex-wrap:wrap;">
+  <span style="background:#c0392b; color:#fff; padding:5px 14px; border-radius:20px; font-size:12px; font-weight:700; letter-spacing:0.5px;">🔴 ACT NOW</span>
+  <span style="background:#e67e22; color:#fff; padding:5px 14px; border-radius:20px; font-size:12px; font-weight:700; letter-spacing:0.5px;">🟠 HEIGHTENED WATCH</span>
+  <span style="background:#2980b9; color:#fff; padding:5px 14px; border-radius:20px; font-size:12px; font-weight:700; letter-spacing:0.5px;">🔵 STRATEGIC WATCH</span>
+  <span style="margin-left:auto; font-size:12px; color:#555; align-self:center;">S = Severity (1–10) · E = Exploitability (1–10) · X = Exposure (1–10)</span>
 </section>
 
-<!-- ══════════════════════════════ EXECUTIVE SUMMARY ══════ -->
-<section style="background:#f8f9fa;border-left:5px solid #0d47a1;padding:1.5rem 2.5rem;margin:0;">
-  <h2 style="margin:0 0 0.75rem;font-size:1.05rem;text-transform:uppercase;letter-spacing:0.1em;color:#0d47a1;font-weight:800;">🔍 Executive Summary</h2>
-  <p style="margin:0 0 0.75rem;font-size:0.95rem;color:#212121;line-height:1.7;">
-    The week of April 14–20, 2026 marks one of the most consequential seven-day windows of the year for enterprise security teams. <strong>Microsoft's April Patch Tuesday</strong> — the second-largest in Microsoft's history — addressed 168 vulnerabilities including one actively exploited zero-day and one publicly disclosed flaw. The actively exploited SharePoint Server spoofing vulnerability (CVE-2026-32201) carries confirmed in-the-wild exploitation and a CISA KEV deadline of April 28. Simultaneously, CVE-2026-33825 is part of a broader pattern — within a 13-day window in April 2026, multiple zero-day exploits targeting Windows Defender were disclosed.
-  </p>
-  <p style="margin:0 0 0.75rem;font-size:0.95rem;color:#212121;line-height:1.7;">
-    Beyond Microsoft, <strong>Cisco</strong> disclosed four critical flaws in Webex and Identity Services Engine (peak CVSS 9.9), <strong>Adobe Acrobat Reader</strong> confirmed active exploitation of CVE-2026-34621 since at least December 2025, and <strong>Fortinet FortiClient EMS</strong> remained under active attack via a second unauthenticated RCE zero-day this month. On the threat actor front, <strong>ShinyHunters</strong> executed a supply-chain pivot through analytics vendor Anodot to breach Rockstar Games' Snowflake data warehouse, leaking 78.6 million records — a template attack pattern now confirmed targeting 160+ organizations. The emergence of <strong>ZionSiphon</strong>, a purpose-built OT malware designed to sabotage water treatment chlorine controls, signals escalating hacktivist experimentation with critical infrastructure disruption — a harbinger all water and utilities sector operators must monitor.
-  </p>
-  <p style="margin:0;font-size:0.95rem;color:#212121;line-height:1.7;">
-    <strong>Bottom line for leadership:</strong> Patch velocity must accelerate. SaaS integration token hygiene is now a board-level supply chain risk. OT/IT security convergence is no longer optional for critical infrastructure operators.
+<!-- ══════════════════ EXECUTIVE SUMMARY ══════════════════ -->
+<section style="background:#fff; margin:0 32px 24px 32px; border-radius:8px; padding:24px 28px; border-left:5px solid #0d1b2a; box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+  <h2 style="margin:0 0 12px 0; font-size:16px; text-transform:uppercase; letter-spacing:1px; color:#0d1b2a;">📋 Executive Summary</h2>
+  <p style="margin:0; font-size:14px; color:#2c3e50;">
+    This week marks one of the most consequential patch cycles of 2026. Microsoft addressed 164 vulnerabilities in its April 2026 security update, double the number from March. Two zero-days are confirmed: CVE-2026-32201, an actively exploited SharePoint spoofing flaw, and CVE-2026-33825, a Microsoft Defender privilege escalation known as BlueHammer. Critically, two additional Defender exploits — RedSun and UnDefend — remain unpatched as of this writing, with all three vulnerabilities under active exploitation. Simultaneously, six U.S. federal agencies issued joint advisory AA26-097A warning of active Iranian IRGC-linked exploitation of internet-exposed Rockwell Automation PLCs across water, energy, and government sectors. The Axios npm supply chain attack — attributed to North Korean threat actors — reached an estimated 100 million weekly downloads and is considered one of the largest blast-radius supply chain compromises in npm history. Cisco disclosed four critical vulnerabilities in ISE and Webex with CVSS scores reaching 9.9. Healthcare remains a priority target: the Interlock ransomware group has been linked to dozens of attacks on critical infrastructure and healthcare organizations since late 2024, with the FBI issuing a joint warning that affiliates are financially motivated and target essential services. Leadership should expect board-level inquiries this week on all items classified ACT NOW.
   </p>
 </section>
 
-<!-- ══════════════════════════ TOP 3 ENTERPRISE RISKS ════ -->
-<section style="padding:1.5rem 2.5rem 0.5rem;background:#fff;">
-  <h2 style="margin:0 0 1rem;font-size:1.05rem;text-transform:uppercase;letter-spacing:0.1em;color:#b71c1c;font-weight:800;">⚠️ Top 3 Enterprise Risks This Week</h2>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;">
+<!-- ══════════════════ TOP 3 ENTERPRISE RISKS ══════════════════ -->
+<section style="background: linear-gradient(135deg, #1b3a5c, #0d1b2a); color:#fff; margin:0 32px 28px 32px; border-radius:8px; padding:22px 28px; box-shadow:0 2px 10px rgba(0,0,0,0.12);">
+  <h2 style="margin:0 0 16px 0; font-size:15px; text-transform:uppercase; letter-spacing:1px; color:#7ec8e3;">⚠️ Top 3 Enterprise Risks This Week</h2>
+  <ol style="margin:0; padding-left:20px; font-size:14px; line-height:2;">
+    <li><strong>Endpoint Protection Nullification:</strong> RedSun &amp; UnDefend zero-days (no patch) enable any local user to escalate to SYSTEM and silently disable Microsoft Defender, creating an undetectable kill chain on every Windows device in your fleet.</li>
+    <li><strong>Nation-State OT Disruption:</strong> Iranian IRGC-linked CyberAv3ngers are actively disrupting internet-exposed Rockwell Automation PLCs in U.S. water, energy, and government facilities — no patch exists; only architectural controls mitigate this threat.</li>
+    <li><strong>Software Supply Chain RAT Exposure:</strong> The Axios npm compromise (attributed to North Korea's UNC1069) may have delivered a cross-platform RAT to CI/CD pipelines and developer environments across tens of millions of projects — credential rotation and pipeline audits are mandatory.</li>
+  </ol>
+</section>
 
-    <div style="border:2px solid #b71c1c;border-radius:8px;padding:1.1rem 1.3rem;background:#fff8f8;">
-      <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;">
-        <span style="background:#b71c1c;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0.9rem;flex-shrink:0;">#1</span>
-        <strong style="font-size:0.95rem;color:#b71c1c;">Unpatched Microsoft SharePoint &amp; Patch Debt Accumulation</strong>
+<!-- ══════════════════ THREAT ITEMS ══════════════════ -->
+<section style="padding:0 32px;">
+  <h2 style="font-size:16px; text-transform:uppercase; letter-spacing:1px; color:#0d1b2a; margin-bottom:16px; border-bottom:2px solid #0d1b2a; padding-bottom:6px;">🛡 Threat Intelligence Items</h2>
+
+  <!-- ─── ITEM 1 ─── -->
+  <div style="background:#fff; border-radius:8px; margin-bottom:20px; box-shadow:0 2px 8px rgba(0,0,0,0.06); overflow:hidden; border-left:5px solid #c0392b;">
+    <div style="background:#c0392b; color:#fff; padding:10px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+      <div>
+        <span style="background:rgba(255,255,255,0.2); padding:3px 10px; border-radius:12px; font-size:11px; font-weight:700; margin-right:8px; letter-spacing:0.5px;">🔴 ACT NOW</span>
+        <strong style="font-size:15px;">Microsoft Defender Triple Zero-Day: BlueHammer, RedSun &amp; UnDefend</strong>
       </div>
-      <p style="margin:0;font-size:0.85rem;color:#333;line-height:1.6;">April continues a volatile 2026 Patch Tuesday pattern — Microsoft has patched a combined 424 vulnerabilities across four months, with April's 167 nearly tripling February's count. With one SharePoint zero-day already weaponized and a CISA deadline of April 28, organizations with deferred patch programs face immediate breach exposure across internet-connected SharePoint deployments.</p>
-    </div>
-
-    <div style="border:2px solid #e65100;border-radius:8px;padding:1.1rem 1.3rem;background:#fff8f0;">
-      <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;">
-        <span style="background:#e65100;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0.9rem;flex-shrink:0;">#2</span>
-        <strong style="font-size:0.95rem;color:#e65100;">SaaS/Third-Party Token Hijacking as Primary Breach Vector</strong>
+      <div style="text-align:right; font-size:12px; opacity:0.9;">
+        <span style="background:rgba(0,0,0,0.2); padding:3px 10px; border-radius:12px; font-weight:700;">RPS: 9.4</span>
       </div>
-      <p style="margin:0;font-size:0.85rem;color:#333;line-height:1.6;">The Rockstar/Anodot/Snowflake incident reinforces a persistent threat pattern: supply-chain attacks via trusted SaaS integrations. ShinyHunters has previously breached Ticketmaster, AT&T, Microsoft, and Cisco using similar vectors. Any enterprise using third-party SaaS connectors with standing credentials to data warehouses is exposed to this technique.</p>
     </div>
+    <div style="padding:18px 22px;">
+      <table style="width:100%; font-size:12px; border-collapse:collapse; margin-bottom:14px;">
+        <tr>
+          <td style="padding:4px 8px 4px 0; color:#555; width:18%;"><strong>Source</strong></td>
+          <td style="padding:4px 0;"><a href="https://thehackernews.com/2026/04/three-microsoft-defender-zero-days.html" style="color:#1b3a5c;">The Hacker News</a> · <a href="https://labs.cloudsecurityalliance.org/research/csa-research-note-defender-triple-zero-day-bluehammer-redsun/" style="color:#1b3a5c;">CSA Research Note</a></td>
+        </tr>
+        <tr style="background:#f8f9fc;">
+          <td style="padding:4px 8px 4px 0; color:#555;"><strong>Published</strong></td>
+          <td style="padding:4px 0;">April 17–19, 2026</td>
+        </tr>
+        <tr>
+          <td style="padding:4px 8px 4px 0; color:#555;"><strong>CVEs</strong></td>
+          <td style="padding:4px 0;">CVE-2026-33825 (CVSS 7.8, PATCHED) · RedSun (No CVE, UNPATCHED) · UnDefend (No CVE, UNPATCHED)</td>
+        </tr>
+        <tr style="background:#f8f9fc;">
+          <td style="padding:4px 8px 4px 0; color:#555;"><strong>MITRE ATT&amp;CK</strong></td>
+          <td style="padding:4px 0;">T1068 – Exploitation for Privilege Escalation · T1562.001 – Impair Defenses: Disable or Modify Tools · T1055 – Process Injection · T1078 – Valid Accounts</td>
+        </tr>
+        <tr>
+          <td style="padding:4px 8px 4px 0; color:#555;"><strong>RPS Inputs</strong></td>
+          <td style="padding:4px 0;">S=10 · E=10 · X=8 → <strong>(10×0.45)+(10×0.35)+(8×0.20) = 9.4</strong></td>
+        </tr>
+      </table>
+      <p style="margin:0; font-size:14px; color:#2c3e50;">
+        A security researcher operating as "Chaotic Eclipse" released three working exploits targeting Microsoft Defender between April 3 and April 16, 2026 — BlueHammer (CVE-2026-33825) has been patched; RedSun and UnDefend remain unpatched with no emergency patch committed by Microsoft. The three vulnerabilities compose into a coherent attack chain: UnDefend silently degrades Defender's threat intelligence while reporting the endpoint as healthy to management consoles; RedSun escalates an unprivileged user to SYSTEM; and the now-degraded Defender is unable to detect the resulting foothold. Huntress observed BlueHammer weaponized since April 10, 2026, followed by RedSun and UnDefend on April 16; activity followed enumeration commands such as <code>whoami /priv</code>, <code>cmdkey /list</code>, and <code>net group</code>, indicating hands-on-keyboard threat actor activity. RedSun works on fully patched April 2026 systems, UnDefend has no patch, and the operational window is not closing quickly. Organizations should supplement Microsoft Defender immediately with a third-party EDR capable of detecting Defender bypass techniques, as compliance dashboards may report false-healthy status due to UnDefend.
+      </p>
+    </div>
+  </div>
 
-    <div style="border:2px solid #1565c0;border-radius:8px;padding:1.1rem 1.3rem;background:#f0f4ff;">
-      <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;">
-        <span style="background:#1565c0;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0.9rem;flex-shrink:0;">#3</span>
-        <strong style="font-size:0.95rem;color:#1565c0;">OT/ICS Critical Infrastructure Targeting Escalation</strong>
+  <!-- ─── ITEM 2 ─── -->
+  <div style="background:#fff; border-radius:8px; margin-bottom:20px; box-shadow:0 2px 8px rgba(0,0,0,0.06); overflow:hidden; border-left:5px solid #c0392b;">
+    <div style="background:#c0392b; color:#fff; padding:10px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+      <div>
+        <span style="background:rgba(255,255,255,0.2); padding:3px 10px; border-radius:12px; font-size:11px; font-weight:700; margin-right:8px; letter-spacing:0.5px;">🔴 ACT NOW</span>
+        <strong style="font-size:15px;">Iranian CyberAv3ngers (IRGC) Actively Exploiting Rockwell PLCs in U.S. Critical Infrastructure</strong>
       </div>
-      <p style="margin:0;font-size:0.85rem;color:#333;line-height:1.6;">ZionSiphon combines privilege escalation, persistence, USB propagation, and ICS scanning with sabotage capabilities aimed at chlorine and pressure controls, highlighting growing experimentation with politically motivated critical infrastructure attacks against industrial operational technologies globally. While currently incomplete, the blueprint is replicable and improving rapidly.</p>
+      <div style="text-align:right; font-size:12px; opacity:0.9;">
+        <span style="background:rgba(0,0,0,0.2); padding:3px 10px; border-radius:12px; font-weight:700;">RPS: 9.3</span>
+      </div>
     </div>
-
+    <div style="padding:18px 22px;">
+      <table style="width:100%; font-size:12px; border-collapse:collapse; margin-bottom:14px;">
+        <tr>
+          <td style="padding:4px 8px 4px 0; color:#555; width:18%;"><strong>Source</strong></td>
+          <td style="padding:4px 0;"><a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-097a" style="color:#1b3a5c;">CISA Advisory AA26-097A</a> · <a href="https://unit42.paloaltonetworks.com/iranian-cyberattacks-2026/" style="color:#1b3a5c;">Palo Alto Unit 42</a></td>
+        </tr>
+        <tr style="background:#f8f9fc;">
+          <td style="padding:4px 8px 4px 0; color:#555;"><strong>Published</strong></td>
+          <td style="padding:4px 0;">April 7, 2026 (updated April 17, 2026)</td>
+        </tr>
+        <tr>
+          <td style="padding:4px 8px 4px 0; color:#555;"><strong>CVEs</strong></td>
+          <td style="padding:4px 0;">CVE-2021-22681 (Rockwell Auth Bypass — NO PATCH AVAILABLE)</td>
+        </tr>
+        <tr style="background:#f8f9fc;">
+          <td style="padding:4px 8px 4px 0; color:#555;"><strong>MITRE ATT&amp;CK</strong></td>
+          <td style="padding:4px 0;">T0883 – Internet Accessible Device · T0885 – Commonly Used Port · T0836 – Modify Parameter · T0831 – Manipulation of Control (ICS) · T1133 – External Remote Services</td>
+        </tr>
+        <tr>
+          <td style="padding:4px 8px 4px 0; color:#555;"><strong>RPS Inputs</strong></td>
+          <td style="padding:4px 0;">S=10 · E=9 · X=9 → <strong>(10×0.45)+(9×0.35)+(9×0.20) = 9.3</strong></td>
+        </tr>
+      </table>
+      <p style="margin:0; font-size:14px; color:#2c3e50;">
+        On April 7, 2026, the FBI, CISA, NSA, EPA, DOE, and U.S. Cyber Command jointly released advisory AA26-097A warning of active exploitation of internet-exposed Rockwell Automation PLCs by Iranian-affiliated cyber actors linked to the IRGC-CEC — operating as CyberAv3ngers, also tracked as Storm-0784 and UNC5691 — targeting PLCs in U.S. government facilities, water and wastewater systems, and energy sector infrastructure. Attackers leverage legitimate Rockwell engineering tools and native functionality to access and manipulate PLCs rather than relying on custom malware, allowing their activity to blend into normal operational workflows and complicating detection. CVE-2021-22681 was added to CISA's KEV catalog in March 2026 after exploitation was confirmed; Rockwell Automation has stated this vulnerability cannot be fully addressed with a patch — no software update exists. The exposure was identified in over 3,800 U.S.-based devices, with global exposure exceeding 5,200 devices. Organizations with internet-facing OT assets must treat this as an architectural emergency requiring immediate network segmentation.
+      </p>
+    </div>
   </div>
-</section>
 
-<!-- ════════════════════════ FINDINGS TABLE ════════════════ -->
-<section style="padding:1.5rem 2.5rem 0.5rem;background:#fff;">
-  <h2 style="margin:0 0 1rem;font-size:1.05rem;text-transform:uppercase;letter-spacing:0.1em;color:#263238;font-weight:800;">📋 Intelligence Findings — Ranked by Risk Priority Score</h2>
-</section>
-
-<!-- ─────────────────────────────────────────────────────── -->
-<!-- ITEM 1 -->
-<!-- ─────────────────────────────────────────────────────── -->
-<section style="margin:0 2rem 1.25rem;border:1px solid #e0e0e0;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.07);">
-  <header style="background:#c62828;padding:0.85rem 1.3rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-    <div style="display:flex;align-items:center;gap:0.75rem;">
-      <span style="background:#fff;color:#c62828;padding:0.2rem 0.65rem;border-radius:4px;font-weight:800;font-size:0.72rem;letter-spacing:0.08em;">ACT NOW</span>
-      <h3 style="margin:0;color:#fff;font-size:1rem;font-weight:700;">Microsoft SharePoint Server Zero-Day CVE-2026-32201 — Actively Exploited</h3>
+  <!-- ─── ITEM 3 ─── -->
+  <div style="background:#fff; border-radius:8px; margin-bottom:20px; box-shadow:0 2px 8px rgba(0,0,0,0.06); overflow:hidden; border-left:5px solid #c0392b;">
+    <div style="background:#c0392b; color:#fff; padding:10px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+      <div>
+        <span style="background:rgba(255,255,255,0.2); padding:3px 10px; border-radius:12px; font-size:11px; font-weight:700; margin-right:8px; letter-spacing:0.5px;">🔴 ACT NOW</span>
+        <strong style="font-size:15px;">Axios npm Supply Chain Attack — North Korean UNC1069, Cross-Platform RAT, ~100M Weekly Downloads</strong>
+      </div>
+      <div style="text-align:right; font-size:12px; opacity:0.9;">
+        <span style="background:rgba(0,0,0,0.2); padding:3px 10px; border-radius:12px; font-weight:700;">RPS: 9.2</span>
+      </div>
     </div>
-    <div style="text-align:right;">
-      <span style="background:rgba(255,255,255,0.2);color:#fff;padding:0.3rem 0.8rem;border-radius:20px;font-weight:800;font-size:1rem;">RPS: 9.35</span>
+    <div style="padding:18px 22px;">
+      <table style="width:100%; font-size:12px; border-collapse:collapse; margin-bottom:14px;">
+        <tr>
+          <td style="padding:4px 8px 4px 0; color:#555; width:18%;"><strong>Source</strong></td>
+          <td style="padding:4px 0;"><a href="https://www.cisa.gov/news-events/alerts/2026/04/20/supply-chain-compromise-impacts-axios-node-package-manager" style="color:#1b3a5c;">CISA Alert (Apr 20, 2026)</a> · <a href="https://www.elastic.co/security-labs/axios-one-rat-to-rule-them-all" style="color:#1b3a5c;">Elastic Security Labs</a></td>
+        </tr>
+        <tr style="background:#f8f9fc;">
+          <td style="padding:4px 8px 4px 0; color:#555;"><strong>Published</strong></td>
+          <td style="padding:4px 0;">March 31 – April 20, 2026 (ongoing)</td>
+        </tr>
+        <tr>
+          <td style="padding:4px 8px 4px 0; color:#555;"><strong>CVEs</strong></td>
+          <td style="padding:4px 0;">No CVE assigned · Affected: axios@1.14.1 and axios@0.30.4 · Malicious dep: plain-crypto-js@4.2.1</td>
+        </tr>
+        <tr style="background:#f8f9fc;">
+          <td style="padding:4px 8px 4px 0; color:#555;"><strong>MITRE ATT&amp;CK</strong></td>
+          <td style="padding:4px 0;">T1195.001 – Compromise Software Dependencies · T1059 – Command and Scripting Interpreter · T1546.016 – Installer Packages · T1082 – System Information Discovery · T1566.003 – Spearphishing via Service</td>
+        </tr>
+        <tr>
+          <td style="padding:4px 8px 4px 0; color:#555;"><strong>RPS Inputs</strong></td>
+          <td style="padding:4px 0;">S=9 · E=10 · X=9 → <strong>(9×0.45)+(10×0.35)+(9×0.20) = 9.2</strong></td>
+        </tr>
+      </table>
+      <p style="margin:0; font-size:14px; color:#2c3e50;">
+        On March 30, 2026, Elastic Security Labs detected a supply chain compromise targeting the Axios npm package; the attacker gained control of the npm account belonging to the project's primary maintainer and published two backdoored versions within a 39-minute window. The Axios maintainer confirmed the compromise was the result of a highly targeted social engineering campaign by North Korean threat actors (UNC1069), who tailored their efforts specifically to him by cloning the founders' likeness of a legitimate, well-known company. The malicious versions introduced the dependency plain-crypto-js, whose postinstall hook silently downloaded and executed cross-platform RAT implants; the attacker deployed three parallel implementations for Windows, macOS, and Linux sharing identical C2 protocol and command structure. CISA confirmed on April 20, 2026 that the malicious packages downloaded multi-stage payloads including a remote access trojan from cyber threat actor infrastructure. All organizations must immediately audit for compromised Axios versions, rotate all credentials from potentially affected systems, and treat any installation of these versions as a full system compromise.
+      </p>
     </div>
-  </header>
-  <div style="padding:1.1rem 1.3rem;background:#fff;">
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.5rem 1.5rem;margin-bottom:1rem;font-size:0.8rem;">
-      <div><span style="color:#757575;font-weight:600;text-transform:uppercase;font-size:0.7rem;">Source</span><br><a href="https://www.securityweek.com/microsoft-patches-exploited-sharepoint-zero-day-and-160-other-vulnerabilities/" style="color:#0d47a1;text-decoration:none;">SecurityWeek</a></div>
-      <div><span style="color:#757575;font-weight:600;text-transform:uppercase;font-size:0.7rem;">Published</span><br>April 15, 2026</div>
-      <div><span style="color:#757575;font-weight:600;text-transform:uppercase;font-size:0.7rem;">CVE / CVSS</span><br>CVE-2026-32201 / 6.5 (Important)</div>
-      <div><span style="color:#757575;font-weight:600;text-transform:uppercase;font-size:0.7rem;">RPS Inputs</span><br>S=9 · E=10 · X=9</div>
-      <div><span style="color:#757575;font-weight:600;text-transform:uppercase;font-size:0.7rem;">MITRE ATT&CK</span><br>T1190 (Exploit Public-Facing App), T1565 (Data Manipulation), T1059 (Command Execution)</div>
-      <div><span style="color:#757575;font-weight:600;text-transform:uppercase;font-size:0.7rem;">CISA KEV Deadline</span><br><strong style="color:#c62828;">April 28, 2026</strong></div>
-    </div>
-    <p style="margin:0;font-size:0.88rem;color:#212121;line-height:1.7;">
-      CVE-2026-32201 is a spoofing vulnerability in SharePoint Server with a CVSS score of 6.5; improper input validation allows an unauthorized attacker to perform spoofing over a network, view sensitive information, and make changes to disclosed information. It is unclear who is behind the zero-day attacks exploiting CVE-2026-32201, and Microsoft has yet to identify the reporter — however, based on the vendor's brief description, it is possible CVE-2026-32201 is being chained with other weaknesses. Two SharePoint zero-days exploited in the wild within nine months points to a structural exposure in on-premises deployments; organizations that have not yet migrated to SharePoint Online may face mounting pressure to do so. Administrators who cannot apply the update immediately should review network segmentation around SharePoint endpoints and audit access logs for signs of pre-patch exploitation activity.
-    </p>
   </div>
-</section>
 
-<!-- ─────────────────────────────────────────────────────── -->
-<!-- ITEM 2 -->
-<!-- ─────────────────────────────────────────────────────── -->
-<section style="margin:0 2rem 1.25rem;border:1px solid #e0e0e0;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.07);">
-  <header style="background:#c62828;padding:0.85rem 1.3rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-    <div style="display:flex;align-items:center;gap:0.75rem;">
-      <span style="background:#fff;color:#c62828;padding:0.2rem 0.65rem;border-radius:4px;font-weight:800;font-size:0.72rem;letter-spacing:0.08em;">ACT NOW</span>
-      <h3 style="margin:0;color:#fff;font-size:1rem;font-weight:700;">Adobe Acrobat Reader CVE-2026-34621 — Zero-Day Exploited Since Dec 2025</h3>
+  <!-- ─── ITEM 4 ─── -->
+  <div style="background:#fff; border-radius:8px; margin-bottom:20px; box-shadow:0 2px 8px rgba(0,0,0,0.06); overflow:hidden; border-left:5px solid #c0392b;">
+    <div style="background:#c0392b; color:#fff; padding:10px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+      <div>
+        <span style="background:rgba(255,255,255,0.2); padding:3px 10px; border-radius:12px; font-size:11px; font-weight:700; margin-right:8px; letter-spacing:0.5px;">🔴 ACT NOW</span>
+        <strong style="font-size:15px;">Cisco Critical Quad-Flaw: Webex SSO Impersonation + ISE RCE (CVSS up to 9.9)</strong>
+      </div>
+      <div style="text-align:right; font-size:12px; opacity:0.9;">
+        <span style="background:rgba(0,0,0,0.2); padding:3px 10px; border-radius:12px; font-weight:700;">RPS: 8.8</span>
+      </div>
     </div>
-    <div style="text-align:right;">
-      <span style="background:rgba(255,255,255,0.2);color:#fff;padding:0.3rem 0.8rem;border-radius:20px;font-weight:800;font-size:1rem;">RPS: 8.80</span>
+    <div style="padding:18px 22px;">
+      <table style="width:100%; font-size:12px; border-collapse:collapse; margin-bottom:14px;">
+        <tr>
+          <td style="padding:4px 8px 4px 0; color:#555; width:18%;"><strong>Source</strong></td>
+          <td style="padding:4px 0;"><a href="https://thehackernews.com/2026/04/cisco-patches-four-critical-identity.html" style="color:#1b3a5c;">The Hacker News</a> · <a href="https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-040/" style="color:#1b3a5c;">Singapore CSA Advisory</a></td>
+        </tr>
+        <tr style="background:#f8f9fc;">
+          <td style="padding:4px 8px 4px 0; color:#555;"><strong>Published</strong></td>
+          <td style="padding:4px 0;">April 15–17, 2026</td>
+        </tr>
+        <tr>
+          <td style="padding:4px 8px 4px 0; color:#555;"><strong>CVEs</strong></td>
+          <td style="padding:4px 0;">CVE-2026-20184 (CVSS 9.8 – Webex SSO) · CVE-2026-20147 (CVSS 9.9 – ISE RCE) · CVE-2026-20180 (CVSS 9.9 – ISE RCE) · CVE-2026-20186 (CVSS 9.9 – ISE RCE)</td>
+        </tr>
+        <tr style="background:#f8f9fc;">
+          <td style="padding:4px 8px 4px 0; color:#555;"><strong>MITRE ATT&amp;CK</strong></td>
+          <td style="padding:4px 0;">T1078.004 – Valid Accounts: Cloud Accounts · T1556 – Modify Authentication Process · T1059 – Command and Scripting Interpreter · T1190 – Exploit Public-Facing Application</td>
+        </tr>
+        <tr>
+          <td style="padding:4px 8px 4px 0; color:#555;"><strong>RPS Inputs</strong></td>
+          <td style="padding:4px 0;">S=10 · E=8 · X=8 → <strong>(10×0.45)+(8×0.35)+(8×0.20) = 8.8</strong></td>
+        </tr>
+      </table>
+      <p style="margin:0; font-size:14px; color:#2c3e50;">
+        CVE-2026-20184 (CVSS 9.8) is an improper certificate validation flaw in Webex Services' SSO integration with Control Hub that could allow an unauthenticated, remote attacker to impersonate any user within the service and gain unauthorized access. CVE-2026-20147 (CVSS 9.9) affects Cisco ISE and ISE-PIC and could allow an authenticated remote attacker with valid administrative credentials to achieve RCE via crafted HTTP requests; CVE-2026-20180 and CVE-2026-20186 (CVSS 9.9) allow read-only admin credentials to execute arbitrary OS commands and escalate to root. In single-node ISE deployments, successful exploitation could cause the affected node to become unavailable, resulting in a DoS condition where unauthenticated endpoints are unable to access the network. Cisco has patched the cloud-side of Webex but patching the cloud infrastructure alone is not sufficient; Cisco has explicitly stated no workarounds are available and affected customers must manually upload a new SAML certificate to the Webex Control Hub.
+      </p>
     </div>
-  </header>
-  <div style="padding:1.1rem 1.3rem;background:#fff;">
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.5rem 1.5rem;margin-bottom:1rem;font-size:0.8rem;">
-      <div><span style="color:#757575;font-weight:600;text-transform:uppercase;font-size:0.7rem;">Source</span><br><a href="https://thehackernews.com/2026/04/adobe-patches-actively-exploited.html" style="color:#0d47a1;text-decoration:none;">The Hacker News</a></div>
-      <div><span style="color:#757575;font-weight:600;text-transform:uppercase;font-size:0.7rem;">Published</span><br>April 13, 2026</div>
-      <div><span style="color:#757575;font-weight:600;text-transform:uppercase;font-size:0.7rem;">CVE / CVSS</span><br>CVE-2026-34621 / 8.6 (Critical)</div>
-      <div><span style="color:#757575;font-weight:600;text-transform:uppercase;font-size:0.7rem;">RPS Inputs</span><br>S=9 · E=9 · X=8</div>
-      <div><span style="color:#757575;font-weight:600;text-transform:uppercase;font-size:0.7rem;">MITRE ATT&CK</span><br>T1204.002 (Malicious File), T1059.007 (JavaScript), T1203 (Exploitation for Client Execution)</div>
-      <div><span style="color:#757575;font-weight:600;text-transform:uppercase;font-size:0.7rem;">CISA KEV Deadline</span><br><strong style="color:#c62828;">April 27, 2026</strong></div>
-    </div>
-    <p style="margin:0;font-size:0.88rem;color:#212121;line-height:1.7;">
-      CVE-2026-34621 carries a CVSS score of 8.6; successful exploitation could allow an attacker to run malicious code on affected installations via prototype pollution — a JavaScript vulnerability that permits an attacker to manipulate an application's objects and properties. There is evidence suggesting that the vulnerability may have been under exploitation since December 2025. CISA added CVE-2026-34621 to its KEV catalog on April 13, 2026, requiring FCEB agencies to apply fixes by April 27, 2026. Given the ubiquity of Adobe Acrobat across enterprise environments and the document-centric nature of the exploit, social-engineering delivery (phishing with malicious PDFs) is the most likely delivery mechanism for broad-based campaigns.
-    </p>
   </div>
-</section>
 
-<!-- ─────────────────────────────────────────────────────── -->
-<!-- ITEM 3 -->
-<!-- ─────────────────────────────────────────────────────── -->
-<section style="margin:0 2rem 1.25rem;border:1px solid #e0e0e0;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.07);">
-  <header style="background:#c62828;padding:0.85rem 1.3rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-    <div style="display:flex;align-items:center;gap:0.75rem;">
-      <span style="background:#fff;color:#c62828;padding:0.2rem 0.65rem;border-radius:4px;font-weight:800;font-size:0.72rem;letter-spacing:0.08em;">ACT NOW</span>
-      <h3 style="margin:0;color:#fff;font-size:1rem;font-weight:700;">Fortinet FortiClient EMS CVE-2026-35616 — Second Unauthenticated RCE This Month</h3>
+  <!-- ─── ITEM 5 ─── -->
+  <div style="background:#fff; border-radius:8px; margin-bottom:20px; box-shadow:0 2px 8px rgba(0,0,0,0.06); overflow:hidden; border-left:5px solid #c0392b;">
+    <div style="background:#c0392b; color:#fff; padding:10px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+      <div>
+        <span style="background:rgba(255,255,255,0.2); padding:3px 10px; border-radius:12px; font-size:11px; font-weight:700; margin-right:8px; letter-spacing:0.5px;">🔴 ACT NOW</span>
+        <strong style="font-size:15px;">April 2026 Patch Tuesday: SharePoint Zero-Day (CVE-2026-32201) Under Active Exploitation + 163 Additional CVEs</strong>
+      </div>
+      <div style="text-align:right; font-size:12px; opacity:0.9;">
+        <span style="background:rgba(0,0,0,0.2); padding:3px 10px; border-radius:12px; font-weight:700;">RPS: 8.6</span>
+      </div>
     </div>
-    <div style="text-align:right;">
-      <span style="background:rgba(255,255,255,0.2);color:#fff;padding:0.3rem 0.8rem;border-radius:20px;font-weight:800;font-size:1rem;">RPS: 8.80</span>
-    </div>
-  </header>
-  <div style="padding:1.1rem 1.3rem;background:#fff;">
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.5rem 1.5rem;margin-bottom:1rem;font-size:0.8rem;">
-      <div><span style="color:#757575;font-weight:600;text-transform:uppercase;font-size:0.7rem;">Source</span><br><a href="https://watchtowr.com/resources/fortinet-forticlient-ems-zero-day-cve-2026-35616-active-exploitation-underway/" style="color:#0d47a1;text-decoration:none;">watchTowr Labs</a></div>
-      <div><span style="color:#757575;font-weight:600;text-transform:uppercase;font-size:0.7rem;">Published</span><br>April 4–7, 2026</div>
-      <div><span style="color:#757575;font-weight:600;text-transform:uppercase;font-size:0.7rem;">CVE / CVSS</span><br>CVE-2026-35616 / 9.1 (Critical)</div>
-      <div><span style="color:#757575;font-weight:600;text-transform:uppercase;font-size:0.7rem;">RPS Inputs</span><br>S=9 · E=9 · X=8</div>
-      <div><span style="color:#757575;font-weight:600;text-transform:uppercase;font-size:0.7rem;">MITRE ATT&CK</span><br>T1190 (Exploit Public-Facing App), T1133 (External Remote Services), T1078 (Valid Accounts)</div>
-      <div><span style="color:#757575;font-weight:600;text-transform:uppercase;font-size:0.7rem;">CISA KEV</span><br><strong style="color:#c62828;">Added April 6, 2026</strong></div>
-    </div>
-    <p style="margin:0;font-size:0.88rem;color:#212121;line-height:1.7;">
-      On March 31, 2026, watchTowr identified exploitation of a critical zero-day in FortiClient EMS ahead of Fortinet's advisory; CVE-2026-35616 carries a CVSS score of 9.1 and allows unauthenticated remote code execution on the latest versions of FortiClient EMS without a hotfix. This is the second unauthenticated RCE vulnerability in FortiClient EMS disclosed within weeks; CVE-2026-21643, a separate critical flaw in the same product, was actively exploited shortly before this advisory, though the two vulnerabilities have not been confirmed as linked. Fortinet has not published indicators of compromise; detection currently relies on log review
+    <div style="padding:18px 22px;">
+      <table style="width:100%; font-size:12px; border-collapse:collapse; margin-bottom
 </body>
 </html>
