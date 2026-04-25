@@ -13,197 +13,235 @@
   </style>
 </head>
 <body>
-  <p class="updated">Last updated: April 24, 2026 at 07:50 UTC</p>
-  Now I have comprehensive data to generate the full CISO weekly briefing. Let me compile and calculate RPS scores for each item and produce the HTML output.
+  <p class="updated">Last updated: April 25, 2026 at 07:04 UTC</p>
+  Now I have comprehensive data to compile the full weekly CISO briefing. Let me calculate the RPS scores and build the HTML output.
 
 **RPS Formula:** (S × 0.45) + (E × 0.35) + (X × 0.20), where:
-- **S** = Severity (1–10, based on CVSS/impact)
-- **E** = Exploitability (1–10, based on active exploitation, PoC, etc.)
-- **X** = Exposure (1–10, based on breadth of affected systems/users)
+- **S** = Severity (1–10)
+- **E** = Exploitability/Active Exploitation (1–10)
+- **X** = Breadth/Exposure (1–10)
 
-Here is the full self-contained CISO briefing:
+**Item RPS Calculations:**
 
-<article>
+1. **Microsoft April 2026 Patch Tuesday — CVE-2026-33824 (IKE, CVSS 9.8):** S=10, E=8, X=10 → (10×0.45)+(8×0.35)+(10×0.20) = 4.5+2.8+2.0 = **9.30**
+2. **Microsoft SharePoint Zero-Day CVE-2026-32201 (Active Exploit):** S=7, E=10, X=9 → 3.15+3.50+1.80 = **8.45**
+3. **Adobe Acrobat Reader CVE-2026-34621 (4-month silent exploit):** S=9, E=9, X=9 → 4.05+3.15+1.80 = **9.00**
+4. **LMDeploy CVE-2026-33626 SSRF (13-hour exploit):** S=8, E=10, X=7 → 3.60+3.50+1.40 = **8.50**
+5. **Anthropic Project Glasswing / Claude Mythos:** S=9, E=5, X=10 → 4.05+1.75+2.0 = **7.80**
+6. **BePrime MSSP Breach / Supply Chain:** S=8, E=9, X=8 → 3.60+3.15+1.60 = **8.35**
+7. **GopherWhisper China APT / Government Espionage:** S=8, E=7, X=7 → 3.60+2.45+1.40 = **7.45**
+8. **LockBit 5.0 Resurgence + RaaS Ecosystem (207 victims):** S=9, E=8, X=9 → 4.05+2.80+1.80 = **8.65**
 
-<header style="background:#0d1b2a;color:#fff;padding:2rem 2.5rem 1.5rem;border-radius:8px 8px 0 0;">
-  <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1rem;">
-    <div>
-      <p style="margin:0;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:#7eb8f7;">Cybersecurity Intelligence Briefing</p>
-      <h1 style="margin:0.25rem 0 0;font-size:1.75rem;font-weight:700;letter-spacing:-0.01em;">Weekly CISO Briefing</h1>
-      <p style="margin:0.4rem 0 0;font-size:0.9rem;color:#a8c8f0;">Period: April 18 – April 24, 2026 &nbsp;|&nbsp; Issued: Friday, April 24, 2026</p>
-    </div>
-    <div style="text-align:right;">
-      <p style="margin:0;font-size:0.75rem;color:#7eb8f7;text-transform:uppercase;letter-spacing:0.08em;">Audience</p>
-      <p style="margin:0.2rem 0 0;font-size:0.85rem;color:#e0eeff;">CISO · CIO · Senior Security Leadership</p>
-      <p style="margin:0.6rem 0 0;font-size:0.75rem;color:#7eb8f7;text-transform:uppercase;letter-spacing:0.08em;">Classification</p>
-      <p style="margin:0.2rem 0 0;font-size:0.85rem;color:#e0eeff;">TLP:WHITE — Unrestricted Distribution</p>
-    </div>
-  </div>
-</header>
+Here is the full briefing:
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!-- EXECUTIVE SUMMARY -->
-<!-- ═══════════════════════════════════════════════════════ -->
-<section style="background:#f0f6ff;border-left:5px solid #1a5fa8;padding:1.5rem 2rem;margin:0;">
-  <h2 style="margin:0 0 0.75rem;font-size:1.1rem;color:#0d1b2a;text-transform:uppercase;letter-spacing:0.06em;">📋 Executive Summary</h2>
-  <p style="margin:0;line-height:1.7;color:#1a2b3c;font-size:0.95rem;">
-    This week marked one of the most consequential patch cycles in recent memory. <strong>Microsoft's April 2026 Patch Tuesday</strong> — the second-largest in Microsoft's history — addressed over 163 CVEs, including a SharePoint Server zero-day (CVE-2026-32201) confirmed under active exploitation and added to CISA's KEV catalog with a federal patch deadline of April 28. Simultaneously, a publicly disclosed Windows Defender privilege escalation flaw ("BlueHammer," CVE-2026-33825) was observed being chained in the wild to deploy the <strong>BeigeBurrow</strong> tunneling agent. Separately, <strong>SAP's near-maximum CVSS 9.9 SQL injection flaw</strong> (CVE-2026-27681) threatens ERP financial data integrity at scale, while a critical <strong>AI model supply chain vulnerability</strong> in SGLang (CVE-2026-5760, CVSS 9.8) enables RCE via malicious model files. On the incident front, <strong>Anubis ransomware</strong> struck Signature Healthcare Brockton Hospital, diverting ambulances and cancelling chemotherapy — the latest in an escalating pattern of healthcare-sector attacks. A massive breach at <strong>France's national identity document agency (ANTS/France Titres)</strong> exposed up to 19 million citizen records, triggering ANSSI, CNIL, and Paris Prosecutor involvement. Leadership must treat unpatched Microsoft and SAP environments as a clear and present risk this week, while reassessing AI/ML infrastructure security posture as a strategic imperative.
-  </p>
-</section>
+<article style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 1100px; margin: 0 auto; color: #1a1a2e; background: #f4f6fa; padding: 0 0 40px 0; border-radius: 12px; box-shadow: 0 4px 32px rgba(0,0,0,0.10);">
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!-- TOP 3 ENTERPRISE RISKS -->
-<!-- ═══════════════════════════════════════════════════════ -->
-<section style="padding:1.5rem 2rem;background:#fff;border-bottom:1px solid #dce6f2;">
-  <h2 style="margin:0 0 1rem;font-size:1.1rem;color:#0d1b2a;text-transform:uppercase;letter-spacing:0.06em;">🔺 Top 3 Enterprise Risks This Week</h2>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;">
-
-    <div style="background:#fff3f3;border:1px solid #e8b4b4;border-left:5px solid #c0392b;border-radius:6px;padding:1rem;">
-      <p style="margin:0 0 0.3rem;font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c0392b;">Risk #1 — ACT NOW</p>
-      <p style="margin:0 0 0.4rem;font-size:0.95rem;font-weight:700;color:#1a1a1a;">Unpatched Microsoft SharePoint &amp; Windows IKE (CVE-2026-32201 / CVE-2026-33824)</p>
-      <p style="margin:0;font-size:0.85rem;color:#444;line-height:1.6;">Active zero-day exploitation of SharePoint and a CVSS 9.8 unauthenticated RCE in Windows IKE combine to create a critical, immediate exposure. Federal deadline for SharePoint patch: <strong>April 28.</strong></p>
-    </div>
-
-    <div style="background:#fff8ee;border:1px solid #f0c98a;border-left:5px solid #e67e22;border-radius:6px;padding:1rem;">
-      <p style="margin:0 0 0.3rem;font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#e67e22;">Risk #2 — ACT NOW</p>
-      <p style="margin:0 0 0.4rem;font-size:0.95rem;font-weight:700;color:#1a1a1a;">Ransomware-as-a-Service Surge Targeting Healthcare &amp; Critical Infrastructure</p>
-      <p style="margin:0;font-size:0.85rem;color:#444;line-height:1.6;">Anubis RaaS (wiper-capable) disrupted Brockton Hospital operations for &gt;2 weeks, diverting ambulances. 166 ransomware victims across 42 countries were claimed in a single week. Healthcare, government, and manufacturing face elevated targeting.</p>
-    </div>
-
-    <div style="background:#f3f7ff;border:1px solid #aac4e8;border-left:5px solid #1a5fa8;border-radius:6px;padding:1rem;">
-      <p style="margin:0 0 0.3rem;font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#1a5fa8;">Risk #3 — HEIGHTENED WATCH</p>
-      <p style="margin:0 0 0.4rem;font-size:0.95rem;font-weight:700;color:#1a1a1a;">AI Model Supply Chain RCE &amp; SAP ERP Financial Data Integrity Threat</p>
-      <p style="margin:0;font-size:0.85rem;color:#444;line-height:1.6;">SGLang CVE-2026-5760 (CVSS 9.8) enables RCE through poisoned AI model files distributed via Hugging Face. SAP CVE-2026-27681 (CVSS 9.9) allows low-privileged users to corrupt ERP financial databases. Both represent emerging, high-sophistication threat vectors.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════ -->
-<!-- LEGEND / SCORING KEY -->
-<!-- ═══════════════════════════════════════════════════════ -->
-<section style="padding:1rem 2rem;background:#f8fafd;border-bottom:1px solid #dce6f2;">
-  <h2 style="margin:0 0 0.5rem;font-size:0.85rem;color:#555;text-transform:uppercase;letter-spacing:0.07em;">Scoring Methodology</h2>
-  <p style="margin:0;font-size:0.82rem;color:#555;line-height:1.7;">
-    <strong>RPS = (S × 0.45) + (E × 0.35) + (X × 0.20)</strong> &nbsp;|&nbsp; S = Severity (1–10) &nbsp;|&nbsp; E = Exploitability (1–10) &nbsp;|&nbsp; X = Enterprise Exposure (1–10)
-    &nbsp;&nbsp;<span style="background:#c0392b;color:#fff;padding:2px 8px;border-radius:3px;font-size:0.75rem;">ACT NOW</span> RPS ≥ 8.0
-    &nbsp;<span style="background:#e67e22;color:#fff;padding:2px 8px;border-radius:3px;font-size:0.75rem;">HEIGHTENED WATCH</span> RPS 6.0–7.9
-    &nbsp;<span style="background:#1a5fa8;color:#fff;padding:2px 8px;border-radius:3px;font-size:0.75rem;">STRATEGIC WATCH</span> RPS &lt; 6.0
-  </p>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════ -->
-<!-- INTELLIGENCE ITEMS -->
-<!-- ═══════════════════════════════════════════════════════ -->
-<section style="padding:1.5rem 2rem 0;background:#fff;">
-  <h2 style="margin:0 0 1.25rem;font-size:1.1rem;color:#0d1b2a;text-transform:uppercase;letter-spacing:0.06em;">🛡️ Intelligence Items</h2>
-
-  <!-- ─── ITEM 1 ─── -->
-  <article style="border:1px solid #e0e8f4;border-radius:8px;margin-bottom:1.25rem;overflow:hidden;">
-    <header style="background:#c0392b;padding:0.75rem 1.25rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;">
+  <!-- HEADER -->
+  <header style="background: linear-gradient(135deg, #0d1b2a 0%, #1b3a5c 100%); border-radius: 12px 12px 0 0; padding: 38px 44px 28px 44px;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px;">
       <div>
-        <span style="background:rgba(255,255,255,0.2);color:#fff;font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 8px;border-radius:3px;">ACT NOW</span>
-        <h3 style="margin:0.35rem 0 0;color:#fff;font-size:1rem;font-weight:700;">CVE-2026-32201 — Microsoft SharePoint Server Zero-Day Actively Exploited</h3>
+        <div style="font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#7eb8e8; font-weight:700; margin-bottom:6px;">CLASSIFIED FOR EXECUTIVE DISTRIBUTION</div>
+        <h1 style="margin:0; font-size:28px; font-weight:800; color:#ffffff; letter-spacing:-0.5px;">CISO Weekly Intelligence Briefing</h1>
+        <p style="margin:6px 0 0 0; font-size:15px; color:#a8c8e8; font-weight:400;">Enterprise Threat &amp; Vulnerability Digest — Week of <strong style="color:#fff;">April 19–25, 2026</strong></p>
       </div>
       <div style="text-align:right;">
-        <p style="margin:0;color:#ffd5d5;font-size:0.75rem;">RPS Score</p>
-        <p style="margin:0;color:#fff;font-size:1.6rem;font-weight:800;line-height:1;">8.73</p>
-        <p style="margin:0;color:#ffd5d5;font-size:0.7rem;">S:9 × 0.45 + E:9 × 0.35 + X:8 × 0.20</p>
+        <div style="background:#c0392b; color:#fff; font-size:11px; font-weight:700; letter-spacing:2px; padding:6px 16px; border-radius:4px; display:inline-block; text-transform:uppercase;">TLP: AMBER</div>
+        <p style="color:#7eb8e8; font-size:12px; margin:8px 0 0 0;">Published: Saturday, April 25, 2026</p>
+        <p style="color:#7eb8e8; font-size:12px; margin:2px 0 0 0;">Audience: CISO · CIO · VP Security · GRC</p>
       </div>
-    </header>
-    <div style="padding:1rem 1.25rem;background:#fff;">
-      <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.9rem;">
-        <span style="background:#f0f4fa;border:1px solid #c8d8ee;color:#1a3a5c;font-size:0.75rem;padding:2px 10px;border-radius:20px;"><strong>Source:</strong> SecurityWeek / Tenable / CISA KEV</span>
-        <span style="background:#f0f4fa;border:1px solid #c8d8ee;color:#1a3a5c;font-size:0.75rem;padding:2px 10px;border-radius:20px;"><strong>Published:</strong> April 14, 2026</span>
-        <span style="background:#f0f4fa;border:1px solid #c8d8ee;color:#1a3a5c;font-size:0.75rem;padding:2px 10px;border-radius:20px;"><strong>CVSS:</strong> 6.5 (Important)</span>
-        <span style="background:#fef3f3;border:1px solid #f5c6c6;color:#c0392b;font-size:0.75rem;padding:2px 10px;border-radius:20px;"><strong>Status:</strong> Actively Exploited In-the-Wild | CISA KEV</span>
-        <span style="background:#f0f4fa;border:1px solid #c8d8ee;color:#1a3a5c;font-size:0.75rem;padding:2px 10px;border-radius:20px;"><strong>MITRE ATT&amp;CK:</strong> T1190 (Exploit Public-Facing App) · T1557 (Adversary-in-the-Middle) · T1565 (Data Manipulation)</span>
-      </div>
-      <div style="font-size:0.87rem;line-height:1.75;color:#222;">
-        <p style="margin:0 0 0.6rem;">The exploited SharePoint Server vulnerability is tracked as CVE-2026-32201 and has been described as a spoofing issue; Microsoft assigned it an 'Important' severity rating with a CVSS score of 6.5. This vulnerability allows unauthenticated remote attackers to perform spoofing by exploiting an improper input validation flaw in Microsoft Office SharePoint; no user interaction is required and attack complexity is low. An attacker that successfully exploits this vulnerability could view sensitive information and make changes to disclosed information, impacting both confidentiality and integrity of the affected system.</p>
-        <p style="margin:0 0 0.6rem;">CISA's Known Exploited Vulnerabilities catalog currently includes 10 SharePoint flaws; CVE-2026-32201 has already been added to CISA's KEV list, and federal agencies have been instructed to patch it by April 28. Based on the vendor's brief description, it is possible that CVE-2026-32201 is being chained with other weaknesses.</p>
-        <p style="margin:0;">SharePoint services, especially those used as internal document stores, can be a treasure trove for threat actors looking to steal data — especially data that may be leveraged to force ransom payments using double-extortion techniques by threatening to release the stolen data if payment is not made. Patch immediately — especially for internet-facing SharePoint servers. Validate patch status across SharePoint 2016, 2019, and Subscription Edition.</p>
-      </div>
-      <p style="margin:0.75rem 0 0;font-size:0.8rem;"><strong>Reference:</strong> <a href="https://www.securityweek.com/microsoft-patches-exploited-sharepoint-zero-day-and-160-other-vulnerabilities/" style="color:#1a5fa8;">SecurityWeek — Microsoft Patches Exploited SharePoint Zero-Day and 160+ Vulnerabilities</a></p>
     </div>
-  </article>
+  </header>
 
-  <!-- ─── ITEM 2 ─── -->
-  <article style="border:1px solid #e0e8f4;border-radius:8px;margin-bottom:1.25rem;overflow:hidden;">
-    <header style="background:#c0392b;padding:0.75rem 1.25rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-      <div>
-        <span style="background:rgba(255,255,255,0.2);color:#fff;font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 8px;border-radius:3px;">ACT NOW</span>
-        <h3 style="margin:0.35rem 0 0;color:#fff;font-size:1rem;font-weight:700;">CVE-2026-33824 — Windows IKE Service Extensions Critical RCE (CVSS 9.8)</h3>
-      </div>
-      <div style="text-align:right;">
-        <p style="margin:0;color:#ffd5d5;font-size:0.75rem;">RPS Score</p>
-        <p style="margin:0;color:#fff;font-size:1.6rem;font-weight:800;line-height:1;">8.83</p>
-        <p style="margin:0;color:#ffd5d5;font-size:0.7rem;">S:10 × 0.45 + E:8 × 0.35 + X:9 × 0.20</p>
-      </div>
-    </header>
-    <div style="padding:1rem 1.25rem;background:#fff;">
-      <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.9rem;">
-        <span style="background:#f0f4fa;border:1px solid #c8d8ee;color:#1a3a5c;font-size:0.75rem;padding:2px 10px;border-radius:20px;"><strong>Source:</strong> Tenable / CrowdStrike / Zero Day Initiative</span>
-        <span style="background:#f0f4fa;border:1px solid #c8d8ee;color:#1a3a5c;font-size:0.75rem;padding:2px 10px;border-radius:20px;"><strong>Published:</strong> April 14, 2026</span>
-        <span style="background:#f0f4fa;border:1px solid #c8d8ee;color:#1a3a5c;font-size:0.75rem;padding:2px 10px;border-radius:20px;"><strong>CVSS:</strong> 9.8 (Critical)</span>
-        <span style="background:#fff8e6;border:1px solid #f5d88a;color:#a05c00;font-size:0.75rem;padding:2px 10px;border-radius:20px;"><strong>Status:</strong> Not yet exploited | Exploitation more likely</span>
-        <span style="background:#f0f4fa;border:1px solid #c8d8ee;color:#1a3a5c;font-size:0.75rem;padding:2px 10px;border-radius:20px;"><strong>MITRE ATT&amp;CK:</strong> T1190 (Exploit Public-Facing App) · T1210 (Exploitation of Remote Services) · T1021 (Remote Services)</span>
-      </div>
-      <div style="font-size:0.87rem;line-height:1.75;color:#222;">
-        <p style="margin:0 0 0.6rem;">CVE-2026-33824 is a critical remote code execution vulnerability affecting Windows Internet Key Exchange (IKE) Service Extensions with a CVSS score of 9.8. It allows unauthenticated remote attackers to execute arbitrary code by exploiting a double free flaw (CWE-415) in the Windows IKE Extension. No user interaction is required and attack complexity is low — an unauthenticated attacker could exploit this vulnerability by sending specially crafted packets to a Windows machine with IKE version 2 enabled, which could enable remote code execution on the target system.</p>
-        <p style="margin:0 0 0.6rem;">Affected systems include Windows Server 2025; Windows Server 2022, 23H2 edition; Windows Server 2019 and 2016 with server core installation; and certain desktop versions of Windows 10 and 11 for x64, 32-bit, and ARM systems. Windows admins who cannot immediately install the security update can take one of two actions: block inbound traffic on UDP ports 500 and 4500 for systems that do not use IKE; or, for systems that require IKE, configure firewall rules to allow inbound traffic only from known peer addresses.</p>
-        <p style="margin:0;">From a strategic perspective, leadership should prioritize remediation around this IKE issue and CVE-2026-33826 (Active Directory RCE), due to their combination of exploitability and enterprise-wide impact. The Active Directory hole "represents a direct threat to identity infrastructure" — by exploiting improper input validation in RPC handling, an authenticated attacker can execute arbitrary code within the domain, with the low complexity of exploitation combined with the central role of Active Directory significantly amplifying risk.</p>
-      </div>
-      <p style="margin:0.75rem 0 0;font-size:0.8rem;"><strong>Reference:</strong> <a href="https://www.tenable.com/blog/microsofts-april-2026-patch-tuesday-addresses-163-cves-cve-2026-32201" style="color:#1a5fa8;">Tenable — Microsoft's April 2026 Patch Tuesday Addresses 163 CVEs</a></p>
+  <div style="padding: 32px 44px 0 44px;">
+
+  <!-- EXECUTIVE SUMMARY -->
+  <section style="background:#ffffff; border-left:6px solid #1b3a5c; border-radius:8px; padding:26px 28px; margin-bottom:32px; box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+    <h2 style="margin:0 0 14px 0; font-size:17px; font-weight:800; color:#1b3a5c; text-transform:uppercase; letter-spacing:1.5px;">📋 Executive Summary</h2>
+    <p style="margin:0 0 12px 0; font-size:14.5px; line-height:1.75; color:#2d3748;">
+      This week marks one of the most consequential seven-day periods in 2026 for enterprise security leaders. <strong>Microsoft's April 2026 Patch Tuesday</strong> — the second-largest on record — delivered patches for 164 CVEs including a CVSS 9.8 RCE in Windows IKE and an actively exploited SharePoint zero-day; federal agencies have a hard deadline of April 28 to remediate. Simultaneously, <strong>Anthropic's Project Glasswing</strong> announcement confirmed that AI has crossed a threshold enabling autonomous discovery and exploitation of vulnerabilities at scale, collapsing the historical gap between disclosure and weaponization. In the threat actor space, <strong>LockBit 5.0</strong> continues claiming victims across manufacturing, healthcare, and government with 207 claimed victims in 2026; <strong>GopherWhisper</strong>, a newly disclosed China-aligned APT, was found abusing enterprise SaaS platforms (Slack, Discord, Outlook) for command-and-control. A supply chain breach at Mexican MSSP <strong>BePrime</strong> — caused by a missing MFA control — exposed plaintext credentials, security audit reports, and live network device access across major enterprise clients. Finally, a critical SSRF flaw in the AI inference toolkit <strong>LMDeploy</strong> was weaponized within 13 hours of advisory publication, underscoring that AI infrastructure is now firmly in adversaries' crosshairs. CISOs must act on patch obligations, vendor MFA attestation, and AI infrastructure exposure this week.
+    </p>
+  </section>
+
+  <!-- RPS KEY -->
+  <section style="margin-bottom:28px;">
+    <h2 style="margin:0 0 14px 0; font-size:15px; font-weight:800; color:#1b3a5c; text-transform:uppercase; letter-spacing:1.5px;">⚙️ Risk Priority Score (RPS) Methodology</h2>
+    <div style="background:#eaf0fb; border-radius:8px; padding:14px 20px; font-size:13px; color:#2d3748; line-height:1.8;">
+      <strong>Formula:</strong> RPS = (S × 0.45) + (E × 0.35) + (X × 0.20) &nbsp;|&nbsp;
+      <strong>S</strong> = Severity (CVSS/Impact, 1–10) &nbsp;·&nbsp;
+      <strong>E</strong> = Exploitability / Active Exploitation Evidence (1–10) &nbsp;·&nbsp;
+      <strong>X</strong> = Breadth / Enterprise Exposure (1–10)
+      <br>
+      <span style="font-weight:700; color:#c0392b;">ACT NOW</span> = RPS ≥ 8.5 &nbsp;·&nbsp;
+      <span style="font-weight:700; color:#d35400;">HEIGHTENED WATCH</span> = RPS 7.0–8.49 &nbsp;·&nbsp;
+      <span style="font-weight:700; color:#27ae60;">STRATEGIC WATCH</span> = RPS &lt; 7.0
     </div>
-  </article>
+  </section>
 
-  <!-- ─── ITEM 3 ─── -->
-  <article style="border:1px solid #e0e8f4;border-radius:8px;margin-bottom:1.25rem;overflow:hidden;">
-    <header style="background:#c0392b;padding:0.75rem 1.25rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-      <div>
-        <span style="background:rgba(255,255,255,0.2);color:#fff;font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 8px;border-radius:3px;">ACT NOW</span>
-        <h3 style="margin:0.35rem 0 0;color:#fff;font-size:1rem;font-weight:700;">CVE-2026-33825 "BlueHammer" — Microsoft Defender EoP Observed in Wild Chaining to Deploy BeigeBurrow</h3>
+  <!-- ITEMS HEADER -->
+  <h2 style="margin:0 0 18px 0; font-size:17px; font-weight:800; color:#1b3a5c; text-transform:uppercase; letter-spacing:1.5px; border-bottom:2px solid #dde3ef; padding-bottom:10px;">🔍 This Week's Top Threat Items</h2>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ITEM 1 -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section style="background:#fff; border-radius:10px; margin-bottom:22px; box-shadow:0 2px 10px rgba(0,0,0,0.07); overflow:hidden; border-top:5px solid #c0392b;">
+    <div style="padding:22px 26px 18px 26px;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:14px;">
+        <div>
+          <span style="background:#c0392b; color:#fff; font-size:11px; font-weight:800; letter-spacing:1.5px; padding:4px 12px; border-radius:4px; text-transform:uppercase;">🔴 ACT NOW</span>
+          <h3 style="margin:10px 0 4px 0; font-size:17px; font-weight:800; color:#1a1a2e;">CVE-2026-33824 — Windows IKE Service Extensions Critical RCE (CVSS 9.8)</h3>
+          <p style="margin:0; font-size:12px; color:#718096;">
+            Source: <a href="https://www.csoonline.com/article/4158706/april-patch-tuesday-roundup-zero-day-vulnerabilities-and-critical-bugs.html" style="color:#1b3a5c;">CSO Online</a> &amp; <a href="https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-april-2026/" style="color:#1b3a5c;">CrowdStrike</a> &amp; <a href="https://www.tenable.com/blog/microsofts-april-2026-patch-tuesday-addresses-163-cves-cve-2026-32201" style="color:#1b3a5c;">Tenable</a> &nbsp;|&nbsp; Published: April 14, 2026
+          </p>
+        </div>
+        <div style="text-align:center; background:#fef2f2; border:2px solid #c0392b; border-radius:8px; padding:10px 20px; min-width:100px;">
+          <div style="font-size:28px; font-weight:900; color:#c0392b; line-height:1;">9.30</div>
+          <div style="font-size:10px; font-weight:700; color:#c0392b; letter-spacing:1px;">RPS SCORE</div>
+          <div style="font-size:10px; color:#888; margin-top:2px;">S:10 · E:8 · X:10</div>
+        </div>
       </div>
-      <div style="text-align:right;">
-        <p style="margin:0;color:#ffd5d5;font-size:0.75rem;">RPS Score</p>
-        <p style="margin:0;color:#fff;font-size:1.6rem;font-weight:800;line-height:1;">8.41</p>
-        <p style="margin:0;color:#ffd5d5;font-size:0.7rem;">S:8 × 0.45 + E:9 × 0.35 + X:8 × 0.20</p>
-      </div>
-    </header>
-    <div style="padding:1rem 1.25rem;background:#fff;">
-      <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.9rem;">
-        <span style="background:#f0f4fa;border:1px solid #c8d8ee;color:#1a3a5c;font-size:0.75rem;padding:2px 10px;border-radius:20px;"><strong>Source:</strong> CCB Belgium / Tenable / SecurityWeek</span>
-        <span style="background:#f0f4fa;border:1px solid #c8d8ee;color:#1a3a5c;font-size:0.75rem;padding:2px 10px;border-radius:20px;"><strong>Published:</strong> April 14, 2026 (PoC April 16; in-wild chain April 21)</span>
-        <span style="background:#f0f4fa;border:1px solid #c8d8ee;color:#1a3a5c;font-size:0.75rem;padding:2px 10px;border-radius:20px;"><strong>CVSS:</strong> 7.8 (Important)</span>
-        <span style="background:#fef3f3;border:1px solid #f5c6c6;color:#c0392b;font-size:0.75rem;padding:2px 10px;border-radius:20px;"><strong>Status:</strong> PoC Public | Observed In-Wild Chaining</span>
-        <span style="background:#f0f4fa;border:1px solid #c8d8ee;color:#1a3a5c;font-size:0.75rem;padding:2px 10px;border-radius:20px;"><strong>MITRE ATT&amp;CK:</strong> T1068 (Exploitation for Privilege Escalation) · T1090 (Proxy) · T1543 (Create/Modify System Process)</span>
-      </div>
-      <div style="font-size:0.87rem;line-height:1.75;color:#222;">
-        <p style="margin:0 0 0.6rem;">CVE-2026-33825 is an elevation of privilege vulnerability in Microsoft Defender, receiving a CVSSv3 score of 7.8 and rated Important. According to Microsoft, this flaw was publicly disclosed prior to a patch being made available. While Microsoft's advisory made no mention of public exploit code, the description appears to match a zero-day exploit known as BlueHammer, with code posted to GitHub on April 3rd. A researcher using the alias "Chaotic Eclipse" released the exploit and expressed concern about Microsoft's handling of the vulnerability disclosure process.</p>
-        <p style="margin:0 0 0.6rem;">As of April 21, 2026, this vulnerability has been observed in the wild as part of a vulnerability chaining attempt to deploy BeigeBurrow, a tunneling or proxy agent. This escalates the severity materially beyond the CVSS score — the flaw is now a live component of a multi-stage intrusion chain.</p>
-        <p style="margin:0;">This flaw lies in insufficient granularity of access control in Microsoft Defender, which allows an authorized attacker to elevate privileges locally. The description of the flaw matches that of BlueHammer, a zero-day exploit code released publicly earlier in April. Note that no action is required to install the patch as it happens automatically — however, verify auto-update status and treat any unconfirmed deployments as critical. Hunt for BeigeBurrow IOCs immediately.</p>
-      </div>
-      <p style="margin:0.75rem 0 0;font-size:0.8rem;"><strong>Reference:</strong> <a href="https://ccb.belgium.be/advisories/warning-microsoft-patch-tuesday-april-2026-patches-163-vulnerabilities-8-critical-154" style="color:#1a5fa8;">CCB Belgium — Microsoft Patch Tuesday April 2026 Advisory</a></p>
+      <table style="font-size:12px; color:#4a5568; margin-bottom:14px; border-collapse:collapse;">
+        <tr>
+          <td style="padding:3px 16px 3px 0; font-weight:700; white-space:nowrap;">CVE:</td>
+          <td>CVE-2026-33824</td>
+          <td style="padding:3px 16px 3px 24px; font-weight:700; white-space:nowrap;">CVSS:</td>
+          <td>9.8 Critical</td>
+          <td style="padding:3px 16px 3px 24px; font-weight:700; white-space:nowrap;">Status:</td>
+          <td><span style="color:#c0392b; font-weight:700;">Patch Available — Patch Immediately</span></td>
+        </tr>
+        <tr>
+          <td style="padding:3px 16px 3px 0; font-weight:700;">MITRE ATT&amp;CK:</td>
+          <td colspan="5">T1203 (Exploitation for Client Execution) · T1190 (Exploit Public-Facing Application) · T1068 (Exploitation for Privilege Escalation)</td>
+        </tr>
+      </table>
+      <p style="margin:0; font-size:14px; line-height:1.75; color:#2d3748;">
+        CVE-2026-33824 is a Critical remote code execution vulnerability affecting Windows Internet Key Exchange (IKE) Service Extensions with a CVSS score of 9.8. It allows unauthenticated remote attackers to execute arbitrary code by exploiting a double-free flaw in the Windows IKE Extension, with no user interaction required and low attack complexity. An unauthenticated attacker can exploit it by sending specially crafted packets to a Windows machine with IKE version 2 enabled. Affected systems include Windows Server 2025, Windows Server 2022, Windows Server 2019 and 2016 (server core), and certain desktop versions of Windows 10 and 11 for x64, 32-bit, and ARM systems. Windows admins who cannot immediately install the security update can block inbound traffic on UDP ports 500 and 4500 for systems that do not use IKE; for systems that require IKE, configure firewall rules to allow inbound traffic on those ports only from known peer addresses. While not yet observed exploited in the wild, researchers note that historical exploits for IKE precedents exist, making weaponization by motivated threat actors highly plausible within days.
+      </p>
     </div>
-  </article>
+  </section>
 
-  <!-- ─── ITEM 4 ─── -->
-  <article style="border:1px solid #e0e8f4;border-radius:8px;margin-bottom:1.25rem;overflow:hidden;">
-    <header style="background:#c0392b;padding:0.75rem 1.25rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-      <div>
-        <span style="background:rgba(255,255,255,0.2);color:#fff;font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 8px;border-radius:3px;">ACT NOW</span>
-        <h3 style="margin:0.35rem 0 0;color:#fff;font-size:1rem;font-weight:700;">Anubis RaaS — Ransomware Attack on Signature Healthcare Brockton Hospital</h3>
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ITEM 2 -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section style="background:#fff; border-radius:10px; margin-bottom:22px; box-shadow:0 2px 10px rgba(0,0,0,0.07); overflow:hidden; border-top:5px solid #c0392b;">
+    <div style="padding:22px 26px 18px 26px;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:14px;">
+        <div>
+          <span style="background:#c0392b; color:#fff; font-size:11px; font-weight:800; letter-spacing:1.5px; padding:4px 12px; border-radius:4px; text-transform:uppercase;">🔴 ACT NOW</span>
+          <h3 style="margin:10px 0 4px 0; font-size:17px; font-weight:800; color:#1a1a2e;">Adobe Acrobat Reader CVE-2026-34621 — 4-Month Silent Zero-Day RCE Now Patched</h3>
+          <p style="margin:0; font-size:12px; color:#718096;">
+            Source: <a href="https://www.gblock.app/articles/adobe-reader-zero-day-pdf-exploit-cve-2026-34621" style="color:#1b3a5c;">gblock.app</a> &amp; <a href="https://www.thezdi.com/blog/2026/4/14/the-april-2026-security-update-review" style="color:#1b3a5c;">Zero Day Initiative</a> &nbsp;|&nbsp; Published: April 11–14, 2026
+          </p>
+        </div>
+        <div style="text-align:center; background:#fef2f2; border:2px solid #c0392b; border-radius:8px; padding:10px 20px; min-width:100px;">
+          <div style="font-size:28px; font-weight:900; color:#c0392b; line-height:1;">9.00</div>
+          <div style="font-size:10px; font-weight:700; color:#c0392b; letter-spacing:1px;">RPS SCORE</div>
+          <div style="font-size:10px; color:#888; margin-top:2px;">S:9 · E:9 · X:9</div>
+        </div>
       </div>
-      <div style="text-align:right;">
-        <p style="margin:0;color:#ffd5d5;font-size:0.75rem;">RPS Score</p>
-        <p style="margin:0;color:#fff;font-size:1.6rem;font-weight:800;line-height:1;">8.30</p>
-        <p style="margin:0;color:#ffd5d5;font-size:0.7rem;">S:9 × 0.45 + E:8 × 0.35 + X:8 × 0.20</p>
+      <table style="font-size:12px; color:#4a5568; margin-bottom:14px; border-collapse:collapse;">
+        <tr>
+          <td style="padding:3px 16px 3px 0; font-weight:700; white-space:nowrap;">CVE:</td>
+          <td>CVE-2026-34621</td>
+          <td style="padding:3px 16px 3px 24px; font-weight:700; white-space:nowrap;">CVSS:</td>
+          <td>8.6 (severity assessed 9.6 by researchers)</td>
+          <td style="padding:3px 16px 3px 24px; font-weight:700; white-space:nowrap;">Status:</td>
+          <td><span style="color:#c0392b; font-weight:700;">Emergency Patch Released (APSB26-43)</span></td>
+        </tr>
+        <tr>
+          <td style="padding:3px 16px 3px 0; font-weight:700;">MITRE ATT&amp;CK:</td>
+          <td colspan="5">T1203 (Exploitation for Client Execution) · T1566.001 (Phishing: Spearphishing Attachment) · T1059 (Command and Scripting Interpreter)</td>
+        </tr>
+      </table>
+      <p style="margin:0; font-size:14px; line-height:1.75; color:#2d3748;">
+        A critical zero-day vulnerability in Adobe Acrobat Reader, CVE-2026-34621, was actively exploited in the wild for at least four months before Adobe released a patch on April 11, 2026. Adobe released an emergency patch under security bulletin APSB26-43 with a Priority 1 rating; affected versions include Acrobat Reader 24.001.30356, 26.001.21367, and all earlier releases on both Windows and macOS. The exploit required only that a victim open a malicious PDF — no additional interaction needed — making this an extremely effective delivery vehicle via email, procurement portals, and HR workflows. Organizations should add the known C2 indicator <code>ado-read-parser[.]com</code> to blocklists and monitor for the "Adobe Synchronizer" User Agent string in HTTP and HTTPS traffic. Any organization with unpatched Adobe Reader and external PDF workflows should treat affected endpoints as potentially compromised pending forensic review.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ITEM 3 -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section style="background:#fff; border-radius:10px; margin-bottom:22px; box-shadow:0 2px 10px rgba(0,0,0,0.07); overflow:hidden; border-top:5px solid #c0392b;">
+    <div style="padding:22px 26px 18px 26px;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:14px;">
+        <div>
+          <span style="background:#c0392b; color:#fff; font-size:11px; font-weight:800; letter-spacing:1.5px; padding:4px 12px; border-radius:4px; text-transform:uppercase;">🔴 ACT NOW</span>
+          <h3 style="margin:10px 0 4px 0; font-size:17px; font-weight:800; color:#1a1a2e;">LMDeploy CVE-2026-33626 — AI Inference SSRF Weaponized Within 13 Hours of Disclosure</h3>
+          <p style="margin:0; font-size:12px; color:#718096;">
+            Source: <a href="https://thehackernews.com/2026/04/lmdeploy-cve-2026-33626-flaw-exploited.html" style="color:#1b3a5c;">The Hacker News</a> &amp; <a href="https://webflow.sysdig.com/blog/cve-2026-33626-how-attackers-exploited-lmdeploy-llm-inference-engines-in-12-hours" style="color:#1b3a5c;">Sysdig</a> &nbsp;|&nbsp; Published: April 22–24, 2026
+          </p>
+        </div>
+        <div style="text-align:center; background:#fef2f2; border:2px solid #c0392b; border-radius:8px; padding:10px 20px; min-width:100px;">
+          <div style="font-size:28px; font-weight:900; color:#c0392b; line-height:1;">8.50</div>
+          <div style="font-size:10px; font-weight:700; color:#c0392b; letter-spacing:1px;">RPS SCORE</div>
+          <div style="font-size:10px; color:#888; margin-top:2px;">S:8 · E:10 · X:7</div>
+        </div>
       </div>
-    </header>
-    <div style="padding:1rem 1.25rem;background:#fff;">
-      <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.9rem;">
-        <span style="background:#f0f4fa;border:1px solid #c8d8ee;color:#1a3a5c;font-size:0.75rem;padding:2px 10px;border-radius:20px;"><strong>Source:</strong> HIPAA Journal / GovInfoSecurity / Comparitech</span>
-        <span style="background:#f0f4fa;border:1px solid #c8d
+      <table style="font-size:12px; color:#4a5568; margin-bottom:14px; border-collapse:collapse;">
+        <tr>
+          <td style="padding:3px 16px 3px 0; font-weight:700; white-space:nowrap;">CVE:</td>
+          <td>CVE-2026-33626</td>
+          <td style="padding:3px 16px 3px 24px; font-weight:700; white-space:nowrap;">CVSS:</td>
+          <td>7.5 High</td>
+          <td style="padding:3px 16px 3px 24px; font-weight:700; white-space:nowrap;">Status:</td>
+          <td><span style="color:#c0392b; font-weight:700;">Actively Exploited — Patch to v0.12.3</span></td>
+        </tr>
+        <tr>
+          <td style="padding:3px 16px 3px 0; font-weight:700;">MITRE ATT&amp;CK:</td>
+          <td colspan="5">T1190 (Exploit Public-Facing Application) · T1552.005 (Cloud Instance Metadata API) · T1046 (Network Service Discovery)</td>
+        </tr>
+      </table>
+      <p style="margin:0; font-size:14px; line-height:1.75; color:#2d3748;">
+        On April 21, 2026, GitHub published advisory GHSA-6w67-hwm5-92mq (CVE-2026-33626), a Server-Side Request Forgery (SSRF) vulnerability in LMDeploy, a toolkit for serving vision-language and text LLMs. CVE-2026-33626 was exploited within 12 hours of disclosure, enabling attackers to use a vision-LLM endpoint for SSRF-based internal network scanning, cloud metadata access, and service enumeration. What distinguishes this from a textbook SSRF is what it unlocks on an AI-serving node: IAM credentials and cloud metadata. Vision-LLM nodes typically run on GPU instances with broad IAM roles covering S3 model artifacts, training datasets, and often cross-account assume-role permissions — meaning one successful IMDS fetch can compromise an entire cloud account. Model-serving platforms such as LMDeploy, vLLM, TGI, and Ray Serve are frequently deployed outside standard security review and often not covered by CVE scanning until well after disclosure. Any organization running AI inference infrastructure must treat this as a high-priority remediation: update to v0.12.3 and enforce explicit egress filtering on all AI endpoint nodes immediately.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ITEM 4 -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section style="background:#fff; border-radius:10px; margin-bottom:22px; box-shadow:0 2px 10px rgba(0,0,0,0.07); overflow:hidden; border-top:5px solid #c0392b;">
+    <div style="padding:22px 26px 18px 26px;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:14px;">
+        <div>
+          <span style="background:#c0392b; color:#fff; font-size:11px; font-weight:800; letter-spacing:1.5px; padding:4px 12px; border-radius:4px; text-transform:uppercase;">🔴 ACT NOW</span>
+          <h3 style="margin:10px 0 4px 0; font-size:17px; font-weight:800; color:#1a1a2e;">LockBit 5.0 RaaS Resurgence — 207 Victims in 2026, Cross-Platform ESXi/Linux Targeting</h3>
+          <p style="margin:0; font-size:12px; color:#718096;">
+            Source: <a href="https://www.bitdefender.com/en-us/blog/businessinsights/bitdefender-threat-debrief-april-2026" style="color:#1b3a5c;">Bitdefender Threat Debrief</a> &amp; <a href="https://www.provendata.com/blog/lockbit-5" style="color:#1b3a5c;">Proven Data</a> &nbsp;|&nbsp; Published: April 2026
+          </p>
+        </div>
+        <div style="text-align:center; background:#fef2f2; border:2px solid #c0392b; border-radius:8px; padding:10px 20px; min-width:100px;">
+          <div style="font-size:28px; font-weight:900; color:#c0392b; line-height:1;">8.65</div>
+          <div style="font-size:10px; font-weight:700; color:#c0392b; letter-spacing:1px;">RPS SCORE</div>
+          <div style="font-size:10px; color:#888; margin-top:2px;">S:9 · E:8 · X:9</div>
+        </div>
+      </div>
+      <table style="font-size:12px; color:#4a5568; margin-bottom:14px; border-collapse:collapse;">
+        <tr>
+          <td style="padding:3px 16px 3px 0; font-weight:700;">Threat Actor:</td>
+          <td>LockBit (LockBitSupp) / RaaS Affiliates</td>
+          <td style="padding:3px 16px 3px 24px; font-weight:700;">Targets:</td>
+          <td>Manufacturing, Healthcare, Government, Construction</td>
+        </tr>
+        <tr>
+          <td style="padding:3px 16px 3px 0; font-weight:700;">MITRE ATT&amp;CK:</td>
+          <td colspan="3">T1486 (Data Encrypted for Impact) · T1490 (Inhibit System Recovery) · T1657 (Financial Theft) · T1078 (Valid Accounts) · T1133 (External Remote Services)</td>
+        </tr>
+      </table>
+      <p style="margin:0; font-size:14px; line-height:1.75; color:#2d3748;">
+        LockBit has claimed 207 victims to date following the release of its LockBit 5.0 RaaS platform, with the majority of victims in manufacturing, healthcare, government, and construction. The latest LockBit 5.0 variant has both Windows and Linux versions with notable improvements including anti-analysis features and unique 16-character extensions added to each encrypted file. The newly observed LockBit 5.0 attacks span a broad range of targets — about 80% on Windows systems, and around 20% on ESXi and Linux environments. Ransomware tactics are increasingly abandoning traditional encryption-based attacks in favor of data theft and extortion-only operations, reducing operational complexity for attackers while maintaining pressure on victims through the threat of data exposure. Organizations should note that OFAC sanctions against LockBit's operator (Khoroshev) make ransom payment legally problematic, amplifying the need for recovery-without-payment capability.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ITEM 5 -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section style="background:#fff; border-radius:10px; margin-bottom:22px; box-shadow:0 2px 10px rgba(0,0,0,0.07); overflow:hidden; border-top:5px solid #c0392b;">
+    <div style="padding:22px 26px 18px 26px;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:14px;">
+        <div>
+          <span style="background:#c0392b; color:#fff; font-size:11px; font-weight:800; letter-spacing:1.5px; padding:4px 12px; border-radius:4px; text-transform:uppercase;">🔴 ACT NOW</span>
+          
 </body>
 </html>
