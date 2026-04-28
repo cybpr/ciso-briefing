@@ -13,195 +13,207 @@
   </style>
 </head>
 <body>
-  <p class="updated">Last updated: April 27, 2026 at 08:07 UTC</p>
-  Now I have comprehensive data to compile the full weekly CISO briefing. Let me produce the HTML output.
+  <p class="updated">Last updated: April 28, 2026 at 08:08 UTC</p>
+  Now I have comprehensive data to build the full briefing. Let me compile and render it.
 
-```html
-<!-- RPS Formula: (Severity × 0.45) + (Exploitability × 0.35) + (Exposure × 0.20) -->
-<!-- Scale: S, E, X all rated 1–10 -->
-```
+<article style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 1100px; margin: 0 auto; background: #f5f6fa; color: #1a1a2e; padding: 0 0 40px 0;">
 
-Here is the complete self-contained HTML briefing:
-
----
-
-<article style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 1100px; margin: 0 auto; color: #1a1a2e; background: #f8f9fb; padding: 0 0 48px 0;">
-
-  <!-- HEADER -->
-  <header style="background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 60%, #162447 100%); color: #fff; padding: 40px 44px 32px 44px; border-bottom: 4px solid #e63946;">
-    <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+  <!-- ═══════════════════════  HEADER  ═══════════════════════ -->
+  <header style="background: linear-gradient(135deg, #0d1b2a 0%, #1b2a4a 60%, #0d2a4a 100%); color: #fff; padding: 38px 40px 30px; border-radius: 0 0 8px 8px; margin-bottom: 30px;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px;">
       <div>
-        <div style="font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#a8c0d6; margin-bottom:6px;">CONFIDENTIAL — EXECUTIVE DISTRIBUTION ONLY</div>
-        <h1 style="margin:0; font-size:26px; font-weight:800; letter-spacing:0.5px;">🔐 Weekly CISO Intelligence Briefing</h1>
-        <div style="margin-top:6px; font-size:14px; color:#c9d6e3;">Threat Window: <strong>April 21–27, 2026</strong> &nbsp;|&nbsp; Issued: <strong>Monday, April 27, 2026</strong></div>
+        <div style="font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#7ecfff; margin-bottom:6px;">🔒 Confidential — Executive Distribution Only</div>
+        <h1 style="margin:0 0 6px; font-size:26px; font-weight:800; letter-spacing:-.5px;">Weekly CISO Intelligence Briefing</h1>
+        <div style="font-size:14px; color:#a8c7e8;">Coverage Period: <strong>April 21 – April 28, 2026</strong> &nbsp;|&nbsp; Published: <strong>April 28, 2026</strong></div>
       </div>
-      <div style="text-align:right;">
-        <div style="background:#e63946; color:#fff; font-weight:700; font-size:13px; padding:8px 18px; border-radius:4px; letter-spacing:1px;">THREAT LEVEL: ELEVATED</div>
-        <div style="font-size:12px; color:#a8c0d6; margin-top:6px;">Items Tracked: 6 &nbsp;|&nbsp; ACT NOW: 3 &nbsp;|&nbsp; HEIGHTENED: 2 &nbsp;|&nbsp; STRATEGIC: 1</div>
+      <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:8px; padding:14px 20px; text-align:center; min-width:140px;">
+        <div style="font-size:10px; letter-spacing:2px; text-transform:uppercase; color:#7ecfff;">Threat Level</div>
+        <div style="font-size:32px; font-weight:900; color:#ff6b6b; line-height:1.1;">HIGH</div>
+        <div style="font-size:10px; color:#a8c7e8;">7 Items Tracked</div>
       </div>
     </div>
   </header>
 
-  <!-- RPS LEGEND -->
-  <div style="background:#1b263b; color:#c9d6e3; font-size:12px; padding:10px 44px; display:flex; gap:28px; flex-wrap:wrap; border-bottom:2px solid #2e3f5c;">
-    <span><strong style="color:#fff;">RPS Formula:</strong> (Severity × 0.45) + (Exploitability × 0.35) + (Exposure × 0.20) &nbsp;|&nbsp; Scale: 1–10</span>
-    <span style="background:#e63946; color:#fff; padding:2px 10px; border-radius:3px; font-weight:700;">● ACT NOW ≥ 8.0</span>
-    <span style="background:#f4a261; color:#1a1a2e; padding:2px 10px; border-radius:3px; font-weight:700;">● HEIGHTENED 6.0–7.9</span>
-    <span style="background:#2a9d8f; color:#fff; padding:2px 10px; border-radius:3px; font-weight:700;">● STRATEGIC WATCH &lt; 6.0</span>
-  </div>
+  <!-- ═══════════════════════  LEGEND / RPS KEY  ═══════════════════════ -->
+  <section style="margin: 0 30px 28px; background:#fff; border-radius:8px; padding:16px 22px; border-left:4px solid #3a7bd5; box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+    <h3 style="margin:0 0 10px; font-size:13px; text-transform:uppercase; letter-spacing:1.5px; color:#3a7bd5;">📐 Risk Priority Score (RPS) Methodology</h3>
+    <p style="margin:0 0 8px; font-size:13px; color:#444;"><strong>Formula:</strong> RPS = (Severity × 0.45) + (Exploitability × 0.35) + (Exposure Breadth × 0.20) &nbsp;|&nbsp; All dimensions scored 1–10.</p>
+    <div style="display:flex; gap:18px; flex-wrap:wrap; font-size:12px;">
+      <span style="background:#ff4d4d; color:#fff; padding:3px 12px; border-radius:20px; font-weight:700;">🔴 ACT NOW &nbsp;RPS ≥ 8.0</span>
+      <span style="background:#ff9900; color:#fff; padding:3px 12px; border-radius:20px; font-weight:700;">🟠 HEIGHTENED WATCH &nbsp;RPS 6.0–7.9</span>
+      <span style="background:#3a7bd5; color:#fff; padding:3px 12px; border-radius:20px; font-weight:700;">🔵 STRATEGIC WATCH &nbsp;RPS &lt; 6.0</span>
+    </div>
+  </section>
 
-  <div style="padding: 32px 44px 0 44px;">
+  <!-- ═══════════════════════  EXECUTIVE SUMMARY  ═══════════════════════ -->
+  <section style="margin: 0 30px 28px; background: linear-gradient(135deg,#0d1b2a,#1b2a4a); color:#fff; border-radius:8px; padding:24px 28px; box-shadow:0 4px 16px rgba(13,27,42,0.18);">
+    <h2 style="margin:0 0 14px; font-size:15px; text-transform:uppercase; letter-spacing:2px; color:#7ecfff;">📋 Executive Summary</h2>
+    <p style="margin:0 0 12px; font-size:14px; line-height:1.7; color:#dce8f5;">
+      This week's threat landscape is defined by a <strong>record-scale Microsoft Patch Tuesday</strong>, active zero-day exploitation across widely deployed platforms, and two high-profile data incidents that expose systemic gaps in third-party and insider risk controls. Microsoft's April 2026 cycle — the company's second-largest on record — patched over 160 vulnerabilities including an <strong>actively exploited SharePoint zero-day (CVE-2026-32201)</strong> already added to CISA's KEV catalog and a <strong>Windows Defender privilege-escalation flaw (CVE-2026-33825)</strong> now being chained in the wild with the <em>BeigeBurrow</em> tunneling implant. Separately, the <strong>Vercel/Context.ai OAuth supply-chain breach</strong> — attributed to ShinyHunters using Lumma Stealer as initial access — underscores that AI productivity tool sprawl has become a first-class attack surface. The <strong>UK Biobank genomic data incident</strong> involving 500,000 citizens raises acute insider-threat and data-governance concerns with geopolitical overtones. CISA's Emergency Directive 26-03 for Cisco SD-WAN adds urgency to network infrastructure patching. Boards and cyber insurers are already responding: the 2026 At-Bay InsurSec Report documents claim severity at an all-time high of $221,000 on average, with ransomware events averaging $508,000 — a 16% year-on-year increase.
+    </p>
+    <p style="margin:0; font-size:13px; color:#a8c7e8;"><strong>Decision-makers should prioritize:</strong> Immediate SharePoint, Defender, Windows IKE/TCP patching; OAuth grant audits across all productivity and AI tool integrations; and SD-WAN infrastructure hardening per CISA ED 26-03.</p>
+  </section>
 
-    <!-- ═══════════════════════════════ EXECUTIVE SUMMARY ═══════════════════════════════ -->
-    <section style="background:#fff; border-left:5px solid #e63946; border-radius:6px; padding:24px 28px; margin-bottom:32px; box-shadow:0 2px 8px rgba(0,0,0,0.07);">
-      <h2 style="margin:0 0 12px 0; font-size:17px; text-transform:uppercase; letter-spacing:1px; color:#0d1b2a;">📋 Executive Summary</h2>
-      <p style="margin:0 0 10px 0; font-size:14.5px; line-height:1.7; color:#2c2c2c;">
-        This week's threat landscape is defined by three converging forces: a record-scale Microsoft Patch Tuesday releasing over 160 CVEs with active zero-day exploitation, a sophisticated enterprise collaboration-platform attack campaign disclosed by Google/Mandiant, and cascading SaaS supply chain breaches by ShinyHunters yielding tens of millions of exfiltrated records. Microsoft addressed 164 vulnerabilities in its April 2026 security update release — double the number of March — including one exploited zero-day, one previously disclosed zero-day, and eight Critical vulnerabilities. Simultaneously, Google Threat Intelligence Group (GTIG) identified a multistage intrusion campaign by a newly tracked group, UNC6692, that leveraged persistent social engineering via Microsoft Teams, impersonating IT helpdesk employees to convince victims to accept chat invitations from accounts outside their organization. On the data breach front, Rockstar Games confirmed a breach after ShinyHunters exploited a third-party integration to access the company's internal Snowflake data warehouse, leaking over 78.6 million records; the breach did not stem from a direct attack on Rockstar's infrastructure but instead from ShinyHunters leveraging Anodot, an AI-powered cloud cost monitoring SaaS. Defenders must act immediately on three ACT NOW items — two of which remain unpatched or uncontained as of this briefing.
-      </p>
-    </section>
+  <!-- ═══════════════════════  TOP 3 ENTERPRISE RISKS  ═══════════════════════ -->
+  <section style="margin: 0 30px 28px;">
+    <h2 style="margin:0 0 14px; font-size:15px; text-transform:uppercase; letter-spacing:2px; color:#0d1b2a; border-bottom:2px solid #ff4d4d; padding-bottom:6px;">🏆 Top 3 Enterprise Risks This Week</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
 
-    <!-- ═══════════════════════════════ TOP 3 ENTERPRISE RISKS ═══════════════════════════════ -->
-    <section style="margin-bottom:36px;">
-      <h2 style="font-size:16px; text-transform:uppercase; letter-spacing:1px; color:#0d1b2a; margin-bottom:16px; border-bottom:2px solid #1b263b; padding-bottom:6px;">🔴 Top 3 Enterprise Risks This Week</h2>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
-
-        <div style="background:#fff1f1; border:1.5px solid #e63946; border-radius:6px; padding:18px 20px;">
-          <div style="font-size:12px; font-weight:700; color:#e63946; letter-spacing:1px; margin-bottom:6px;">RISK #1 — ACT NOW</div>
-          <div style="font-weight:700; font-size:15px; color:#0d1b2a; margin-bottom:6px;">Unpatched Microsoft Defender Zero-Days (RedSun & UnDefend)</div>
-          <p style="font-size:13px; color:#3a3a3a; margin:0; line-height:1.6;">As of late April 2026, the RedSun and UnDefend vulnerabilities remain unpatched, leaving even fully updated systems exposed. These vulnerabilities exploit trusted Microsoft Defender processes running with SYSTEM privileges, effectively turning the endpoint protection mechanism itself into an attack vector.</p>
-        </div>
-
-        <div style="background:#fff1f1; border:1.5px solid #e63946; border-radius:6px; padding:18px 20px;">
-          <div style="font-size:12px; font-weight:700; color:#e63946; letter-spacing:1px; margin-bottom:6px;">RISK #2 — ACT NOW</div>
-          <div style="font-weight:700; font-size:15px; color:#0d1b2a; margin-bottom:6px;">SaaS Supply Chain Exploitation (ShinyHunters / Snowflake / Salesforce)</div>
-          <p style="font-size:13px; color:#3a3a3a; margin:0; line-height:1.6;">ShinyHunters' operational model is to identify large companies with SaaS integration gaps, extract valuable data, and apply public pressure to force payment. Their confirmed target history includes Salesforce-linked companies — 400+ organizations compromised in March 2026, with data from 26 already published.</p>
-        </div>
-
-        <div style="background:#fff8f0; border:1.5px solid #f4a261; border-radius:6px; padding:18px 20px;">
-          <div style="font-size:12px; font-weight:700; color:#c77c3a; letter-spacing:1px; margin-bottom:6px;">RISK #3 — HEIGHTENED</div>
-          <div style="font-weight:700; font-size:15px; color:#0d1b2a; margin-bottom:6px;">UNC6692 Teams-Based Enterprise Intrusion Campaign</div>
-          <p style="font-size:13px; color:#3a3a3a; margin:0; line-height:1.6;">From March 1 to April 1, 2026, senior-level employees accounted for 77% of observed UNC6692 incidents, up from 59% in the first two months of 2026. A critical element of this strategy is the systematic abuse of legitimate cloud services for payload delivery and exfiltration and for C2 infrastructure; by hosting malicious components on trusted cloud platforms, attackers can often bypass traditional network reputation filters.</p>
-        </div>
-
+      <div style="background:#fff; border-radius:8px; padding:18px; border-top:4px solid #ff4d4d; box-shadow:0 2px 10px rgba(0,0,0,0.08);">
+        <div style="font-size:11px; font-weight:700; color:#ff4d4d; letter-spacing:1px; text-transform:uppercase; margin-bottom:6px;">#1 · Unpatched Microsoft Infrastructure</div>
+        <p style="margin:0; font-size:13px; line-height:1.6; color:#333;">Active exploitation of SharePoint CVE-2026-32201 and in-the-wild chaining of Defender CVE-2026-33825 with the BeigeBurrow implant make unpatched Microsoft environments immediate breach candidates. Every day of delay extends exposure across potentially millions of enterprise endpoints and servers.</p>
       </div>
-    </section>
 
-    <!-- ═══════════════════════════════ INTELLIGENCE ITEMS ═══════════════════════════════ -->
-    <h2 style="font-size:16px; text-transform:uppercase; letter-spacing:1px; color:#0d1b2a; margin-bottom:20px; border-bottom:2px solid #1b263b; padding-bottom:6px;">📡 Intelligence Items — Detailed Analysis</h2>
-
-    <!-- ─── ITEM 1 ─── -->
-    <section style="background:#fff; border-radius:8px; margin-bottom:24px; box-shadow:0 2px 10px rgba(0,0,0,0.07); overflow:hidden;">
-      <div style="background:#e63946; color:#fff; padding:14px 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
-        <div>
-          <span style="font-size:11px; letter-spacing:2px; font-weight:700; opacity:0.85;">ITEM 01 — ACT NOW</span>
-          <h3 style="margin:4px 0 0 0; font-size:16px; font-weight:800;">Unpatched Microsoft Defender Zero-Days: RedSun &amp; UnDefend Still Active</h3>
-        </div>
-        <div style="text-align:right; white-space:nowrap;">
-          <div style="font-size:22px; font-weight:900; letter-spacing:-1px;">RPS: 9.1</div>
-          <div style="font-size:11px; opacity:0.8;">(S:9 × 0.45) + (E:9 × 0.35) + (X:9 × 0.20)</div>
-        </div>
+      <div style="background:#fff; border-radius:8px; padding:18px; border-top:4px solid #ff4d4d; box-shadow:0 2px 10px rgba(0,0,0,0.08);">
+        <div style="font-size:11px; font-weight:700; color:#ff4d4d; letter-spacing:1px; text-transform:uppercase; margin-bottom:6px;">#2 · AI Tool OAuth Supply-Chain Compromise</div>
+        <p style="margin:0; font-size:13px; line-height:1.6; color:#333;">The Vercel breach demonstrates that unsanctioned AI productivity tools with broad OAuth grants are a viable, largely unmonitored initial-access vector. Any organization with shadow-AI tool integrations across Google Workspace, Microsoft 365, or CI/CD platforms is at equivalent risk to the Vercel scenario.</p>
       </div>
-      <div style="padding:22px 24px;">
-        <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:16px; font-size:12px;">
-          <span style="background:#f0f4f8; border-radius:4px; padding:4px 10px;"><strong>Source:</strong> The Hacker News / Proarch / Huntress</span>
-          <span style="background:#f0f4f8; border-radius:4px; padding:4px 10px;"><strong>Published:</strong> April 24, 2026</span>
-          <span style="background:#f0f4f8; border-radius:4px; padding:4px 10px;"><strong>CVEs:</strong> RedSun (unassigned), UnDefend (unassigned) | CVE-2026-33825 (BlueHammer — patched)</span>
-          <span style="background:#f0f4f8; border-radius:4px; padding:4px 10px;"><strong>MITRE ATT&amp;CK:</strong> T1068 (EoP) · T1562.001 (Impair Defenses) · T1055 (Process Injection)</span>
+
+      <div style="background:#fff; border-radius:8px; padding:18px; border-top:4px solid #ff9900; box-shadow:0 2px 10px rgba(0,0,0,0.08);">
+        <div style="font-size:11px; font-weight:700; color:#ff9900; letter-spacing:1px; text-transform:uppercase; margin-bottom:6px;">#3 · VPN / SD-WAN Edge Infrastructure Exploitation</div>
+        <p style="margin:0; font-size:13px; line-height:1.6; color:#333;">CISA ED 26-03 and active exploitation of Cisco Catalyst SD-WAN (CVE-2026-20133) reinforce that VPNs and edge-management planes remain the #1 ransomware entry vector (73% of intrusions per 2026 insurance data). Unpatched edge devices represent the widest open door into enterprise networks.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════  ITEM CARDS  ═══════════════════════ -->
+  <section style="margin: 0 30px 28px;">
+    <h2 style="margin:0 0 18px; font-size:15px; text-transform:uppercase; letter-spacing:2px; color:#0d1b2a; border-bottom:2px solid #3a7bd5; padding-bottom:6px;">📌 Intelligence Items</h2>
+
+    <!-- ─────────── ITEM 1 ─────────── -->
+    <div style="background:#fff; border-radius:8px; margin-bottom:18px; overflow:hidden; box-shadow:0 2px 10px rgba(0,0,0,0.07);">
+      <div style="background:#ff4d4d; padding:10px 22px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+        <span style="color:#fff; font-weight:800; font-size:13px; letter-spacing:.5px;">🔴 ACT NOW &nbsp;|&nbsp; ITEM 1 of 7</span>
+        <span style="background:rgba(0,0,0,0.2); color:#fff; padding:2px 12px; border-radius:20px; font-size:12px; font-weight:700;">RPS: 9.1</span>
+      </div>
+      <div style="padding:20px 22px;">
+        <h3 style="margin:0 0 6px; font-size:17px; color:#0d1b2a;">Microsoft April 2026 Patch Tuesday: Actively Exploited SharePoint Zero-Day &amp; Record 160+ CVEs</h3>
+        <div style="font-size:12px; color:#666; margin-bottom:12px; display:flex; flex-wrap:wrap; gap:16px;">
+          <span>🏢 <strong>Source:</strong> <a href="https://www.securityweek.com/microsoft-patches-exploited-sharepoint-zero-day-and-160-other-vulnerabilities/" style="color:#3a7bd5;">SecurityWeek</a> &amp; <a href="https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-april-2026/" style="color:#3a7bd5;">CrowdStrike</a></span>
+          <span>📅 <strong>Published:</strong> April 14–15, 2026</span>
+          <span>🎯 <strong>CVEs:</strong> CVE-2026-32201, CVE-2026-33824, CVE-2026-33825, CVE-2026-33826, CVE-2026-33827</span>
         </div>
-        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
-          <a href="https://thehackernews.com/2026/04/three-microsoft-defender-zero-days.html" style="color:#1a6faf; font-size:13px; text-decoration:underline;">→ The Hacker News Report</a>
-          <a href="https://www.proarch.com/blog/threats-vulnerabilities/microsoft-defender-zero-day-bluehammer-redsun-undefend" style="color:#1a6faf; font-size:13px; text-decoration:underline;">→ Proarch Technical Analysis</a>
+        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-bottom:14px; font-size:12px; flex-wrap:wrap;">
+          <div style="background:#f5f6fa; border-radius:6px; padding:10px;">
+            <div style="color:#666; text-transform:uppercase; font-size:10px; letter-spacing:1px; margin-bottom:4px;">Severity (S)</div>
+            <div style="font-weight:700; font-size:18px; color:#ff4d4d;">9.8</div>
+            <div style="color:#555;">CVSS max (IKE RCE)</div>
+          </div>
+          <div style="background:#f5f6fa; border-radius:6px; padding:10px;">
+            <div style="color:#666; text-transform:uppercase; font-size:10px; letter-spacing:1px; margin-bottom:4px;">Exploitability (E)</div>
+            <div style="font-weight:700; font-size:18px; color:#ff4d4d;">9</div>
+            <div style="color:#555;">SharePoint: in-the-wild; PoC public</div>
+          </div>
+          <div style="background:#f5f6fa; border-radius:6px; padding:10px;">
+            <div style="color:#666; text-transform:uppercase; font-size:10px; letter-spacing:1px; margin-bottom:4px;">Exposure Breadth (X)</div>
+            <div style="font-weight:700; font-size:18px; color:#ff4d4d;">10</div>
+            <div style="color:#555;">Ubiquitous enterprise use</div>
+          </div>
         </div>
-        <p style="font-size:14px; line-height:1.75; margin:0; color:#2c2c2c;">
-          Security researchers and threat monitoring teams identified three zero-day vulnerabilities affecting Microsoft Defender — BlueHammer, RedSun, and UnDefend — that were publicly disclosed and subsequently observed being exploited in the wild during April 2026. These vulnerabilities allow attackers to escalate privileges and weaken endpoint protection by abusing Defender's internal remediation and update mechanisms. BlueHammer was addressed in the April 14 Patch Tuesday update as CVE-2026-33825, but RedSun exploits Defender's file rewrite behavior to overwrite system files and gain administrative privileges, while UnDefend can prevent antivirus updates from being applied — both affecting fully updated Windows 10, 11, and Server installations with Defender enabled. The close release timing and functional overlap of these vulnerabilities suggest they may be used sequentially, enabling attackers to escalate privileges first and then suppress detection mechanisms; Defender alerting may still appear nominal in some cases, particularly with UnDefend, creating a false sense of protection. CVE-2026-33825 has been observed in the wild as part of a vulnerability chaining attempt to deploy BeigeBurrow, a tunneling or proxy agent. Additionally, CISA added CVE-2026-33825 to its Known Exploited Vulnerabilities Catalog on April 22, 2026, requiring Federal Civilian Executive Branch agencies to apply fixes by May 6, 2026.
+        <p style="margin:0 0 12px; font-size:13.5px; line-height:1.7; color:#333;">
+          Microsoft addressed 164 vulnerabilities in its April 2026 security update release — double the number patched in March — including one exploited zero-day, one previously disclosed zero-day, and eight Critical-rated vulnerabilities. The headline issue is CVE-2026-32201, a spoofing vulnerability in Microsoft SharePoint Server rated CVSS 6.5 "Important," where improper input validation allows an unauthorized attacker to perform spoofing over a network, potentially enabling sensitive information access and data manipulation. CISA's KEV catalog already includes ten SharePoint flaws; CVE-2026-32201 was added immediately and federal agencies were instructed to patch by April 28. Additionally, CVE-2026-33824 is a Critical Windows IKE RCE rated CVSS 9.8, exploitable by unauthenticated remote attackers via a double-free flaw, requiring no user interaction and allowing arbitrary code execution on systems with IKEv2 enabled. CVE-2026-33825 (BlueHammer) was observed in the wild as part of a vulnerability chaining attempt to deploy BeigeBurrow, a tunneling or proxy agent, as of April 21.
         </p>
+        <div style="background:#fff5f5; border-radius:6px; padding:10px 14px; font-size:12.5px;">
+          <strong style="color:#c0392b;">🎯 MITRE ATT&amp;CK:</strong> T1190 (Exploit Public-Facing Application) · T1068 (Exploitation for Privilege Escalation) · T1210 (Exploitation of Remote Services) · T1055 (Process Injection) · T1572 (Protocol Tunneling — BeigeBurrow deployment)
+        </div>
       </div>
-    </section>
+    </div>
 
-    <!-- ─── ITEM 2 ─── -->
-    <section style="background:#fff; border-radius:8px; margin-bottom:24px; box-shadow:0 2px 10px rgba(0,0,0,0.07); overflow:hidden;">
-      <div style="background:#e63946; color:#fff; padding:14px 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
-        <div>
-          <span style="font-size:11px; letter-spacing:2px; font-weight:700; opacity:0.85;">ITEM 02 — ACT NOW</span>
-          <h3 style="margin:4px 0 0 0; font-size:16px; font-weight:800;">UNC6692: Microsoft Teams IT Helpdesk Impersonation &amp; SNOW Malware Campaign</h3>
-        </div>
-        <div style="text-align:right; white-space:nowrap;">
-          <div style="font-size:22px; font-weight:900; letter-spacing:-1px;">RPS: 8.7</div>
-          <div style="font-size:11px; opacity:0.8;">(S:9 × 0.45) + (E:8 × 0.35) + (X:9 × 0.20)</div>
-        </div>
+    <!-- ─────────── ITEM 2 ─────────── -->
+    <div style="background:#fff; border-radius:8px; margin-bottom:18px; overflow:hidden; box-shadow:0 2px 10px rgba(0,0,0,0.07);">
+      <div style="background:#ff4d4d; padding:10px 22px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+        <span style="color:#fff; font-weight:800; font-size:13px; letter-spacing:.5px;">🔴 ACT NOW &nbsp;|&nbsp; ITEM 2 of 7</span>
+        <span style="background:rgba(0,0,0,0.2); color:#fff; padding:2px 12px; border-radius:20px; font-size:12px; font-weight:700;">RPS: 8.8</span>
       </div>
-      <div style="padding:22px 24px;">
-        <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:16px; font-size:12px;">
-          <span style="background:#f0f4f8; border-radius:4px; padding:4px 10px;"><strong>Source:</strong> Google GTIG / Mandiant</span>
-          <span style="background:#f0f4f8; border-radius:4px; padding:4px 10px;"><strong>Published:</strong> April 23–24, 2026</span>
-          <span style="background:#f0f4f8; border-radius:4px; padding:4px 10px;"><strong>Threat Actor:</strong> UNC6692</span>
-          <span style="background:#f0f4f8; border-radius:4px; padding:4px 10px;"><strong>MITRE ATT&amp;CK:</strong> T1566.002 (Spearphishing Link) · T1078 (Valid Accounts) · T1550.002 (Pass-the-Hash) · T1003.001 (LSASS Memory) · T1567 (Exfiltration to Cloud) · T1053 (Scheduled Task)</span>
+      <div style="padding:20px 22px;">
+        <h3 style="margin:0 0 6px; font-size:17px; color:#0d1b2a;">Vercel / Context.ai OAuth Supply-Chain Breach — ShinyHunters Claim $2M Data Sale</h3>
+        <div style="font-size:12px; color:#666; margin-bottom:12px; display:flex; flex-wrap:wrap; gap:16px;">
+          <span>🏢 <strong>Source:</strong> <a href="https://techcrunch.com/2026/04/20/app-host-vercel-confirms-security-incident-says-customer-data-was-stolen-via-breach-at-context-ai/" style="color:#3a7bd5;">TechCrunch</a> &amp; <a href="https://vercel.com/kb/bulletin/vercel-april-2026-security-incident" style="color:#3a7bd5;">Vercel Security Bulletin</a></span>
+          <span>📅 <strong>Published:</strong> April 19–22, 2026</span>
+          <span>🎯 <strong>Threat Actor:</strong> ShinyHunters (unconfirmed) / Lumma Stealer initial access</span>
         </div>
-        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
-          <a href="https://cloud.google.com/blog/topics/threat-intelligence/unc6692-social-engineering-custom-malware" style="color:#1a6faf; font-size:13px; text-decoration:underline;">→ Google GTIG / Mandiant Blog</a>
-          <a href="https://thehackernews.com/2026/04/unc6692-impersonates-it-helpdesk-via.html" style="color:#1a6faf; font-size:13px; text-decoration:underline;">→ The Hacker News Coverage</a>
+        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-bottom:14px; font-size:12px;">
+          <div style="background:#f5f6fa; border-radius:6px; padding:10px;">
+            <div style="color:#666; text-transform:uppercase; font-size:10px; letter-spacing:1px; margin-bottom:4px;">Severity (S)</div>
+            <div style="font-weight:700; font-size:18px; color:#ff4d4d;">9</div>
+            <div style="color:#555;">CI/CD, API keys, source code at risk</div>
+          </div>
+          <div style="background:#f5f6fa; border-radius:6px; padding:10px;">
+            <div style="color:#666; text-transform:uppercase; font-size:10px; letter-spacing:1px; margin-bottom:4px;">Exploitability (E)</div>
+            <div style="font-weight:700; font-size:18px; color:#ff4d4d;">9</div>
+            <div style="color:#555;">Actively exploited; data sold</div>
+          </div>
+          <div style="background:#f5f6fa; border-radius:6px; padding:10px;">
+            <div style="color:#666; text-transform:uppercase; font-size:10px; letter-spacing:1px; margin-bottom:4px;">Exposure Breadth (X)</div>
+            <div style="font-weight:700; font-size:18px; color:#ff9900;">8</div>
+            <div style="color:#555;">Hundreds of orgs; downstream apps</div>
+          </div>
         </div>
-        <p style="font-size:14px; line-height:1.75; margin:0; color:#2c2c2c;">
-          A previously undocumented threat activity cluster known as UNC6692 has been observed leveraging social engineering tactics via Microsoft Teams to deploy a custom malware suite on compromised hosts; as with many other intrusions, UNC6692 relied heavily on impersonating IT helpdesk employees, convincing victims to accept a Microsoft Teams chat invitation from an account outside their organization. UNC6692 first overwhelms the target's inbox with a flood of spam emails creating a false sense of urgency, then approaches the target over Microsoft Teams claiming to be from IT support to offer assistance with the email bombing problem. UNC6692's modular malware suite consists of SNOWBELT (a JavaScript browser extension establishing persistence), SNOWGLAZE (a Python WebSocket tunneler routing traffic via a SOCKS proxy to a Heroku C2 server), and SNOWBASIN (a Python HTTP server executing shell commands, capturing screenshots, and exfiltrating files). After gaining access, UNC6692 scans local networks for ports 135, 445, and 3389, then uses LSASS memory extraction through Windows Task Manager and pass-the-hash techniques to move laterally to domain controllers. The campaign has specifically targeted senior-level employees and domain controllers, with Active Directory database exfiltration confirmed.
+        <p style="margin:0 0 12px; font-size:13.5px; line-height:1.7; color:#333;">
+          The intrusion began with a Lumma Stealer malware infection at Context.ai in approximately February 2026; attackers leveraged a compromise of Context.ai's Google Workspace OAuth tokens to gain a foothold into Vercel's internal systems, exposing environment variables for an undisclosed but reportedly limited subset of customer projects. The incident originated with a compromise of Context.ai, a third-party AI tool used by a Vercel employee; the attacker used that access to take over the employee's individual Vercel Google Workspace account, then pivoted into a Vercel environment and maneuvered through systems to enumerate and decrypt non-sensitive environment variables. Following the breach, threat actors posted the leaked Vercel database for sale at $2M on BreachForums. From a compromised deployment platform, an attacker may be able to read or modify build settings, add malicious build steps, trigger deployments, and extract environment variables — turning a third-party AI tool compromise into an end-to-end supply-chain attack.
         </p>
+        <div style="background:#fff5f5; border-radius:6px; padding:10px 14px; font-size:12.5px;">
+          <strong style="color:#c0392b;">🎯 MITRE ATT&amp;CK:</strong> T1199 (Trusted Relationship) · T1528 (Steal Application Access Token — OAuth) · T1552.001 (Credentials in Files — env vars) · T1078 (Valid Accounts) · T1650 (Acquire Access) · T1195 (Supply Chain Compromise)
+        </div>
       </div>
-    </section>
+    </div>
 
-    <!-- ─── ITEM 3 ─── -->
-    <section style="background:#fff; border-radius:8px; margin-bottom:24px; box-shadow:0 2px 10px rgba(0,0,0,0.07); overflow:hidden;">
-      <div style="background:#e63946; color:#fff; padding:14px 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
-        <div>
-          <span style="font-size:11px; letter-spacing:2px; font-weight:700; opacity:0.85;">ITEM 03 — ACT NOW</span>
-          <h3 style="margin:4px 0 0 0; font-size:16px; font-weight:800;">Microsoft April Patch Tuesday: SharePoint Zero-Day (CVE-2026-32201) + IKE RCE (CVE-2026-33824, CVSS 9.8)</h3>
-        </div>
-        <div style="text-align:right; white-space:nowrap;">
-          <div style="font-size:22px; font-weight:900; letter-spacing:-1px;">RPS: 8.5</div>
-          <div style="font-size:11px; opacity:0.8;">(S:9 × 0.45) + (E:8 × 0.35) + (X:8 × 0.20)</div>
-        </div>
+    <!-- ─────────── ITEM 3 ─────────── -->
+    <div style="background:#fff; border-radius:8px; margin-bottom:18px; overflow:hidden; box-shadow:0 2px 10px rgba(0,0,0,0.07);">
+      <div style="background:#ff4d4d; padding:10px 22px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+        <span style="color:#fff; font-weight:800; font-size:13px; letter-spacing:.5px;">🔴 ACT NOW &nbsp;|&nbsp; ITEM 3 of 7</span>
+        <span style="background:rgba(0,0,0,0.2); color:#fff; padding:2px 12px; border-radius:20px; font-size:12px; font-weight:700;">RPS: 8.4</span>
       </div>
-      <div style="padding:22px 24px;">
-        <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:16px; font-size:12px;">
-          <span style="background:#f0f4f8; border-radius:4px; padding:4px 10px;"><strong>Source:</strong> Microsoft MSRC / CrowdStrike / SecurityWeek</span>
-          <span style="background:#f0f4f8; border-radius:4px; padding:4px 10px;"><strong>Published:</strong> April 14, 2026</span>
-          <span style="background:#f0f4f8; border-radius:4px; padding:4px 10px;"><strong>CVEs:</strong> CVE-2026-32201 (CVSS 6.5, exploited) · CVE-2026-33824 (CVSS 9.8, RCE) · CVE-2026-33826 (CVSS 8.0, RCE-AD) · CVE-2026-33827 (CVSS 8.1, TCP/IP RCE)</span>
-          <span style="background:#f0f4f8; border-radius:4px; padding:4px 10px;"><strong>MITRE ATT&amp;CK:</strong> T1190 (Exploit Public-Facing App) · T1212 (Exploitation for Credential Access) · T1059 (Command Execution) · T1548 (Abuse Elevation Control)</span>
+      <div style="padding:20px 22px;">
+        <h3 style="margin:0 0 6px; font-size:17px; color:#0d1b2a;">Cisco Catalyst SD-WAN CVE-2026-20133 Actively Exploited — CISA Emergency Directive 26-03</h3>
+        <div style="font-size:12px; color:#666; margin-bottom:12px; display:flex; flex-wrap:wrap; gap:16px;">
+          <span>🏢 <strong>Source:</strong> <a href="https://www.bleepingcomputer.com/news/security/cisa-flags-new-sd-wan-flaw-as-actively-exploited-in-attacks/" style="color:#3a7bd5;">BleepingComputer</a> &amp; <a href="https://cybersecuritynews.com/cisco-sd-wan-manager-vulnerabilities/" style="color:#3a7bd5;">CybersecurityNews</a></span>
+          <span>📅 <strong>Published:</strong> April 21–24, 2026</span>
+          <span>🎯 <strong>CVE:</strong> CVE-2026-20133 (+ CVE-2026-20122, CVE-2026-20128)</span>
         </div>
-        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
-          <a href="https://www.securityweek.com/microsoft-patches-exploited-sharepoint-zero-day-and-160-other-vulnerabilities/" style="color:#1a6faf; font-size:13px; text-decoration:underline;">→ SecurityWeek Analysis</a>
-          <a href="https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-april-2026/" style="color:#1a6faf; font-size:13px; text-decoration:underline;">→ CrowdStrike Patch Tuesday Review</a>
-          <a href="https://www.tenable.com/blog/microsofts-april-2026-patch-tuesday-addresses-163-cves-cve-2026-32201" style="color:#1a6faf; font-size:13px; text-decoration:underline;">→ Tenable Analysis</a>
+        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-bottom:14px; font-size:12px;">
+          <div style="background:#f5f6fa; border-radius:6px; padding:10px;">
+            <div style="color:#666; text-transform:uppercase; font-size:10px; letter-spacing:1px; margin-bottom:4px;">Severity (S)</div>
+            <div style="font-weight:700; font-size:18px; color:#ff9900;">8</div>
+            <div style="color:#555;">Network management plane exposure</div>
+          </div>
+          <div style="background:#f5f6fa; border-radius:6px; padding:10px;">
+            <div style="color:#666; text-transform:uppercase; font-size:10px; letter-spacing:1px; margin-bottom:4px;">Exploitability (E)</div>
+            <div style="font-weight:700; font-size:18px; color:#ff4d4d;">9</div>
+            <div style="color:#555;">Confirmed in-the-wild; CISA KEV</div>
+          </div>
+          <div style="background:#f5f6fa; border-radius:6px; padding:10px;">
+            <div style="color:#666; text-transform:uppercase; font-size:10px; letter-spacing:1px; margin-bottom:4px;">Exposure Breadth (X)</div>
+            <div style="font-weight:700; font-size:18px; color:#ff9900;">8</div>
+            <div style="color:#555;">Up to 6,000 devices per manager</div>
+          </div>
         </div>
-        <p style="font-size:14px; line-height:1.75; margin:0; color:#2c2c2c;">
-          Microsoft addressed 164 vulnerabilities in April 2026 — double the March count — including one exploited zero-day, one previously disclosed zero-day, and eight Critical vulnerabilities. The exploited SharePoint Server vulnerability CVE-2026-32201 is tracked as a spoofing issue rated "important" with a CVSS score of 6.5; improper input validation in Microsoft Office SharePoint allows an unauthorized attacker to perform spoofing over a network, potentially accessing sensitive information and altering it. Telemetry from threat intelligence firms points to coordinated reconnaissance against internet-facing SharePoint instances in the first half of April, indicating the bug was being mapped and attacked before the patch window opened; CISA has set a hard deadline for federal civilian agencies to patch by April 28, 2026. Additionally, CVE-2026-33824 is a Critical RCE vulnerability in Windows IKE Service Extensions with a CVSS score of 9.8, allowing unauthenticated remote attackers to execute arbitrary code by exploiting a double-free flaw with no user interaction required via specially crafted packets to a Windows machine with IKE v2 enabled. CVE-2026-33826 is a Critical RCE in Windows Active Directory rated CVSS 8.0 and assessed as "Exploitation More Likely," with successful exploitation requiring an authenticated attacker to send a specially crafted RPC call resulting in code execution with the same permissions as the RPC host.
+        <p style="margin:0 0 12px; font-size:13.5px; line-height:1.7; color:#333;">
+          CISA added CVE-2026-20133 to its Known Exploited Vulnerabilities catalog "based on evidence of active exploitation" and ordered Federal Civilian Executive Branch agencies to secure their networks by Friday, April 24. CVE-2026-20133 (CWE-200 – Sensitive Information Exposure) allows remote, unauthenticated attackers to view sensitive information on affected systems. Catalyst SD-WAN Manager is a centralized tool used to monitor and manage up to 6,000 Cisco SD-WAN devices, making a successful exploit a potential gateway to mass enterprise network intrusion. While ransomware involvement is currently listed as "unknown," the exploitation of SD-WAN management platforms has historically preceded large-scale network intrusions; CISA has issued Emergency Directive 26-03 along with dedicated Hunt &amp; Hardening Guidance for Cisco SD-WAN Devices, underscoring the threat's severity.
         </p>
+        <div style="background:#fff5f5; border-radius:6px; padding:10px 14px; font-size:12.5px;">
+          <strong style="color:#c0392b;">🎯 MITRE ATT&amp;CK:</strong> T1190 (Exploit Public-Facing Application) · T1083 (File and Directory Discovery) · T1040 (Network Sniffing) · T1078 (Valid Accounts) · T1021.004 (Remote Services: SSH)
+        </div>
       </div>
-    </section>
+    </div>
 
-    <!-- ─── ITEM 4 ─── -->
-    <section style="background:#fff; border-radius:8px; margin-bottom:24px; box-shadow:0 2px 10px rgba(0,0,0,0.07); overflow:hidden;">
-      <div style="background:#f4a261; color:#1a1a2e; padding:14px 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
-        <div>
-          <span style="font-size:11px; letter-spacing:2px; font-weight:700; opacity:0.75;">ITEM 04 — HEIGHTENED WATCH</span>
-          <h3 style="margin:4px 0 0 0; font-size:16px; font-weight:800;">ShinyHunters SaaS Chain: Rockstar/Snowflake + McGraw Hill/Salesforce — 92M+ Records Leaked</h3>
-        </div>
-        <div style="text-align:right; white-space:nowrap;">
-          <div style="font-size:22px; font-weight:900; letter-spacing:-1px;">RPS: 7.8</div>
-          <div style="font-size:11px; opacity:0.75;">(S:8 × 0.45) + (E:7 × 0.35) + (X:9 × 0.20)</div>
-        </div>
+    <!-- ─────────── ITEM 4 ─────────── -->
+    <div style="background:#fff; border-radius:8px; margin-bottom:18px; overflow:hidden; box-shadow:0 2px 10px rgba(0,0,0,0.07);">
+      <div style="background:#ff9900; padding:10px 22px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+        <span style="color:#fff; font-weight:800; font-size:13px; letter-spacing:.5px;">🟠 HEIGHTENED WATCH &nbsp;|&nbsp; ITEM 4 of 7</span>
+        <span style="background:rgba(0,0,0,0.2); color:#fff; padding:2px 12px; border-radius:20px; font-size:12px; font-weight:700;">RPS: 7.9</span>
       </div>
-      <div style="padding:22px 24px;">
-        <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:16px; font-size:12px;">
-          <span style="background:#f0f4f8; border-radius:4px; padding:4px 10px;"><strong>Source:</strong> BleepingComputer / The Register / Bitdefender</span>
-          <span style="background:#f0f4f8; border-radius:4px; padding:4px 10px;"><strong>Published:</strong> April 13–16, 2026</span>
-          <span style="background:#f0f4f8; border-radius:4px; padding:4px 10px;"><strong>Threat Actor:</strong> ShinyHunters</span>
-          <span style="background:#f0f4f8; border-radius:4px; padding:4px 10px;"><strong>MITRE ATT&amp;CK:</strong> T1199 (Trusted Relationship) · T1530 (Data from Cloud Storage) · T1657 (Financial Theft / Extortion) · T1552.001 (Credentials in Files)</span>
+      <div style="padding:20px 22px;">
+        <h3 style="margin:0 0 6px; font-size:17px; color:#0d1b2a;">Adobe Acrobat Reader Zero-Day CVE-2026-34621 — Exploited Since December 2025 via Malicious PDFs</h3>
+        <div style="font-size:12px; color:#666; margin-bottom:12px; display:flex; flex-wrap:wrap; gap:16px;">
+          <span>🏢 <strong>Source:</strong> <a href="https://thehackernews.com/2026/04/adobe-patches-actively-exploited.html" style="color:#3a7bd5;">The Hacker News</a> &amp; <a href="https://www.helpnetsecurity.com/2026/04/13/adobe-acrobat-reader-cve-2026-34621-emergency-fix/" style="color:#3a7bd5;">Help Net Security</a></span>
+          <span>📅 <strong>Published:</strong> April 11–13, 2026</span>
+          <span>🎯 <strong>CVE:</strong> CVE-2026-34621 (CVSS 8.6)</span>
         </div>
-        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
-          <a href="https://www.bleepingcomputer.com/news/security/data-breach-at-edtech-giant-mcgraw-hill-affects-135-million-accounts/" style="color:#1a6faf; font-size:13px; text-decoration:underline;">→ BleepingComputer – McGraw Hill</a>
-          <a href="https://www.theregister.com/2026/04/13/shinyhunters_rockstar_breach/" style="color:#1a6faf; font-size:13px; text-decoration:underline;">→ The Register – Rockstar Games</a>
-          <a href="https://cybersecuritynews.com/rockstars-gta-game-hacked/" style="color:#1a6faf; font-size:13px; text-decoration:underline;">→ CyberSecurityNews – Rockstar Analysis</a>
-        </div>
-        <p style="font-size:14px; line-height:1.75; margin:0; color:#2c2c2c;">
-          ShinyHunters conducted two high-profile extortion campaigns this week targeting SaaS integration weaknesses rather than core infrastructure. Rockstar Games confirmed a breach after ShinyHunters exploited Anodot, an AI-powered cloud cost monitoring SaaS, extracting authentication tokens that allowed them to impersonate a legitimate internal service and access Rockstar's connected Snowflake data warehouse; notably, no vulnerability in Snowflake itself was exploited — the tokens provided trusted, seemingly legitimate access. The leaked archive contains 78.6 million records described as a multi-domain analytics dataset used for GTA Online and Red Dead Online. Simultaneously, McGraw Hill confirmed a massive data leak of roughly 13.5 million user accounts; the breach stemmed from a misconfiguration in a third-party environment hosted by Salesforce, with ShinyHunters claiming responsibility and
+        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-bottom:14px; font-size:12px;">
+          <div style="background:#f5f6fa; border-radius:6px; padding:10px;">
+            <div style="color:#666; text-transform:uppercase; font-size:10px; letter-spacing:1px; margin-bottom:4px;">Severity (S)</div>
+            <div style="font-weight
 </body>
 </html>
