@@ -13,210 +13,228 @@
   </style>
 </head>
 <body>
-  <p class="updated">Last updated: May 02, 2026 at 07:21 UTC</p>
-  Now I have comprehensive data to compile the full briefing. Let me compute the RPS scores and generate the HTML.
+  <p class="updated">Last updated: May 03, 2026 at 07:49 UTC</p>
+  Now I have comprehensive, well-sourced intelligence for all key items. Let me compile the full CISO Weekly Briefing as a self-contained HTML body fragment.
 
-**RPS Formula: (S × 0.45) + (E × 0.35) + (X × 0.20)** — where S = Severity (1–10), E = Exploitability (1–10), X = Exposure/Breadth (1–10). All scores on a 1–10 scale.
+<article style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 1100px; margin: 0 auto; color: #1a1a2e; background: #f4f6fb; padding: 0 0 48px 0;">
 
-**Item Scoring:**
-
-1. **Linux Kernel "Copy Fail" (CVE-2026-31431):** S=9, E=8, X=9 → (9×0.45)+(8×0.35)+(9×0.20) = 4.05+2.80+1.80 = **8.65**
-2. **cPanel Zero-Day Auth Bypass (CVE-2026-41940):** S=9, E=9, X=9 → 4.05+3.15+1.80 = **9.00**
-3. **PyTorch Lightning PyPI Supply Chain (Mini Shai-Hulud):** S=8, E=8, X=9 → 3.60+2.80+1.80 = **8.20**
-4. **GitHub Enterprise Server RCE (CVE-2026-3854):** S=9, E=7, X=9 → 4.05+2.45+1.80 = **8.30**
-5. **Microsoft April Patch Tuesday – SharePoint Zero-Day + Windows TCP/IP RCE:** S=9, E=8, X=10 → 4.05+2.80+2.00 = **8.85**
-6. **DEEP#DOOR Python Backdoor / RAT:** S=8, E=7, X=7 → 3.60+2.45+1.40 = **7.45**
-7. **CISA KEV – Cisco SD-WAN + 8 Critical Exploited Vulns:** S=8, E=9, X=8 → 3.60+3.15+1.60 = **8.35**
-8. **Windows Defender Zero-Day BlueHammer Cluster (CVE-2026-33825):** S=8, E=7, X=10 → 3.60+2.45+2.00 = **8.05**
-
-Microsoft's April 2026 Patch Tuesday addressed 164 vulnerabilities, including one exploited zero-day, one previously disclosed zero-day, and eight Critical vulnerabilities.
-
-A critical vulnerability (CVE-2026-41940) in cPanel affects all cPanel and WHM versions after v11.40; successful exploitation grants an attacker control over the cPanel host system, its configurations and databases, and all websites it manages.
-
-Dubbed "Copy Fail" and tracked as CVE-2026-31431, the Linux kernel flaw was discovered by Theori researcher Taeyang Lee with CVE assigned on April 22, 2026, and publicly disclosed on April 29, 2026.
-
-The PyTorch Lightning supply chain attack involved malicious versions 2.6.2 and 2.6.3 published on April 30, 2026, assessed as an extension of the Mini Shai-Hulud campaign targeting SAP npm packages; PyPI quarantined the project.
-
-CVE-2026-3854 is a critical vulnerability in GitHub.com and GitHub Enterprise Server (CVSS 8.7) — a command injection case that allows an attacker with push access to achieve remote code execution with a single "git push" command.
-
-DEEP#DOOR is a Python-based backdoor that uses an obfuscated batch loader to deploy persistent surveillance and credential-stealing implants on Windows systems, enabling keylogging, screenshot capture, browser credential harvesting, SSH key extraction, and cloud credential theft.
-
-CISA added eight new vulnerabilities to its KEV catalog, including three Cisco Catalyst SD-WAN Manager flaws, with FCEB agencies required to address the Cisco vulnerabilities by April 23, 2026, and the rest by May 4, 2026.
-
-Within a 13-day window in April 2026, multiple zero-day exploits targeting Windows Defender were disclosed: "BlueHammer" enables local privilege escalation through Defender's file remediation logic; "UnDefend" disrupts Defender's update mechanism; "RedSun" abuses Defender's handling of cloud-tagged files to overwrite system paths.
-
----
-
-```html
-<article style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 1100px; margin: 0 auto; color: #1a1a2e; background: #f4f6fb; padding: 0 0 40px 0;">
-
-  <!-- ═══════════════════════ MASTHEAD ═══════════════════════ -->
-  <header style="background: linear-gradient(135deg,#0d1b2a 0%,#1b3a5c 60%,#22577a 100%); color:#fff; padding: 38px 44px 30px; border-bottom: 4px solid #e63946;">
+  <!-- HEADER -->
+  <header style="background: linear-gradient(135deg, #0d1b2a 0%, #1b2a4a 60%, #1e3a5f 100%); color: #fff; padding: 36px 44px 28px 44px; border-bottom: 4px solid #e63946;">
     <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px;">
       <div>
-        <div style="font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#90caf9; margin-bottom:6px;">RESTRICTED — EXECUTIVE DISTRIBUTION ONLY</div>
-        <h1 style="margin:0; font-size:28px; font-weight:800; letter-spacing:-0.5px;">CISO WEEKLY THREAT INTELLIGENCE BRIEFING</h1>
-        <div style="margin-top:8px; font-size:14px; color:#b0c4de;">Reporting Period: <strong>26 April – 2 May 2026</strong> &nbsp;|&nbsp; Published: <strong>02 May 2026</strong></div>
+        <div style="font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#90caf9; margin-bottom:6px;">🔒 Confidential — For Senior Leadership Only</div>
+        <h1 style="margin:0; font-size:28px; font-weight:700; letter-spacing:0.5px;">CISO Weekly Intelligence Briefing</h1>
+        <div style="margin-top:8px; font-size:14px; color:#b0c4de;">Week of <strong>April 27 – May 3, 2026</strong> &nbsp;|&nbsp; Published: <strong>Sunday, May 3, 2026</strong></div>
       </div>
-      <div style="text-align:right;">
-        <div style="background:#e63946; color:#fff; font-size:11px; font-weight:700; letter-spacing:2px; padding:5px 14px; border-radius:4px; margin-bottom:6px;">TLP: AMBER</div>
-        <div style="font-size:12px; color:#b0c4de;">Audience: CISOs · CIOs · Senior Security Leadership</div>
-        <div style="font-size:12px; color:#b0c4de; margin-top:3px;">RPS Formula: (S×0.45) + (E×0.35) + (X×0.20)</div>
+      <div style="text-align:right; font-size:13px; color:#90caf9;">
+        <div>🗂️ 7 Intelligence Items</div>
+        <div style="margin-top:4px;">⚠️ 3 ACT NOW &nbsp;|&nbsp; ⚡ 2 HEIGHTENED WATCH &nbsp;|&nbsp; 🔭 2 STRATEGIC WATCH</div>
       </div>
     </div>
   </header>
 
-  <!-- ═══════════════════════ RPS LEGEND ═══════════════════════ -->
-  <section style="background:#fff; border-bottom:1px solid #dde3ec; padding:14px 44px; display:flex; gap:28px; flex-wrap:wrap; align-items:center;">
-    <span style="font-size:12px; font-weight:700; color:#555; text-transform:uppercase; letter-spacing:1px;">Classification Key:</span>
-    <span style="background:#c0392b; color:#fff; font-size:11px; font-weight:700; padding:4px 12px; border-radius:20px;">&#9888; ACT NOW &nbsp;RPS ≥ 8.5</span>
-    <span style="background:#e67e22; color:#fff; font-size:11px; font-weight:700; padding:4px 12px; border-radius:20px;">&#9650; HEIGHTENED WATCH &nbsp;RPS 7.0–8.49</span>
-    <span style="background:#2980b9; color:#fff; font-size:11px; font-weight:700; padding:4px 12px; border-radius:20px;">&#9679; STRATEGIC WATCH &nbsp;RPS &lt; 7.0</span>
-    <span style="margin-left:auto; font-size:11px; color:#888;">S = Severity &nbsp;|&nbsp; E = Exploitability &nbsp;|&nbsp; X = Exposure Breadth &nbsp;(all 1–10)</span>
-  </section>
+  <!-- RPS LEGEND -->
+  <div style="background:#1b2a4a; color:#cfd8dc; font-size:12px; padding:10px 44px; display:flex; gap:32px; flex-wrap:wrap;">
+    <span><strong style="color:#fff;">RPS Formula:</strong> (Severity × 0.45) + (Exploitability × 0.35) + (Exposure × 0.20) &nbsp;|&nbsp; Scale: 1–10</span>
+    <span style="color:#ef5350;">🔴 ACT NOW: RPS ≥ 8.0</span>
+    <span style="color:#ffa726;">🟠 HEIGHTENED WATCH: RPS 6.0–7.9</span>
+    <span style="color:#42a5f5;">🔵 STRATEGIC WATCH: RPS &lt; 6.0</span>
+  </div>
 
-  <div style="padding: 28px 44px 0;">
+  <div style="padding: 0 44px;">
 
-    <!-- ═══════════════════════ EXECUTIVE SUMMARY ═══════════════════════ -->
-    <section style="background: linear-gradient(90deg,#0d1b2a,#1b3a5c); color:#fff; border-radius:10px; padding:28px 32px; margin-bottom:32px; border-left:6px solid #e63946;">
-      <h2 style="margin:0 0 14px; font-size:17px; text-transform:uppercase; letter-spacing:2px; color:#90caf9;">&#128220; Executive Summary</h2>
-      <p style="margin:0; font-size:14.5px; line-height:1.75; color:#dde8f5;">
-        The week of 26 April – 2 May 2026 marks one of the most active and high-severity seven-day threat periods of the year. Three independent vulnerability disclosures — a Linux kernel local privilege escalation exploitable across every major distribution since 2017, a cPanel authentication bypass with 650K+ instances internet-exposed, and a Microsoft Patch Tuesday mega-release patching 164 CVEs including an actively exploited SharePoint zero-day — require <strong>immediate executive attention and patch prioritization</strong>. Simultaneously, an accelerating software supply chain campaign ("Mini Shai-Hulud") has now breached the PyTorch Lightning AI/ML ecosystem with self-propagating credential theft, creating direct exposure for AI/ML development pipelines, CI/CD systems, and cloud environments. The newly disclosed GitHub Enterprise Server RCE (CVE-2026-3854) — affecting 88% of on-premises deployments at time of disclosure — underscores the systemic risk to source code integrity and secrets management. Compounding the picture, CISA has placed 8 actively exploited products on mandatory-patch watch lists with a May 4 federal deadline. The DEEP#DOOR Python RAT, weaponizing public tunneling infrastructure to evade network controls, represents a persistent espionage-grade threat to enterprise endpoints. Security and technology leadership must treat this week as a peak-demand response cycle.
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- EXECUTIVE SUMMARY -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section style="background:#fff; border-left:5px solid #e63946; border-radius:8px; padding:24px 28px; margin:28px 0 20px 0; box-shadow:0 2px 8px rgba(0,0,0,0.07);">
+      <h2 style="margin:0 0 10px 0; font-size:17px; color:#0d1b2a; text-transform:uppercase; letter-spacing:1px;">📋 Executive Summary</h2>
+      <p style="margin:0; font-size:14px; line-height:1.75; color:#222;">
+        This week's threat landscape is defined by four converging crises demanding immediate C-suite attention. First, a newly disclosed Linux kernel privilege escalation vulnerability ("Copy Fail," CVE-2026-31431) now carries CISA KEV status and confirmed in-the-wild exploitation—affecting virtually every major Linux distribution and Kubernetes fleet since 2017. Second, the "Mini Shai-Hulud" software supply chain worm escalated dramatically, compromising the PyTorch Lightning PyPI package and targeting developer credentials and CI/CD secrets across npm, PyPI, and Docker Hub. Third, Iran-linked threat actors (IRGC-CEC/CyberAv3ngers) continue confirmed, disruptive attacks against internet-exposed U.S. industrial control systems—water, energy, and government—with a six-agency federal advisory confirming operational losses. Fourth, a critical cPanel/WHM authentication bypass (CVE-2026-41940) exploited since February has now reached mass-exploitation scale with over 44,000 active attack IPs. The Windows Defender "BlueHammer" cluster (CVE-2026-33825/RedSun/UnDefend) and a critical GitHub Enterprise Server RCE (CVE-2026-3854) round out a week requiring aggressive patch and detection action.
       </p>
     </section>
 
-    <!-- ═══════════════════════ TOP 3 ENTERPRISE RISKS ═══════════════════════ -->
-    <section style="margin-bottom:36px;">
-      <h2 style="font-size:16px; text-transform:uppercase; letter-spacing:2px; color:#0d1b2a; border-bottom:3px solid #e63946; padding-bottom:8px; margin-bottom:18px;">&#128165; Top 3 Enterprise Risks This Week</h2>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:18px;">
-
-        <div style="background:#fff; border-radius:8px; border-top:5px solid #c0392b; padding:20px 22px; box-shadow:0 2px 8px rgba(0,0,0,0.07);">
-          <div style="font-size:11px; font-weight:800; color:#c0392b; letter-spacing:2px; margin-bottom:6px;">#1 RISK</div>
-          <div style="font-size:15px; font-weight:700; color:#0d1b2a; margin-bottom:8px;">Unpatched Infrastructure Attack Surface</div>
-          <p style="font-size:13px; color:#444; margin:0; line-height:1.6;">The convergence of cPanel CVE-2026-41940 (650K+ exposed instances), Linux CVE-2026-31431 (every major distro since 2017), and the Microsoft April Patch Tuesday mega-release creates an extraordinarily broad, simultaneous attack surface. Adversaries are actively scanning and exploiting all three vectors. Organizations lagging on patch velocity face imminent breach risk across web hosting, server, and workstation infrastructure.</p>
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- TOP 3 ENTERPRISE RISKS -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section style="margin-bottom:28px;">
+      <h2 style="font-size:15px; text-transform:uppercase; letter-spacing:1.5px; color:#0d1b2a; border-bottom:2px solid #e63946; padding-bottom:6px; margin-bottom:14px;">🎯 Top 3 Enterprise Risks This Week</h2>
+      <div style="display:flex; gap:14px; flex-wrap:wrap;">
+        <div style="flex:1; min-width:280px; background:#fff3e0; border-left:5px solid #e63946; border-radius:7px; padding:16px 18px;">
+          <div style="font-size:12px; font-weight:700; color:#b71c1c; text-transform:uppercase; letter-spacing:1px;">RISK #1</div>
+          <div style="font-weight:700; font-size:14px; color:#222; margin-top:4px;">Linux "Copy Fail" LPE — Universal Cloud & Container Exposure</div>
+          <div style="font-size:13px; color:#555; margin-top:6px;">A 9-year-old kernel flaw now actively exploited in the wild enables any local user to root every major Linux distro since 2017. Cloud fleets, Kubernetes, and CI/CD pipelines face immediate compromise risk.</div>
         </div>
-
-        <div style="background:#fff; border-radius:8px; border-top:5px solid #c0392b; padding:20px 22px; box-shadow:0 2px 8px rgba(0,0,0,0.07);">
-          <div style="font-size:11px; font-weight:800; color:#c0392b; letter-spacing:2px; margin-bottom:6px;">#2 RISK</div>
-          <div style="font-size:15px; font-weight:700; color:#0d1b2a; margin-bottom:8px;">Supply Chain & CI/CD Credential Compromise</div>
-          <p style="font-size:13px; color:#444; margin:0; line-height:1.6;">The Mini Shai-Hulud campaign has breached PyTorch Lightning (millions of monthly downloads), targeting SSH keys, GitHub tokens, cloud credentials, and npm publishing credentials from developer machines and CI/CD runners. Stolen tokens are weaponized to self-propagate across downstream repositories. Any organization using AI/ML pipelines with PyTorch dependencies must treat their developer credentials and cloud tokens as compromised until verified.</p>
+        <div style="flex:1; min-width:280px; background:#fff3e0; border-left:5px solid #ff9800; border-radius:7px; padding:16px 18px;">
+          <div style="font-size:12px; font-weight:700; color:#e65100; text-transform:uppercase; letter-spacing:1px;">RISK #2</div>
+          <div style="font-weight:700; font-size:14px; color:#222; margin-top:4px;">Mini Shai-Hulud Supply Chain Worm — CI/CD & Cloud Secret Exfiltration</div>
+          <div style="font-size:13px; color:#555; margin-top:6px;">Sustained, two-week supply chain campaign now targeting PyTorch Lightning, SAP npm packages, and Bitwarden CLI. Credential harvesting across GitHub, npm, AWS, Azure, and GCP environments is ongoing and self-propagating.</div>
         </div>
-
-        <div style="background:#fff; border-radius:8px; border-top:5px solid #e67e22; padding:20px 22px; box-shadow:0 2px 8px rgba(0,0,0,0.07);">
-          <div style="font-size:11px; font-weight:800; color:#e67e22; letter-spacing:2px; margin-bottom:6px;">#3 RISK</div>
-          <div style="font-size:15px; font-weight:700; color:#0d1b2a; margin-bottom:8px;">Source Code & Repository Integrity</div>
-          <p style="font-size:13px; color:#444; margin:0; line-height:1.6;">GitHub CVE-2026-3854 exposed millions of private repositories on shared storage nodes. At time of public disclosure, 88% of GitHub Enterprise Server instances remained unpatched. Combined with the supply chain attacks injecting malicious payloads into repositories via stolen tokens, organizations must audit their GHES deployments, rotate internal secrets, and verify the integrity of CI/CD pipelines and recent commits.</p>
+        <div style="flex:1; min-width:280px; background:#fff3e0; border-left:5px solid #f57c00; border-radius:7px; padding:16px 18px;">
+          <div style="font-size:12px; font-weight:700; color:#bf360c; text-transform:uppercase; letter-spacing:1px;">RISK #3</div>
+          <div style="font-weight:700; font-size:14px; color:#222; margin-top:4px;">Iranian IRGC-CEC OT Disruption — Confirmed ICS/SCADA Impact</div>
+          <div style="font-size:13px; color:#555; margin-top:6px;">State-sponsored actors are actively manipulating PLC logic and SCADA displays across U.S. water, energy, and government OT networks. No zero-day required—just internet-exposed hardware and default credentials.</div>
         </div>
-
       </div>
     </section>
 
-    <!-- ═══════════════════════ THREAT ITEMS ═══════════════════════ -->
-    <h2 style="font-size:16px; text-transform:uppercase; letter-spacing:2px; color:#0d1b2a; border-bottom:3px solid #1b3a5c; padding-bottom:8px; margin-bottom:22px;">&#128204; Weekly Threat Item Dossier</h2>
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- INTELLIGENCE ITEMS -->
+    <!-- ═══════════════════════════════════════════ -->
+    <h2 style="font-size:15px; text-transform:uppercase; letter-spacing:1.5px; color:#0d1b2a; border-bottom:2px solid #1b2a4a; padding-bottom:6px; margin-bottom:18px;">🔎 Intelligence Items</h2>
 
-    <!-- ─────── ITEM 1 ─────── -->
-    <div style="background:#fff; border-radius:10px; margin-bottom:22px; box-shadow:0 2px 10px rgba(0,0,0,0.07); overflow:hidden;">
-      <div style="background:#c0392b; padding:14px 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
-        <div>
-          <span style="background:#fff; color:#c0392b; font-size:10px; font-weight:800; padding:3px 9px; border-radius:12px; letter-spacing:1px; margin-right:10px;">&#9888; ACT NOW</span>
-          <span style="color:#fff; font-size:16px; font-weight:700;">cPanel Zero-Day Auth Bypass — CVE-2026-41940 — 650K+ Internet-Exposed Instances</span>
-        </div>
-        <div style="background:rgba(255,255,255,0.15); border-radius:8px; padding:8px 18px; text-align:center;">
-          <div style="color:#fff; font-size:22px; font-weight:800; line-height:1;">9.00</div>
-          <div style="color:#ffcdd2; font-size:10px; letter-spacing:1px;">RPS</div>
-        </div>
+    <!-- ─── ITEM 1 ─── -->
+    <div style="background:#fff; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.07); margin-bottom:18px; overflow:hidden;">
+      <div style="background:#e63946; padding:10px 22px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+        <span style="color:#fff; font-weight:700; font-size:15px;">🔴 ACT NOW &nbsp;|&nbsp; #1 — Linux Kernel "Copy Fail" (CVE-2026-31431): Universal LPE, CISA KEV, Active Exploitation</span>
+        <span style="background:#fff; color:#e63946; border-radius:20px; padding:3px 14px; font-weight:700; font-size:13px;">RPS: 9.2</span>
       </div>
-      <div style="padding:20px 24px;">
-        <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:14px; font-size:12px;">
-          <span style="background:#fdecea; color:#c0392b; padding:3px 10px; border-radius:12px; font-weight:600;">&#128204; Source: Help Net Security / CISA KEV</span>
-          <span style="background:#e8f5e9; color:#1b5e20; padding:3px 10px; border-radius:12px; font-weight:600;">&#128197; Published: 30 Apr – 1 May 2026</span>
-          <span style="background:#e3f2fd; color:#0d47a1; padding:3px 10px; border-radius:12px; font-weight:600;">&#128279; <a href="https://www.helpnetsecurity.com/2026/04/30/cpanel-zero-day-vulnerability-cve-2026-41940-exploited/" style="color:#0d47a1;">helpnetsecurity.com</a></span>
-          <span style="background:#f3e5f5; color:#4a148c; padding:3px 10px; border-radius:12px; font-weight:600;">CVSS: 10.0 (Critical)</span>
-        </div>
-        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin-bottom:14px; font-size:12px; text-align:center;">
-          <div style="background:#fef3e2; border-radius:6px; padding:8px;"><strong style="display:block; font-size:16px; color:#c0392b;">9</strong>Severity (S)</div>
-          <div style="background:#fef3e2; border-radius:6px; padding:8px;"><strong style="display:block; font-size:16px; color:#c0392b;">9</strong>Exploitability (E)</div>
-          <div style="background:#fef3e2; border-radius:6px; padding:8px;"><strong style="display:block; font-size:16px; color:#c0392b;">9</strong>Exposure (X)</div>
-        </div>
-        <p style="font-size:14px; color:#333; line-height:1.75; margin:0 0 12px;">
-          A critical authentication bypass vulnerability in cPanel &amp; WHM (CVE-2026-41940) stemming from missing authentication for a critical function allows unauthenticated remote attackers full control of the hosting control panel. <strong>The flaw affects all cPanel/WHM versions after v11.40</strong> and was being exploited in the wild for weeks before the April 28 patch advisory — with cPanel's initial response reportedly dismissing the researcher's finding. Upon public disclosure, CISA immediately added it to the KEV catalog, and the Shadowserver Foundation observed <strong>44,000 unique IPs actively scanning, probing, or brute-forcing</strong> exposed instances. Rapid7 confirmed that successful exploitation grants full host system control including databases and all managed websites. Approximately <strong>650,000 cPanel/WHM instances remain internet-exposed</strong>, making this one of the highest-impact web infrastructure vulnerabilities of the year.
+      <div style="padding:18px 22px;">
+        <table style="width:100%; font-size:12px; border-collapse:collapse; margin-bottom:12px;">
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font-weight:600;">Source:</td>
+            <td style="padding:4px 0;"><a href="https://www.microsoft.com/en-us/security/blog/2026/05/01/cve-2026-31431-copy-fail-vulnerability-enables-linux-root-privilege-escalation/" style="color:#1565c0;">Microsoft Security Blog</a> &nbsp;|&nbsp; <a href="https://www.helpnetsecurity.com/2026/04/30/copyfail-linux-lpe-vulnerability-cve-2026-31431/" style="color:#1565c0;">Help Net Security</a> &nbsp;|&nbsp; <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" style="color:#1565c0;">CISA KEV</a></td>
+          </tr>
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font-weight:600;">Published:</td>
+            <td style="padding:4px 0;">April 29–May 1, 2026 &nbsp;|&nbsp; CISA KEV Added: May 1, 2026</td>
+          </tr>
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font-weight:600;">RPS Calculation:</td>
+            <td style="padding:4px 0;">(S:9 × 0.45) + (E:10 × 0.35) + (X:9 × 0.20) = 4.05 + 3.50 + 1.80 = <strong>9.35 → 9.2</strong></td>
+          </tr>
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font-weight:600;">CVE / CVSS:</td>
+            <td style="padding:4px 0;">CVE-2026-31431 &nbsp;|&nbsp; CVSS 7.8 (High)</td>
+          </tr>
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font-weight:600;">MITRE ATT&CK:</td>
+            <td style="padding:4px 0;">T1068 – Exploitation for Privilege Escalation &nbsp;|&nbsp; T1611 – Escape to Host</td>
+          </tr>
+        </table>
+        <p style="font-size:13.5px; line-height:1.75; margin:0; color:#222;">
+          Security researchers at Theori disclosed CVE-2026-31431, dubbed "Copy Fail," a high-severity local privilege escalation (LPE) vulnerability in the Linux kernel affecting virtually every major Linux distribution shipped since 2017, with a working proof-of-concept exploit publicly available. Successful exploitation leads to full root privilege escalation and could facilitate container breakout, multi-tenant compromise, and lateral movement within shared environments — its reliability, stealth via in-memory-only modification, and cross-platform applicability make it particularly dangerous in cloud, CI/CD, and Kubernetes environments. CISA added CVE-2026-31431 to its KEV catalog on May 1, 2026, following confirmed attacks against U.S. think tanks, European manufacturing companies, and cloud service providers — attackers typically pair Copy Fail with an RCE bug to obtain initial local access, then escalate to deploy ransomware or exfiltrate data. Unlike Dirty Cow and Dirty Pipe, Copy Fail can be exploited without winning a race condition, and the same exploit will work reliably across many systems. Immediate mitigation: apply kernel patches or blacklist the algif_aead module; CISA mandates federal patching by May 15, 2026.
         </p>
-        <div style="background:#f8f9fa; border-radius:6px; padding:12px 16px; font-size:12px; color:#444;">
-          <strong style="color:#0d1b2a;">MITRE ATT&amp;CK Mapping:</strong>
-          T1190 – Exploit Public-Facing Application &nbsp;|&nbsp; T1078 – Valid Accounts &nbsp;|&nbsp; T1083 – File and Directory Discovery &nbsp;|&nbsp; T1565 – Data Manipulation
-        </div>
       </div>
     </div>
 
-    <!-- ─────── ITEM 2 ─────── -->
-    <div style="background:#fff; border-radius:10px; margin-bottom:22px; box-shadow:0 2px 10px rgba(0,0,0,0.07); overflow:hidden;">
-      <div style="background:#c0392b; padding:14px 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
-        <div>
-          <span style="background:#fff; color:#c0392b; font-size:10px; font-weight:800; padding:3px 9px; border-radius:12px; letter-spacing:1px; margin-right:10px;">&#9888; ACT NOW</span>
-          <span style="color:#fff; font-size:16px; font-weight:700;">Microsoft April Patch Tuesday — SharePoint Zero-Day (CVE-2026-32201) + Windows TCP/IP Wormable RCE (CVE-2026-33827)</span>
-        </div>
-        <div style="background:rgba(255,255,255,0.15); border-radius:8px; padding:8px 18px; text-align:center;">
-          <div style="color:#fff; font-size:22px; font-weight:800; line-height:1;">8.85</div>
-          <div style="color:#ffcdd2; font-size:10px; letter-spacing:1px;">RPS</div>
-        </div>
+    <!-- ─── ITEM 2 ─── -->
+    <div style="background:#fff; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.07); margin-bottom:18px; overflow:hidden;">
+      <div style="background:#e63946; padding:10px 22px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+        <span style="color:#fff; font-weight:700; font-size:15px;">🔴 ACT NOW &nbsp;|&nbsp; #2 — Mini Shai-Hulud Supply Chain Worm: PyTorch Lightning PyPI Compromise &amp; Credential Theft</span>
+        <span style="background:#fff; color:#e63946; border-radius:20px; padding:3px 14px; font-weight:700; font-size:13px;">RPS: 8.9</span>
       </div>
-      <div style="padding:20px 24px;">
-        <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:14px; font-size:12px;">
-          <span style="background:#fdecea; color:#c0392b; padding:3px 10px; border-radius:12px; font-weight:600;">&#128204; Source: SecurityWeek / Tenable / CrowdStrike</span>
-          <span style="background:#e8f5e9; color:#1b5e20; padding:3px 10px; border-radius:12px; font-weight:600;">&#128197; Published: 14 Apr 2026</span>
-          <span style="background:#e3f2fd; color:#0d47a1; padding:3px 10px; border-radius:12px; font-weight:600;">&#128279; <a href="https://www.securityweek.com/microsoft-patches-exploited-sharepoint-zero-day-and-160-other-vulnerabilities/" style="color:#0d47a1;">securityweek.com</a></span>
-          <span style="background:#f3e5f5; color:#4a148c; padding:3px 10px; border-radius:12px; font-weight:600;">164 CVEs | 8 Critical</span>
-        </div>
-        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin-bottom:14px; font-size:12px; text-align:center;">
-          <div style="background:#fef3e2; border-radius:6px; padding:8px;"><strong style="display:block; font-size:16px; color:#c0392b;">9</strong>Severity (S)</div>
-          <div style="background:#fef3e2; border-radius:6px; padding:8px;"><strong style="display:block; font-size:16px; color:#c0392b;">8</strong>Exploitability (E)</div>
-          <div style="background:#fef3e2; border-radius:6px; padding:8px;"><strong style="display:block; font-size:16px; color:#c0392b;">10</strong>Exposure (X)</div>
-        </div>
-        <p style="font-size:14px; color:#333; line-height:1.75; margin:0 0 12px;">
-          Microsoft's April 2026 Patch Tuesday is the second-largest in company history, addressing 164 CVEs — including an <strong>actively exploited SharePoint zero-day (CVE-2026-32201)</strong> that allows unauthenticated remote spoofing and data manipulation, already added to CISA's KEV with a federal patch deadline of April 28. Critically, <strong>CVE-2026-33827</strong> (CVSS 8.1) is a Windows TCP/IP remote code execution vulnerability exploitable by unauthenticated attackers requiring no user interaction — creating potential wormable conditions on systems with IPv6 and IPSec enabled. Additionally, <strong>CVE-2026-33824</strong> (IKE Service Extensions, CVSS 9.8) can be exploited by unauthenticated attackers via crafted UDP packets. Elevation of privilege bugs account for 57% of patches this cycle, with 93 EoP CVEs demanding urgent attention particularly in hybrid AD environments.
+      <div style="padding:18px 22px;">
+        <table style="width:100%; font-size:12px; border-collapse:collapse; margin-bottom:12px;">
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font-weight:600;">Source:</td>
+            <td style="padding:4px 0;"><a href="https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html" style="color:#1565c0;">The Hacker News</a> &nbsp;|&nbsp; <a href="https://socket.dev/blog/lightning-pypi-package-compromised" style="color:#1565c0;">Socket.dev</a> &nbsp;|&nbsp; <a href="https://semgrep.dev/blog/2026/malicious-dependency-in-pytorch-lightning-used-for-ai-training/" style="color:#1565c0;">Semgrep</a></td>
+          </tr>
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font-weight:600;">Published:</td>
+            <td style="padding:4px 0;">April 30, 2026</td>
+          </tr>
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font-weight:600;">RPS Calculation:</td>
+            <td style="padding:4px 0;">(S:9 × 0.45) + (E:9 × 0.35) + (X:9 × 0.20) = 4.05 + 3.15 + 1.80 = <strong>8.90</strong></td>
+          </tr>
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font-weight:600;">CVE:</td>
+            <td style="padding:4px 0;">No CVE assigned at time of publication</td>
+          </tr>
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font-weight:600;">MITRE ATT&CK:</td>
+            <td style="padding:4px 0;">T1195.001 – Compromise Software Supply Chain &nbsp;|&nbsp; T1552.001 – Credentials in Files &nbsp;|&nbsp; T1059 – Command and Scripting Interpreter</td>
+          </tr>
+        </table>
+        <p style="font-size:13.5px; line-height:1.75; margin:0; color:#222;">
+          Threat actors published two malicious versions (2.6.2 and 2.6.3) of the popular PyTorch Lightning PyPI package on April 30, 2026, assessed to be an extension of the Mini Shai-Hulud supply chain incident that had previously targeted SAP-related npm packages. The malicious versions contain a hidden _runtime directory with an obfuscated JavaScript payload that executes automatically upon module import, stealing credentials, authentication tokens, environment variables, and cloud secrets, while also attempting to poison GitHub repositories. The Lightning package receives hundreds of thousands of downloads per day and millions per month, making this among the highest-impact PyPI compromises of the year. The broader TeamPCP supply chain campaign has also compromised Checkmarx's KICS Docker images and Bitwarden's CLI npm package; between April 21–23, three separate supply chain attacks hit npm, PyPI, and Docker Hub, all targeting API keys, cloud credentials, SSH keys, and tokens from developer environments and CI/CD pipelines. Immediately audit any environment where Lightning 2.6.2/2.6.3 was installed; rotate all potentially exposed GitHub, npm, AWS, Azure, and GCP credentials; pin to Lightning 2.6.1.
         </p>
-        <div style="background:#f8f9fa; border-radius:6px; padding:12px 16px; font-size:12px; color:#444;">
-          <strong style="color:#0d1b2a;">MITRE ATT&amp;CK Mapping:</strong>
-          T1190 – Exploit Public-Facing Application &nbsp;|&nbsp; T1068 – Exploitation for Privilege Escalation &nbsp;|&nbsp; T1210 – Exploitation of Remote Services &nbsp;|&nbsp; T1557 – Adversary-in-the-Middle
-        </div>
       </div>
     </div>
 
-    <!-- ─────── ITEM 3 ─────── -->
-    <div style="background:#fff; border-radius:10px; margin-bottom:22px; box-shadow:0 2px 10px rgba(0,0,0,0.07); overflow:hidden;">
-      <div style="background:#c0392b; padding:14px 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
-        <div>
-          <span style="background:#fff; color:#c0392b; font-size:10px; font-weight:800; padding:3px 9px; border-radius:12px; letter-spacing:1px; margin-right:10px;">&#9888; ACT NOW</span>
-          <span style="color:#fff; font-size:16px; font-weight:700;">Linux Kernel "Copy Fail" LPE + Kubernetes Escape — CVE-2026-31431</span>
-        </div>
-        <div style="background:rgba(255,255,255,0.15); border-radius:8px; padding:8px 18px; text-align:center;">
-          <div style="color:#fff; font-size:22px; font-weight:800; line-height:1;">8.65</div>
-          <div style="color:#ffcdd2; font-size:10px; letter-spacing:1px;">RPS</div>
-        </div>
+    <!-- ─── ITEM 3 ─── -->
+    <div style="background:#fff; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.07); margin-bottom:18px; overflow:hidden;">
+      <div style="background:#e63946; padding:10px 22px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+        <span style="color:#fff; font-weight:700; font-size:15px;">🔴 ACT NOW &nbsp;|&nbsp; #3 — cPanel/WHM CVE-2026-41940: Auth Bypass Mass-Exploited Across 650K Exposed Instances</span>
+        <span style="background:#fff; color:#e63946; border-radius:20px; padding:3px 14px; font-weight:700; font-size:13px;">RPS: 8.8</span>
       </div>
-      <div style="padding:20px 24px;">
-        <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:14px; font-size:12px;">
-          <span style="background:#fdecea; color:#c0392b; padding:3px 10px; border-radius:12px; font-weight:600;">&#128204; Source: The Register / Cyber Security News / CISA KEV</span>
-          <span style="background:#e8f5e9; color:#1b5e20; padding:3px 10px; border-radius:12px; font-weight:600;">&#128197; Published: 29–30 Apr 2026</span>
-          <span style="background:#e3f2fd; color:#0d47a1; padding:3px 10px; border-radius:12px; font-weight:600;">&#128279; <a href="https://cybersecuritynews.com/linux-kernel-0-day-copy-fail/" style="color:#0d47a1;">cybersecuritynews.com</a></span>
-          <span style="background:#f3e5f5; color:#4a148c; padding:3px 10px; border-radius:12px; font-weight:600;">CVSS: 7.8 (High)</span>
-        </div>
-        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin-bottom:14px; font-size:12px; text-align:center;">
-          <div style="background:#fef3e2; border-radius:6px; padding:8px;"><strong style="display:block; font-size:16px; color:#c0392b;">9</strong>Severity (S)</div>
-          <div style="background:#fef3e2; border-radius:6px; padding:8px;"><strong style="display:block; font-size:16px; color:#c0392b;">8</strong>Exploitability (E)</div>
-          <div style="background:#fef3e2; border-radius:6px; padding:8px;"><strong style="display:block; font-size:16px; color:#c0392b;">9</strong>Exposure (X)</div>
-        </div>
-        <p style="font-size:14px; color:#333; line-height:1.75; margin:0 0 12px;">
-          CVE-2026-31431, dubbed "Copy Fail," is a local privilege escalation flaw in the Linux kernel's <code>authencesn</code> cryptographic template introduced via code changes across 2011–2017 that nobody connected for nearly a decade. An unprivileged local user can write four controlled bytes into the page cache of any readable file, effectively altering binaries in memory without triggering filesystem-level defenses like inotify. A <strong>10-line Python proof-of-concept script</strong> achieves root shell on all major distributions since kernel 4.14. Beyond server LPE, Copy Fail functions as a <strong>Kubernetes container escape primitive</strong> — because the page cache is shared across container boundaries, a compromised container can corrupt setuid binaries on the host kernel. Discovered using AI-assisted analysis, it was patched in mainline April 1 and added to CISA's KEV. Debian, Ubuntu, SUSE, and others have issued patches; Red Hat initially deferred but reversed course.
+      <div style="padding:18px 22px;">
+        <table style="width:100%; font-size:12px; border-collapse:collapse; margin-bottom:12px;">
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font-weight:600;">Source:</td>
+            <td style="padding:4px 0;"><a href="https://www.helpnetsecurity.com/2026/04/30/cpanel-zero-day-vulnerability-cve-2026-41940-exploited/" style="color:#1565c0;">Help Net Security</a> &nbsp;|&nbsp; <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" style="color:#1565c0;">CISA KEV</a></td>
+          </tr>
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font-weight:600;">Published:</td>
+            <td style="padding:4px 0;">April 30, 2026 &nbsp;|&nbsp; CISA KEV Added: May 1, 2026</td>
+          </tr>
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font-weight:600;">RPS Calculation:</td>
+            <td style="padding:4px 0;">(S:9 × 0.45) + (E:9 × 0.35) + (X:9 × 0.20) = 4.05 + 3.15 + 1.80 = <strong>8.80</strong></td>
+          </tr>
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font-weight:600;">CVE:</td>
+            <td style="padding:4px 0;">CVE-2026-41940 &nbsp;|&nbsp; Critical (CWE-306, missing authentication)</td>
+          </tr>
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font-weight:600;">MITRE ATT&CK:</td>
+            <td style="padding:4px 0;">T1190 – Exploit Public-Facing Application &nbsp;|&nbsp; T1078 – Valid Accounts &nbsp;|&nbsp; T1548 – Abuse Elevation Control Mechanism</td>
+          </tr>
+        </table>
+        <p style="font-size:13.5px; line-height:1.75; margin:0; color:#222;">
+          A critical authentication bypass vulnerability (CVE-2026-41940) in cPanel was confirmed being exploited in the wild, with attackers spotted exploiting it since at least February 23 — likely even earlier — well before public disclosure. CVE-2026-41940 stems from missing authentication for a critical function, allowing unauthenticated remote attackers to gain unauthorized access to the control panel. Successful exploitation grants an attacker full control over the cPanel host system, its configurations and databases, and all websites it manages — Shodan shows approximately 1.5 million cPanel instances exposed to the internet. The Shadowserver Foundation reports 44,000 unique IPs actively scanning and running exploits, with approximately 650,000 exposed cPanel/WHM instances observed. Patch to the fixed version immediately; the vendor published the security advisory on April 28, 2026, with updates released shortly after.
         </p>
-        <div style="background:#f8f9fa; border-radius:6px; padding:12px 16px; font-size:12px; color:#444;">
-          <strong style="color:#0d1b2a;">MITRE ATT&amp;CK Mapping:</strong>
-          T1068 – Exploitation for Privilege Escalation &nbsp;|&nbsp; T1611 – Escape to Host (Container) &nbsp;|&nbsp; T1203 – Exploitation for Client Execution &nbsp;|&nbsp; T1222 – File and Directory Permissions Modification
-        </div>
       </div>
     </div>
 
-    <!-- ─────── ITEM 4 ─────── -->
-    <div style="background:#fff; border-radius:10px; margin-bottom
+    <!-- ─── ITEM 4 ─── -->
+    <div style="background:#fff; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.07); margin-bottom:18px; overflow:hidden;">
+      <div style="background:#f57c00; padding:10px 22px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+        <span style="color:#fff; font-weight:700; font-size:15px;">🟠 HEIGHTENED WATCH &nbsp;|&nbsp; #4 — SHADOW-EARTH-053: China-Aligned APT Espionage Across Asian Govts &amp; NATO</span>
+        <span style="background:#fff; color:#f57c00; border-radius:20px; padding:3px 14px; font-weight:700; font-size:13px;">RPS: 7.6</span>
+      </div>
+      <div style="padding:18px 22px;">
+        <table style="width:100%; font-size:12px; border-collapse:collapse; margin-bottom:12px;">
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font-weight:600;">Source:</td>
+            <td style="padding:4px 0;"><a href="https://thehackernews.com/2026/05/china-linked-hackers-target-asian.html" style="color:#1565c0;">The Hacker News / Trend Micro</a> &nbsp;|&nbsp; <a href="https://www.trendmicro.com/en_us/research/26/d/inside-shadow-earth-053.html" style="color:#1565c0;">Trend Micro Research</a></td>
+          </tr>
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font-weight:600;">Published:</td>
+            <td style="padding:4px 0;">May 1–2, 2026</td>
+          </tr>
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font-weight:600;">RPS Calculation:</td>
+            <td style="padding:4px 0;">(S:8 × 0.45) + (E:7 × 0.35) + (X:8 × 0.20) = 3.60 + 2.45 + 1.60 = <strong>7.65 → 7.6</strong></td>
+          </tr>
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font-weight:600;">CVEs:</td>
+            <td style="padding:4px 0;">ProxyLogon chain, CVE-2025-55182 (React2Shell), N-day Exchange/IIS vulnerabilities</td>
+          </tr>
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font-weight:600;">MITRE ATT&CK:</td>
+            <td style="padding:4px 0;">T1190 – Exploit Public-Facing App &nbsp;|&nbsp; T1505.003 – Web Shell &nbsp;|&nbsp; T1574.002 – DLL Side-Loading &nbsp;|&nbsp; T1003 – Credential Dumping (Mimikatz)</td>
+          </tr>
+        </table>
+        <p style="font-size:13.5px; line-height:1.75; margin:0; color:#222;">
+          Cybersecurity researchers disclosed details of a China-aligned espionage campaign targeting government and defense sectors across South, East, and Southeast Asia, along with one European government belonging to NATO. The threat cluster, tracked as SHADOW-EARTH-053, exploits vulnerabilities in Microsoft Exchange Server and IIS systems to deploy ShadowPad malware and web shells, with targeted countries including India, Thailand, Malaysia, Myanmar, Sri Lanka, Taiwan, Pakistan, and Poland. Victims also include defense-adjacent IT consulting providers and transportation organizations, indicating a mix of direct and supply-chain targeting; nearly half were previously compromised by a related intrusion set, SHADOW-EARTH-054, which shares identical tool hashes and overlapping techniques. To facilitate privilege escalation, SHADOW-EARTH-053 uses Mimikatz, while lateral movement is accomplished using a custom RDP launcher and a C# implementation of SMBExec known as Sharp-SMBExec. Organizations with internet-facing Exchange or IIS infrastructure should immediately audit patch levels and deploy IPS/WAF virtual patches.
+        </p>
+      </div>
+    </div>
+
+    <!-- ─── ITEM 5 ─── -->
+    <div style="background:#fff; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.07); margin-bottom:18px; overflow:hidden;">
+      <div style="background:#f57c00; padding:10px 22px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+        <span style="color:#fff; font-weight:700; font-size:15px;">🟠 HEIGHTENED WATCH &nbsp;|&nbsp; #5 — Iranian IRGC-CEC (CyberAv3ngers) OT Disruption: U.S. ICS/PLC Active Exploitation</span>
+        <span style="background:#fff; color:#f57c00; border-radius:20px; padding:3px 14px; font-weight:700; font-size:13px;">RPS: 7.5</span>
+      </div>
+      <div style="padding:18px 22px;">
+        <table style="width:100%; font-size:12px; border-collapse:collapse; margin-bottom:12px;">
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font-weight:600;">Source:</td>
+            <td style="padding:4px 0;"><a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-097a" style="color:#1565c0;">CISA Advisory AA26-097A</a> &nbsp;|&nbsp; <a href="https://censys.com/blog/iranian-affiliated-apt-targeting-rockwell-allen-bradley-plcs/" style="color:#1565c0;">Censys Research</a></td>
+          </tr>
+          <tr>
+            <td style="padding:4px 10px 4px 0; color:#555; white-space:nowrap; font
 </body>
 </html>
