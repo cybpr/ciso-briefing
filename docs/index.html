@@ -13,218 +13,213 @@
   </style>
 </head>
 <body>
-  <p class="updated">Last updated: May 05, 2026 at 07:56 UTC</p>
-  Now I have comprehensive data to build the full weekly CISO briefing. Let me compile it with RPS scoring and full analysis.
+  <p class="updated">Last updated: May 06, 2026 at 08:09 UTC</p>
+  Now I have comprehensive, well-sourced intelligence across seven major items. Let me compile and render the full CISO briefing as a self-contained HTML fragment.
 
-**RPS Formula:** (Severity × 0.45) + (Exploitability × 0.35) + (Exposure × 0.20), all inputs scored 1–10.
+<br>
 
-Here is the fully rendered briefing:
+<article style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 1100px; margin: 0 auto; color: #1a1a2e; background: #f4f6fb; padding: 0 0 40px 0;">
 
----
+<!-- HEADER -->
+<header style="background: linear-gradient(135deg, #0d1b2a 0%, #1b3a5c 100%); color: #fff; padding: 36px 48px 28px 48px; border-radius: 0 0 8px 8px;">
+  <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px;">
+    <div>
+      <div style="font-size:11px; letter-spacing:3px; color:#7eb8e8; text-transform:uppercase; margin-bottom:6px;">Confidential — Senior Leadership Distribution Only</div>
+      <h1 style="margin:0 0 6px 0; font-size:26px; font-weight:800; letter-spacing:-0.5px;">Weekly CISO Intelligence Briefing</h1>
+      <div style="font-size:14px; color:#a8c8e8;">Reporting Period: <strong>30 April – 06 May 2026</strong> &nbsp;|&nbsp; Published: <strong>06 May 2026</strong></div>
+    </div>
+    <div style="text-align:right;">
+      <div style="font-size:11px; color:#7eb8e8; text-transform:uppercase; letter-spacing:2px;">Threat Posture</div>
+      <div style="font-size:36px; font-weight:900; color:#f4a261; margin-top:2px;">ELEVATED</div>
+    </div>
+  </div>
+</header>
 
-<article style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 980px; margin: 0 auto; color: #1a1a2e; background: #f8f9fc; padding: 0 0 40px 0;">
+<!-- CLASSIFICATION LEGEND -->
+<section style="background:#fff; margin:24px 32px 0 32px; border-radius:8px; padding:16px 24px; display:flex; gap:28px; flex-wrap:wrap; border: 1px solid #e0e7ef;">
+  <div style="font-size:12px; font-weight:700; color:#555; text-transform:uppercase; letter-spacing:1px; align-self:center;">Classification Key &amp; RPS Formula:</div>
+  <span style="background:#c0392b; color:#fff; border-radius:4px; padding:4px 12px; font-size:12px; font-weight:700;">ACT NOW &nbsp;RPS ≥ 7.5</span>
+  <span style="background:#e67e22; color:#fff; border-radius:4px; padding:4px 12px; font-size:12px; font-weight:700;">HEIGHTENED WATCH &nbsp;5.0–7.4</span>
+  <span style="background:#2980b9; color:#fff; border-radius:4px; padding:4px 12px; font-size:12px; font-weight:700;">STRATEGIC WATCH &nbsp;&lt;5.0</span>
+  <div style="font-size:12px; color:#555; align-self:center;"><strong>RPS</strong> = (Severity × 0.45) + (Exploitability × 0.35) + (Exposure × 0.20) &nbsp;|&nbsp; Scale: 1–10</div>
+</section>
 
-  <!-- HEADER BANNER -->
-  <header style="background: linear-gradient(135deg, #0d1b2a 0%, #1b3a5c 60%, #22577a 100%); color: #fff; padding: 36px 44px 28px 44px; border-radius: 0 0 8px 8px;">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px;">
+<!-- EXECUTIVE SUMMARY -->
+<section style="margin:24px 32px 0 32px; background: linear-gradient(90deg,#1b3a5c 0%,#22577a 100%); color:#fff; border-radius:8px; padding:24px 32px;">
+  <h2 style="margin:0 0 12px 0; font-size:16px; text-transform:uppercase; letter-spacing:2px; color:#7eb8e8;">Executive Summary</h2>
+  <p style="margin:0; font-size:14px; line-height:1.7;">
+    This week delivered a convergence of critical infrastructure vulnerabilities, active zero-day exploitation, and a sustained campaign by the <strong>ShinyHunters</strong> extortion group that collectively affected hundreds of millions of individuals. The headline threat is a critical cPanel/WHM authentication bypass (CVE-2026-41940) under active exploitation, with some attacks leading to complete wipe of entire websites and backups. In parallel, the Linux "Copy Fail" vulnerability (CVE-2026-31431) enables root privilege escalation across cloud environments and Kubernetes workloads, with a working exploit already in the wild. Progress Software also disclosed a CVSS 9.8 MOVEit Automation authentication bypass (CVE-2026-4670), with exploitation potentially leading to unauthorized access, administrative control, and data exposure. On the threat actor front, Instructure, the company behind the widely-used Canvas LMS, confirmed a data breach — with ShinyHunters claiming responsibility and alleging data from nearly 9,000 educational institutions affecting 275 million individuals, plus billions of private messages. Strategically, AI automation and Ransomware-as-a-Service (RaaS) platforms have fundamentally altered the threat landscape by lowering the capability bar of entry and enabling nation-state actors to automate up to 90% of intrusions. Leadership should treat patching velocity and identity security posture as board-level priorities this week.
+  </p>
+</section>
+
+<!-- TOP 3 ENTERPRISE RISKS -->
+<section style="margin:24px 32px 0 32px;">
+  <h2 style="margin:0 0 14px 0; font-size:15px; text-transform:uppercase; letter-spacing:2px; color:#1b3a5c;">🔴 Top 3 Enterprise Risks This Week</h2>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px;">
+
+    <div style="background:#fff; border-left:5px solid #c0392b; border-radius:6px; padding:18px 20px; box-shadow:0 2px 8px rgba(0,0,0,0.07);">
+      <div style="font-size:11px; font-weight:700; color:#c0392b; text-transform:uppercase; letter-spacing:1px; margin-bottom:6px;">Risk #1 — Unpatched MFT Infrastructure</div>
+      <div style="font-size:13px; line-height:1.6; color:#333;">
+        Whether Cl0p or another group moves first on CVE-2026-4670, the 2023 campaign established that the exploitation window for critical MOVEit flaws is measured in hours after public disclosure. Any internet-exposed MOVEit Automation instance not yet patched is in a pre-breach state.
+      </div>
+    </div>
+
+    <div style="background:#fff; border-left:5px solid #c0392b; border-radius:6px; padding:18px 20px; box-shadow:0 2px 8px rgba(0,0,0,0.07);">
+      <div style="font-size:11px; font-weight:700; color:#c0392b; text-transform:uppercase; letter-spacing:1px; margin-bottom:6px;">Risk #2 — SSO/SaaS Identity as Primary Attack Surface</div>
+      <div style="font-size:13px; line-height:1.6; color:#333;">
+        ShinyHunters has been behind widespread vishing campaigns targeting employees' Microsoft Entra, Okta, and Google SSO accounts, then stealing data from connected SaaS applications such as Salesforce, Microsoft 365, Google Workspace, SAP, Slack, and others. Any enterprise relying on a single SSO gateway without phishing-resistant MFA is at direct risk.
+      </div>
+    </div>
+
+    <div style="background:#fff; border-left:5px solid #e67e22; border-radius:6px; padding:18px 20px; box-shadow:0 2px 8px rgba(0,0,0,0.07);">
+      <div style="font-size:11px; font-weight:700; color:#e67e22; text-transform:uppercase; letter-spacing:1px; margin-bottom:6px;">Risk #3 — AI-Accelerated Ransomware Proliferation</div>
+      <div style="font-size:13px; line-height:1.6; color:#333;">
+        The growth in new ransomware groups is being boosted by white-label ransomware services, while adversaries are increasingly deploying AI-enabled malware directly in live operations. Only 7% of respondents feel extremely confident their organization could successfully navigate a ransomware attack in 2026.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- THREAT INTELLIGENCE ITEMS -->
+<section style="margin:28px 32px 0 32px;">
+  <h2 style="margin:0 0 16px 0; font-size:15px; text-transform:uppercase; letter-spacing:2px; color:#1b3a5c;">Threat Intelligence Items</h2>
+
+  <!-- ITEM 1 -->
+  <div style="background:#fff; border-radius:8px; margin-bottom:18px; box-shadow:0 2px 10px rgba(0,0,0,0.07); overflow:hidden;">
+    <div style="background:#c0392b; color:#fff; padding:12px 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
       <div>
-        <div style="font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#7ec8e3; font-weight:700; margin-bottom:6px;">CISO Intelligence Briefing · Weekly Edition</div>
-        <h1 style="margin:0 0 4px 0; font-size:26px; font-weight:800; letter-spacing:-0.5px;">Enterprise Cybersecurity Threat Intelligence Report</h1>
-        <div style="font-size:13px; color:#b0cfe0; margin-top:4px;">Reporting Period: <strong>April 28 – May 5, 2026</strong> &nbsp;|&nbsp; Published: <strong>Tuesday, May 5, 2026</strong></div>
+        <span style="font-size:10px; letter-spacing:2px; text-transform:uppercase; opacity:0.85;">Item 01 — ACT NOW</span>
+        <h3 style="margin:4px 0 0 0; font-size:16px; font-weight:800;">cPanel/WHM Zero-Day Auth Bypass (CVE-2026-41940) — Active Mass Exploitation</h3>
       </div>
-      <div style="text-align:right; min-width:160px;">
-        <div style="font-size:11px; color:#7ec8e3; letter-spacing:2px; text-transform:uppercase; margin-bottom:4px;">Threat Climate</div>
-        <div style="font-size:28px; font-weight:900; color:#ff6b6b; letter-spacing:-1px;">ELEVATED</div>
-        <div style="font-size:11px; color:#b0cfe0;">7 Tracked Incidents</div>
+      <div style="text-align:right;">
+        <div style="font-size:11px; opacity:0.85;">Risk Priority Score</div>
+        <div style="font-size:30px; font-weight:900; line-height:1;">9.0</div>
+        <div style="font-size:10px; opacity:0.8;">(S:9×0.45)+(E:10×0.35)+(X:8×0.20)</div>
       </div>
     </div>
-  </header>
-
-  <div style="padding: 0 32px;">
-
-  <!-- RPS LEGEND -->
-  <section style="display:flex; gap:12px; margin:24px 0 8px 0; flex-wrap:wrap;">
-    <div style="background:#c0392b; color:#fff; border-radius:20px; padding:6px 18px; font-size:12px; font-weight:700; letter-spacing:1px;">ACT NOW &nbsp;RPS ≥ 8.0</div>
-    <div style="background:#d35400; color:#fff; border-radius:20px; padding:6px 18px; font-size:12px; font-weight:700; letter-spacing:1px;">HEIGHTENED WATCH &nbsp;RPS 6.0–7.9</div>
-    <div style="background:#2980b9; color:#fff; border-radius:20px; padding:6px 18px; font-size:12px; font-weight:700; letter-spacing:1px;">STRATEGIC WATCH &nbsp;RPS &lt; 6.0</div>
-    <div style="margin-left:auto; font-size:11px; color:#666; align-self:center; font-style:italic;">RPS = (S×0.45) + (E×0.35) + (X×0.20) &nbsp;|&nbsp; Inputs scored 1–10</div>
-  </section>
-
-  <!-- ─────────────────────────────────────────────
-       EXECUTIVE SUMMARY
-  ───────────────────────────────────────────── -->
-  <section style="background:#fff; border-left:5px solid #1b3a5c; border-radius:6px; padding:22px 28px; margin:20px 0 28px 0; box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-    <h2 style="margin:0 0 10px 0; font-size:15px; text-transform:uppercase; letter-spacing:2px; color:#1b3a5c;">Executive Summary</h2>
-    <p style="margin:0; font-size:14.5px; line-height:1.75; color:#2c2c2c;">
-      This week's threat landscape is defined by an aggressive convergence of supply chain compromise, nation-state credential theft, and critical infrastructure targeting by ransomware actors. The most operationally urgent issues are the <strong>Everest ransomware claim against Fiserv</strong> — a global payment processing backbone — and the <strong>Trellix source code repository breach</strong>, which raises systemic supply chain assurance questions for the 50,000+ enterprises and government agencies relying on Trellix EDR, XDR, and email security products. The Russian APT28 group continues to exploit an <strong>unresolved Windows Shell zero-click credential-theft vector (CVE-2026-32202)</strong>, with a May 12 federal remediation deadline now in force. Simultaneously, the TeamPCP threat actor's <strong>"Mini Shai-Hulud" supply chain campaign</strong> has successfully poisoned core SAP enterprise npm packages used by hundreds of thousands of developers, harvesting cloud and CI/CD secrets at scale. Security and technology leaders should treat patch velocity, software supply chain integrity, and NTLM/credential hygiene as immediate board-level priorities this week.
-    </p>
-  </section>
-
-  <!-- ─────────────────────────────────────────────
-       TOP 3 ENTERPRISE RISKS
-  ───────────────────────────────────────────── -->
-  <section style="margin-bottom:32px;">
-    <h2 style="font-size:15px; text-transform:uppercase; letter-spacing:2px; color:#1b3a5c; margin-bottom:14px; border-bottom:2px solid #e0e8f0; padding-bottom:8px;">⚠ Top 3 Enterprise Risks This Week</h2>
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:14px;">
-
-      <div style="background: linear-gradient(135deg,#c0392b,#922b21); color:#fff; border-radius:8px; padding:18px 20px;">
-        <div style="font-size:11px; letter-spacing:2px; font-weight:700; opacity:0.85; margin-bottom:6px;">RISK #1 · FINANCIAL SECTOR</div>
-        <div style="font-size:15px; font-weight:800; margin-bottom:8px; line-height:1.3;">Fiserv Ransomware Claim by Everest Group</div>
-        <div style="font-size:12.5px; opacity:0.92; line-height:1.6;">A confirmed Everest ransomware group claim against Fiserv — one of the world's largest payment processors — threatens cascading disruption across banking, payment rails, and merchant acquiring networks. Data publication threatened within days.</div>
+    <div style="padding:20px 24px;">
+      <div style="display:flex; gap:24px; flex-wrap:wrap; margin-bottom:14px;">
+        <div><span style="font-size:10px; font-weight:700; color:#888; text-transform:uppercase;">Source</span><br><a href="https://www.helpnetsecurity.com/2026/04/30/cpanel-zero-day-vulnerability-cve-2026-41940-exploited/" style="color:#1b3a5c; font-size:13px;">Help Net Security</a></div>
+        <div><span style="font-size:10px; font-weight:700; color:#888; text-transform:uppercase;">Published</span><br><span style="font-size:13px;">30 Apr 2026 (CISA KEV added 01 May 2026)</span></div>
+        <div><span style="font-size:10px; font-weight:700; color:#888; text-transform:uppercase;">CVSS</span><br><span style="font-size:13px; font-weight:700; color:#c0392b;">Critical (CWE-306)</span></div>
+        <div><span style="font-size:10px; font-weight:700; color:#888; text-transform:uppercase;">MITRE ATT&amp;CK</span><br><span style="font-size:13px;">T1190 · T1078 · T1565</span></div>
       </div>
-
-      <div style="background: linear-gradient(135deg,#c0392b,#922b21); color:#fff; border-radius:8px; padding:18px 20px;">
-        <div style="font-size:11px; letter-spacing:2px; font-weight:700; opacity:0.85; margin-bottom:6px;">RISK #2 · VENDOR TRUST</div>
-        <div style="font-size:15px; font-weight:800; margin-bottom:8px; line-height:1.3;">Trellix Source Code Repository Breach</div>
-        <div style="font-size:12.5px; opacity:0.92; line-height:1.6;">Unauthorized access to Trellix's source code repository may expose security product logic, embedded credentials, and bypass techniques to adversaries, creating long-dwell exploit risk for 200M+ protected endpoints globally.</div>
-      </div>
-
-      <div style="background: linear-gradient(135deg,#d35400,#a04000); color:#fff; border-radius:8px; padding:18px 20px;">
-        <div style="font-size:11px; letter-spacing:2px; font-weight:700; opacity:0.85; margin-bottom:6px;">RISK #3 · DEVELOPMENT PIPELINE</div>
-        <div style="font-size:15px; font-weight:800; margin-bottom:8px; line-height:1.3;">TeamPCP "Mini Shai-Hulud" SAP npm Supply Chain Attack</div>
-        <div style="font-size:12.5px; opacity:0.92; line-height:1.6;">Four widely-used SAP CAP npm packages (~572K weekly downloads) were weaponized to silently harvest cloud secrets, CI/CD tokens, and AWS/Azure/GCP credentials from developer environments. Self-propagation capability confirmed.</div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ─────────────────────────────────────────────
-       INCIDENT CARDS
-  ───────────────────────────────────────────── -->
-  <h2 style="font-size:15px; text-transform:uppercase; letter-spacing:2px; color:#1b3a5c; margin-bottom:16px; border-bottom:2px solid #e0e8f0; padding-bottom:8px;">Threat Intelligence Dossier · 7 Tracked Items</h2>
-
-  <!-- ══════════════════════════════════════════════
-       ITEM 1 — Everest / Fiserv
-  ═══════════════════════════════════════════════ -->
-  <div style="background:#fff; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.07); margin-bottom:20px; overflow:hidden; border-left:6px solid #c0392b;">
-    <div style="padding:18px 24px 14px 22px;">
-      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px; margin-bottom:10px;">
-        <div>
-          <span style="background:#c0392b; color:#fff; border-radius:4px; font-size:10px; font-weight:800; letter-spacing:1.5px; padding:3px 10px; text-transform:uppercase; margin-right:8px;">ACT NOW</span>
-          <span style="background:#2c3e50; color:#fff; border-radius:4px; font-size:10px; font-weight:700; padding:3px 9px;">Ransomware / Financial Sector</span>
-        </div>
-        <div style="text-align:right;">
-          <span style="font-size:22px; font-weight:900; color:#c0392b;">9.2</span>
-          <span style="font-size:11px; color:#888; display:block; margin-top:-2px;">RPS · S:10 E:9 X:8</span>
-        </div>
-      </div>
-      <h3 style="margin:0 0 4px 0; font-size:17px; font-weight:800; color:#1a1a2e;">Everest Ransomware Group Claims Fiserv as Latest Financial-Sector Victim</h3>
-      <div style="font-size:12px; color:#777; margin-bottom:12px;">
-        📰 <a href="https://www.breachsense.com/breaches/" style="color:#1b3a5c; text-decoration:none; font-weight:600;">Breachsense / Ransomware.live</a> &nbsp;|&nbsp; 🗓 May 3–4, 2026 &nbsp;|&nbsp; 🔗 <a href="https://www.ransomware.live/id/RmlzZXJ2QGV2ZXJlc3Q" style="color:#1b3a5c; text-decoration:none;">ransomware.live/id/Fiserv@everest</a>
-      </div>
-      <p style="font-size:13.5px; line-height:1.75; margin:0 0 12px 0; color:#2c2c2c;">
-        The Everest ransomware threat actor has claimed to have targeted Fiserv, a US-based global financial technology company, with a ransomware attack, with the narrative highlighting Fiserv's role as a global provider of payment processing and banking technology and suggesting potential disruption to financial services in the United States. Fiserv provides financial services technology solutions including payment processing, core banking systems, digital banking platforms, and merchant acquiring services — serving banks, credit unions, retailers, and businesses worldwide as one of the largest providers of financial services infrastructure globally. The Everest group has indicated its intent to publish stolen data within 3–4 days of the initial posting. Fiserv has not yet issued a public statement confirming or denying the breach, leaving the full scope unverified but the systemic risk to downstream financial institutions extremely high.
+      <p style="margin:0; font-size:14px; line-height:1.7; color:#333;">
+        A critical authentication bypass vulnerability (CVE-2026-41940) in cPanel is being actively exploited in the wild — and attackers were spotted exploiting it since February 23, likely even earlier before disclosure. The flaw stems from missing authentication for a critical function, allowing unauthenticated remote attackers to gain unauthorized access to the control panel. Successful exploitation grants an attacker control over the cPanel host system, its configurations and databases, and all websites it manages. The Shadowserver Foundation reports 44K unique IPs scanning or running exploits, with approximately 650K IPs hosting exposed cPanel/WHM instances. CISA added CVE-2026-41940 to its Known Exploited Vulnerabilities catalog on May 1, 2026.
       </p>
-      <div style="background:#fdf2f2; border-radius:6px; padding:10px 14px; font-size:12.5px; color:#2c2c2c;">
-        <strong style="color:#c0392b;">MITRE ATT&CK:</strong> T1486 (Data Encrypted for Impact) · T1657 (Financial Theft) · T1590 (Gather Victim Network Information) · T1059 (Command & Scripting Interpreter)
+      <div style="margin-top:12px; background:#fdf0f0; border-radius:5px; padding:10px 14px; font-size:12px; color:#7b2d2d;">
+        <strong>Immediate Action:</strong> Update cPanel/WHM to patched versions immediately. Audit all hosted sites and databases for signs of unauthorized modification. Review the cPanel security advisory at support.cpanel.net dated 04-28-2026.
       </div>
     </div>
   </div>
 
-  <!-- ══════════════════════════════════════════════
-       ITEM 2 — Trellix Source Code Breach
-  ═══════════════════════════════════════════════ -->
-  <div style="background:#fff; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.07); margin-bottom:20px; overflow:hidden; border-left:6px solid #c0392b;">
-    <div style="padding:18px 24px 14px 22px;">
-      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px; margin-bottom:10px;">
-        <div>
-          <span style="background:#c0392b; color:#fff; border-radius:4px; font-size:10px; font-weight:800; letter-spacing:1.5px; padding:3px 10px; text-transform:uppercase; margin-right:8px;">ACT NOW</span>
-          <span style="background:#2c3e50; color:#fff; border-radius:4px; font-size:10px; font-weight:700; padding:3px 9px;">Vendor Breach / Supply Chain</span>
-        </div>
-        <div style="text-align:right;">
-          <span style="font-size:22px; font-weight:900; color:#c0392b;">8.7</span>
-          <span style="font-size:11px; color:#888; display:block; margin-top:-2px;">RPS · S:9 E:7 X:10</span>
-        </div>
+  <!-- ITEM 2 -->
+  <div style="background:#fff; border-radius:8px; margin-bottom:18px; box-shadow:0 2px 10px rgba(0,0,0,0.07); overflow:hidden;">
+    <div style="background:#c0392b; color:#fff; padding:12px 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+      <div>
+        <span style="font-size:10px; letter-spacing:2px; text-transform:uppercase; opacity:0.85;">Item 02 — ACT NOW</span>
+        <h3 style="margin:4px 0 0 0; font-size:16px; font-weight:800;">Linux "Copy Fail" Kernel Zero-Day (CVE-2026-31431) — Root Escalation in Cloud & K8s</h3>
       </div>
-      <h3 style="margin:0 0 4px 0; font-size:17px; font-weight:800; color:#1a1a2e;">Trellix Source Code Repository Breach — Systemic Supply Chain Risk to 50,000+ Enterprise Customers</h3>
-      <div style="font-size:12px; color:#777; margin-bottom:12px;">
-        📰 <a href="https://www.bleepingcomputer.com/news/security/trellix-discloses-data-breach-after-source-code-repository-hack/" style="color:#1b3a5c; text-decoration:none; font-weight:600;">BleepingComputer</a> &nbsp;|&nbsp; 🗓 May 4, 2026 &nbsp;|&nbsp; 🔗 <a href="https://www.trellix.com/statement/" style="color:#1b3a5c; text-decoration:none;">trellix.com/statement</a>
+      <div style="text-align:right;">
+        <div style="font-size:11px; opacity:0.85;">Risk Priority Score</div>
+        <div style="font-size:30px; font-weight:900; line-height:1;">8.4</div>
+        <div style="font-size:10px; opacity:0.8;">(S:9×0.45)+(E:9×0.35)+(X:7×0.20)</div>
       </div>
-      <p style="font-size:13.5px; line-height:1.75; margin:0 0 12px 0; color:#2c2c2c;">
-        Trellix disclosed a data breach on May 4, 2026 after attackers gained access to "a portion" of its source code repository. Trellix — formed from the October 2021 merger of McAfee Enterprise and FireEye — provides services to over 50,000 business and government customers worldwide, protecting more than 200 million endpoints. The timing suggests the breach may be related to a major supply chain attack targeting open source applications, with the campaign linked to profit-driven hacker groups TeamPCP and Lapsus$, also impacting Checkmarx, Aqua Security, and Bitwarden. What makes source code specifically dangerous is that it gives attackers a technical blueprint — instead of guessing where vulnerabilities are, they can read the code and find them directly. Trellix products operate deep within enterprise security environments covering endpoint protection, detection and response, email and data security; any exposure at the code level raises legitimate questions about long-term assurance, even where no immediate tampering is identified.
+    </div>
+    <div style="padding:20px 24px;">
+      <div style="display:flex; gap:24px; flex-wrap:wrap; margin-bottom:14px;">
+        <div><span style="font-size:10px; font-weight:700; color:#888; text-transform:uppercase;">Source</span><br><a href="https://www.microsoft.com/en-us/security/blog/2026/05/01/cve-2026-31431-copy-fail-vulnerability-enables-linux-root-privilege-escalation/" style="color:#1b3a5c; font-size:13px;">Microsoft Security Blog</a></div>
+        <div><span style="font-size:10px; font-weight:700; color:#888; text-transform:uppercase;">Published</span><br><span style="font-size:13px;">01 May 2026 (CISA KEV Deadline: 15 May 2026)</span></div>
+        <div><span style="font-size:10px; font-weight:700; color:#888; text-transform:uppercase;">CVSS</span><br><span style="font-size:13px; font-weight:700; color:#c0392b;">7.8 High (CWE-699)</span></div>
+        <div><span style="font-size:10px; font-weight:700; color:#888; text-transform:uppercase;">MITRE ATT&amp;CK</span><br><span style="font-size:13px;">T1068 · T1611 · T1562</span></div>
+      </div>
+      <p style="margin:0; font-size:14px; line-height:1.7; color:#333;">
+        Tracked as CVE-2026-31431 and dubbed "Copy Fail," the flaw resides in the algif_aead module of the Linux kernel's AF_ALG cryptographic subsystem — a logic bug causing improper memory handling during in-place operations. What makes this flaw particularly alarming is its exploitability: a 732-byte Python script is all an unprivileged local user needs to reliably escalate privileges to root. The vulnerability affects virtually all Linux distributions running kernels from 2017 until patched, including Ubuntu 24.04 LTS, Amazon Linux 2023, RHEL 10.1, SUSE 16, Debian, Fedora, and Arch Linux. Successful exploitation leads to full root privilege escalation and could facilitate container breakout, multi-tenant compromise, and lateral movement; its stealth via in-memory-only modification makes it particularly dangerous in cloud, CI/CD, and Kubernetes environments. CISA added CVE-2026-31431 to the KEV catalog on May 1, 2026, with a mandatory remediation deadline of May 15, 2026 for all federal civilian agencies.
       </p>
-      <div style="background:#fdf2f2; border-radius:6px; padding:10px 14px; font-size:12.5px; color:#2c2c2c;">
-        <strong style="color:#c0392b;">MITRE ATT&CK:</strong> T1195.002 (Compromise Software Supply Chain) · T1213 (Data from Information Repositories) · T1078 (Valid Accounts) · T1083 (File and Directory Discovery)
+      <div style="margin-top:12px; background:#fdf0f0; border-radius:5px; padding:10px 14px; font-size:12px; color:#7b2d2d;">
+        <strong>Immediate Action:</strong> Patch to Linux kernel versions 6.18.22, 6.19.12, or 7.0+. As interim mitigation, block AF_ALG socket creation. Treat any container RCE as potential host compromise. Audit cloud workloads, Kubernetes nodes, and CI/CD runners urgently.
       </div>
     </div>
   </div>
 
-  <!-- ══════════════════════════════════════════════
-       ITEM 3 — TeamPCP SAP npm Supply Chain
-  ═══════════════════════════════════════════════ -->
-  <div style="background:#fff; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.07); margin-bottom:20px; overflow:hidden; border-left:6px solid #c0392b;">
-    <div style="padding:18px 24px 14px 22px;">
-      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px; margin-bottom:10px;">
-        <div>
-          <span style="background:#c0392b; color:#fff; border-radius:4px; font-size:10px; font-weight:800; letter-spacing:1.5px; padding:3px 10px; text-transform:uppercase; margin-right:8px;">ACT NOW</span>
-          <span style="background:#2c3e50; color:#fff; border-radius:4px; font-size:10px; font-weight:700; padding:3px 9px;">Software Supply Chain / Developer Tooling</span>
-        </div>
-        <div style="text-align:right;">
-          <span style="font-size:22px; font-weight:900; color:#c0392b;">8.6</span>
-          <span style="font-size:11px; color:#888; display:block; margin-top:-2px;">RPS · S:9 E:9 X:7</span>
-        </div>
+  <!-- ITEM 3 -->
+  <div style="background:#fff; border-radius:8px; margin-bottom:18px; box-shadow:0 2px 10px rgba(0,0,0,0.07); overflow:hidden;">
+    <div style="background:#c0392b; color:#fff; padding:12px 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+      <div>
+        <span style="font-size:10px; letter-spacing:2px; text-transform:uppercase; opacity:0.85;">Item 03 — ACT NOW</span>
+        <h3 style="margin:4px 0 0 0; font-size:16px; font-weight:800;">MOVEit Automation Critical Auth Bypass (CVE-2026-4670) — CVSS 9.8, Patch Available</h3>
       </div>
-      <h3 style="margin:0 0 4px 0; font-size:17px; font-weight:800; color:#1a1a2e;">"Mini Shai-Hulud" — TeamPCP Poisons Four SAP Enterprise npm Packages, Harvesting Cloud & CI/CD Secrets</h3>
-      <div style="font-size:12px; color:#777; margin-bottom:12px;">
-        📰 <a href="https://www.bleepingcomputer.com/news/security/official-sap-npm-packages-compromised-to-steal-credentials/" style="color:#1b3a5c; text-decoration:none; font-weight:600;">BleepingComputer / Wiz / The Register</a> &nbsp;|&nbsp; 🗓 April 29–May 1, 2026 &nbsp;|&nbsp; 🔗 <a href="https://www.wiz.io/blog/mini-shai-hulud-supply-chain-sap-npm" style="color:#1b3a5c; text-decoration:none;">wiz.io/blog/mini-shai-hulud</a>
+      <div style="text-align:right;">
+        <div style="font-size:11px; opacity:0.85;">Risk Priority Score</div>
+        <div style="font-size:30px; font-weight:900; line-height:1;">8.5</div>
+        <div style="font-size:10px; opacity:0.8;">(S:10×0.45)+(E:8×0.35)+(X:7×0.20)</div>
       </div>
-      <p style="font-size:13.5px; line-height:1.75; margin:0 0 12px 0; color:#2c2c2c;">
-        Multiple official SAP npm packages were compromised in what is believed to be a TeamPCP supply-chain attack to steal credentials and authentication tokens from developers' systems. The malware is designed to harvest local developer credentials, GitHub and npm tokens, GitHub Actions secrets, and cloud secrets from AWS, Azure, GCP, and Kubernetes; stolen data is encrypted and exfiltrated to public GitHub repositories with the description "A Mini Shai-Hulud has Appeared," with over 1,100 such repositories appearing in GitHub search results. Collectively, the four compromised packages receive about 572,000 weekly downloads and are widely used by developers building cloud applications. The malware also contains propagation logic: using any stolen npm tokens, it identifies other packages under the compromised maintainer's account, injects malicious code, and republishes them — enabling exponential, automated spread across the npm ecosystem without actor intervention.
+    </div>
+    <div style="padding:20px 24px;">
+      <div style="display:flex; gap:24px; flex-wrap:wrap; margin-bottom:14px;">
+        <div><span style="font-size:10px; font-weight:700; color:#888; text-transform:uppercase;">Source</span><br><a href="https://thehackernews.com/2026/05/progress-patches-critical-moveit.html" style="color:#1b3a5c; font-size:13px;">The Hacker News / Help Net Security</a></div>
+        <div><span style="font-size:10px; font-weight:700; color:#888; text-transform:uppercase;">Published</span><br><span style="font-size:13px;">04 May 2026</span></div>
+        <div><span style="font-size:10px; font-weight:700; color:#888; text-transform:uppercase;">CVSS</span><br><span style="font-size:13px; font-weight:700; color:#c0392b;">9.8 Critical</span></div>
+        <div><span style="font-size:10px; font-weight:700; color:#888; text-transform:uppercase;">MITRE ATT&amp;CK</span><br><span style="font-size:13px;">T1190 · T1078.003 · T1005</span></div>
+      </div>
+      <p style="margin:0; font-size:14px; line-height:1.7; color:#333;">
+        CVE-2026-4670 is an authentication bypass vulnerability exploitable via low-complexity attacks by unauthenticated attackers; CVE-2026-5174, an improper input validation flaw, may allow authenticated attackers to further escalate privileges. Together, the two vulnerabilities may allow remote attackers to gain administrative control of MOVEit Automation instances, accessing credentials stored in tasks, sensitive business data such as reports, payroll, and financial files, and the wider enterprise network. With over 1,400 instances publicly accessible, organizations should place MOVEit Automation behind a VPN or network perimeter control while patching is completed. Whether Cl0p or another group moves first, the 2023 campaign established that the exploitation window for critical MOVEit flaws is measured in hours after public disclosure. Progress states that upgrading via the full installer is the only way to remediate this issue.
       </p>
-      <div style="background:#fdf2f2; border-radius:6px; padding:10px 14px; font-size:12.5px; color:#2c2c2c;">
-        <strong style="color:#c0392b;">MITRE ATT&CK:</strong> T1195.001 (Compromise Software Dependencies and Development Tools) · T1552.001 (Credentials in Files) · T1567 (Exfiltration Over Web Service) · T1059.007 (JavaScript) · T1053 (Scheduled Task/Job)
+      <div style="margin-top:12px; background:#fdf0f0; border-radius:5px; padding:10px 14px; font-size:12px; color:#7b2d2d;">
+        <strong>Immediate Action:</strong> Upgrade to MOVEit Automation 2025.1.5, 2025.0.9, or 2024.1.8 using the full installer (outage required). Block command port interfaces from internet access. Review audit logs for anomalous authentication, privilege changes, or unusual task execution.
       </div>
     </div>
   </div>
 
-  <!-- ══════════════════════════════════════════════
-       ITEM 4 — APT28 / CVE-2026-32202 Windows Shell
-  ═══════════════════════════════════════════════ -->
-  <div style="background:#fff; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.07); margin-bottom:20px; overflow:hidden; border-left:6px solid #c0392b;">
-    <div style="padding:18px 24px 14px 22px;">
-      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px; margin-bottom:10px;">
-        <div>
-          <span style="background:#c0392b; color:#fff; border-radius:4px; font-size:10px; font-weight:800; letter-spacing:1.5px; padding:3px 10px; text-transform:uppercase; margin-right:8px;">ACT NOW</span>
-          <span style="background:#2c3e50; color:#fff; border-radius:4px; font-size:10px; font-weight:700; padding:3px 9px;">Nation-State / Credential Theft / Zero-Click</span>
-        </div>
-        <div style="text-align:right;">
-          <span style="font-size:22px; font-weight:900; color:#c0392b;">8.3</span>
-          <span style="font-size:11px; color:#888; display:block; margin-top:-2px;">RPS · S:8 E:9 X:8</span>
-        </div>
+  <!-- ITEM 4 -->
+  <div style="background:#fff; border-radius:8px; margin-bottom:18px; box-shadow:0 2px 10px rgba(0,0,0,0.07); overflow:hidden;">
+    <div style="background:#c0392b; color:#fff; padding:12px 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+      <div>
+        <span style="font-size:10px; letter-spacing:2px; text-transform:uppercase; opacity:0.85;">Item 04 — ACT NOW</span>
+        <h3 style="margin:4px 0 0 0; font-size:16px; font-weight:800;">ShinyHunters Vishing Campaign — ADT (5.5M) &amp; Instructure/Canvas (275M) Breaches</h3>
       </div>
-      <h3 style="margin:0 0 4px 0; font-size:17px; font-weight:800; color:#1a1a2e;">APT28 Exploits CVE-2026-32202 — Zero-Click Windows Shell Vulnerability Enables NTLMv2 Credential Theft</h3>
-      <div style="font-size:12px; color:#777; margin-bottom:12px;">
-        📰 <a href="https://www.theregister.com/2026/04/29/microsoft_zero_click_exploit" style="color:#1b3a5c; text-decoration:none; font-weight:600;">The Register / Help Net Security / Akamai</a> &nbsp;|&nbsp; 🗓 April 29, 2026 &nbsp;|&nbsp; 🔗 <a href="https://www.akamai.com/blog/security-research/incomplete-patch-apt28s-zero-day-cve-2026-32202" style="color:#1b3a5c; text-decoration:none;">akamai.com/blog/cve-2026-32202</a>
+      <div style="text-align:right;">
+        <div style="font-size:11px; opacity:0.85;">Risk Priority Score</div>
+        <div style="font-size:30px; font-weight:900; line-height:1;">8.1</div>
+        <div style="font-size:10px; opacity:0.8;">(S:9×0.45)+(E:8×0.35)+(X:8×0.20)</div>
       </div>
-      <p style="font-size:13.5px; line-height:1.75; margin:0 0 12px 0; color:#2c2c2c;">
-        CVE-2026-32202 is an authentication coercion flaw in Windows Shell that can expose sensitive information on vulnerable systems via network spoofing — stemming from an incomplete fix for an earlier vulnerability already abused by Russian spies prior to Microsoft's patch release. CVE-2026-32202 stems from an incomplete patch for CVE-2026-21510, a vulnerability that, in conjunction with CVE-2026-21513, has been exploited by APT28 (aka Fancy Bear) via weaponized LNK files that bypass Windows security features. The most immediate consequence of exploitation is the exposure of NTLMv2 hashes — while this may seem indirect, it opens the door to unauthorized access across systems and services, allowing attackers to impersonate users, access sensitive data, and expand their reach without triggering obvious alarms. Federal Civilian Executive Branch agencies have been ordered to remediate this flaw by May 12, 2026.
+    </div>
+    <div style="padding:20px 24px;">
+      <div style="display:flex; gap:24px; flex-wrap:wrap; margin-bottom:14px;">
+        <div><span style="font-size:10px; font-weight:700; color:#888; text-transform:uppercase;">Sources</span><br>
+          <a href="https://www.rescana.com/post/adt-salesforce-data-breach-2026-shinyhunters-compromise-okta-sso-via-vishing-attack/" style="color:#1b3a5c; font-size:13px;">Rescana</a> &nbsp;|&nbsp;
+          <a href="https://www.bleepingcomputer.com/news/security/instructure-confirms-data-breach-shinyhunters-claims-attack/" style="color:#1b3a5c; font-size:13px;">BleepingComputer</a>
+        </div>
+        <div><span style="font-size:10px; font-weight:700; color:#888; text-transform:uppercase;">Published</span><br><span style="font-size:13px;">24 Apr – 05 May 2026</span></div>
+        <div><span style="font-size:10px; font-weight:700; color:#888; text-transform:uppercase;">Threat Actor</span><br><span style="font-size:13px; font-weight:700; color:#c0392b;">ShinyHunters (eCrime)</span></div>
+        <div><span style="font-size:10px; font-weight:700; color:#888; text-transform:uppercase;">MITRE ATT&amp;CK</span><br><span style="font-size:13px;">T1598.004 · T1078 · T1530 · T1657</span></div>
+      </div>
+      <p style="margin:0; font-size:14px; line-height:1.7; color:#333;">
+        The ADT attack was executed via a voice phishing (vishing) campaign that compromised an employee's Okta single sign-on (SSO) credentials, enabling access to the company's Salesforce instance. Have I Been Pwned confirmed the breach exposed the data of 5.5 million people, including unique email addresses, names, dates of birth, phone numbers, physical addresses, and partial government-issued IDs. Within days, educational tech giant Instructure confirmed a separate data breach, with ShinyHunters again claiming responsibility. The group claims to hold over 3.65 terabytes of data from nearly 9,000 educational institutions affecting 275 million individuals, including billions of private messages. ShinyHunters is simultaneously running two distinct attack playbooks: vishing for SSO credentials and exploiting misconfigured Salesforce Experience Cloud environments. Student data is protected under FERPA, and the updated COPPA rule effective April 22, 2026, tightens consent and breach notification requirements for children's data.
       </p>
-      <div style="background:#fdf2f2; border-radius:6px; padding:10px 14px; font-size:12.5px; color:#2c2c2c;">
-        <strong style="color:#c0392b;">MITRE ATT&CK:</strong> T1557.001 (LLMNR/NBT-NS Poisoning and SMB Relay) · T1187 (Forced Authentication) · T1566.001 (Spearphishing Attachment – LNK) · T1550.002 (Pass the Hash) · G0007 (APT28)
+      <div style="margin-top:12px; background:#fdf0f0; border-radius:5px; padding:10px 14px; font-size:12px; color:#7b2d2d;">
+        <strong>Immediate Action:</strong> Deploy phishing-resistant MFA (FIDO2/passkeys) on all SSO gateways. Audit Salesforce Experience Cloud guest user permissions and Organization-Wide Defaults. Conduct emergency vishing awareness training for help desk and IT staff. Review all API keys and token access to SaaS platforms.
       </div>
     </div>
   </div>
 
-  <!-- ══════════════════════════════════════════════
-       ITEM 5 — cPanel CVE-2026-41940
-  ═══════════════════════════════════════════════ -->
-  <div style="background:#fff; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.07); margin-bottom:20px; overflow:hidden; border-left:6px solid #d35400;">
-    <div style="padding:18px 24px 14px 22px;">
-      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px; margin-bottom:10px;">
-        <div>
-          <span style="background:#d35400; color:#fff; border-radius:4px; font-size:10px; font-weight:800; letter-spacing:1.5px; padding:3px 10px; text-transform:uppercase; margin-right:8px;">HEIGHTENED WATCH</span>
-          <span style="background:#2c3e50; color:#fff; border-radius:4px; font-size:10px; font-weight:700; padding:3px 9px;">Authentication Bypass / Web Hosting</span>
-        </div>
-        <div style="text-align:right;">
-          <span style="font-size:22px; font-weight:900; color:#d35400;">7.7</span>
-          <span style="font-size:11px; color:#888; display:block; margin-top:-2px;">RPS · S:9 E:8 X:5</span>
-        </div>
+  <!-- ITEM 5 -->
+  <div style="background:#fff; border-radius:8px; margin-bottom:18px; box-shadow:0 2px 10px rgba(0,0,0,0.07); overflow:hidden;">
+    <div style="background:#e67e22; color:#fff; padding:12px 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+      <div>
+        <span style="font-size:10px; letter-spacing:2px; text-transform:uppercase; opacity:0.85;">Item 05 — HEIGHTENED WATCH</span>
+        <h3 style="margin:4px 0 0 0; font-size:16px; font-weight:800;">Windows Shell Zero-Click Spoofing (CVE-2026-32202) — APT28 Attribution Suspected</h3>
       </div>
-      <h3 style="margin:0 0 4px 0; font-size:17px; font-weight:800; color:#1a1a2e;">CVE-2026-41940 — cPanel Authentication Bypass Zero-Day Actively Exploited Since February; 650K+ Instances Exposed</h3>
-      <div style="font-size:12px; color:#777; margin-bottom:12px;">
-        📰 <a href="https://www.helpnetsecurity.com/2026/04/30/cpanel-zero-day-vulnerability-cve-2026-41940-exploited/" style="color:#1b3a5c; text-decoration:none; font-weight:600;">Help Net Security</a> &nbsp;|&nbsp; 🗓 April 30 – May 1, 2026 &nbsp;|&nbsp; 🔗 <a href="https://support.cpanel.net/hc/en-us/articles/40073787579671-cPanel-WHM-Security-Update-04-28-2026" style="color:#1b3a5c; text-decoration:none;">support.cpanel.net/security-update</a>
+      <div style="text-align:right;">
+        <div style="font-size:11px; opacity:0.85;">Risk Priority Score</div>
+        <div style="font-size:30px; font-weight:900; line-height:1;">7.1</div>
+        <div style="font-size:10px; opacity:0.8;">(S:8×0.45)+(E:7×0.35)+(X:6×0.20)</div>
       </div>
-      <p style="font-size:13.5px; line-height:1.75; margin:0 0 12px 0; color:#2c2c2c;">
-        A critical authentication bypass vulnerability (CVE-2026-41940) in cPanel, a popular web-based hosting control panel, is being actively exploited by attackers in the wild — with attackers spotted exploiting the vulnerability since at least February 23, and likely even earlier. CVE-2026-41940 stems from missing authentication for a critical function and allows unauthenticated remote attackers to gain unauthorized
+    </div>
+    <div style="padding:20px 24px;">
+      <div style="display:flex; gap:24px; flex-wrap:wrap; margin-bottom:14px;">
+        <div><span style="font-size:10px; font-weight:700; color:#888; text-transform:uppercase;">Source</span><br><a href="https://www.theregister.com/2026/04/29/microsoft_zero_click_exploit" style="color:#1b3a5c; font-size:13px;">The Register</a></div>
+        <div><span style="font-size:10px; font-weight:700; color:#888; text-transform:uppercase;">Published</span><br><span style="font-size:13px;">29
 </body>
 </html>
