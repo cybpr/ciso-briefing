@@ -13,175 +13,233 @@
   </style>
 </head>
 <body>
-  <p class="updated">Last updated: May 11, 2026 at 09:00 UTC</p>
-  Now I have comprehensive data. Let me compile the full briefing as a self-contained HTML body fragment.
+  <p class="updated">Last updated: May 12, 2026 at 08:27 UTC</p>
+  Now I have comprehensive data to compile a full, authoritative weekly CISO briefing. Let me calculate the RPS scores for each item and produce the HTML output.
 
-<article style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 1100px; margin: 0 auto; color: #1a1a2e; background: #f4f6fb; padding: 0 0 40px 0;">
+**RPS Formula: (S × 0.45) + (E × 0.35) + (X × 0.20)**
 
-<!-- HEADER -->
-<header style="background: linear-gradient(135deg, #0d1b2a 0%, #1b2a4a 60%, #22336b 100%); color: #fff; padding: 36px 44px 28px 44px; border-radius: 0 0 10px 10px;">
-  <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px;">
-    <div>
-      <div style="font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#7eb8f7; margin-bottom:6px;">Restricted — Senior Leadership Distribution</div>
-      <h1 style="margin:0; font-size:2rem; font-weight:800; letter-spacing:-0.5px;">CISO Weekly Intelligence Briefing</h1>
-      <div style="margin-top:8px; font-size:1rem; color:#a8c8ff;">Coverage Period: <strong>May 5 – May 11, 2026</strong> &nbsp;|&nbsp; Published: <strong>Monday, May 11, 2026</strong></div>
-    </div>
-    <div style="text-align:right;">
-      <div style="background:#c0392b; color:#fff; border-radius:6px; padding:7px 18px; font-size:0.85rem; font-weight:700; letter-spacing:1px;">TLP:AMBER</div>
-      <div style="color:#7eb8f7; font-size:0.78rem; margin-top:6px;">For authorized recipients only</div>
-    </div>
-  </div>
-</header>
+| # | Item | S (1–10) | E (1–10) | X (1–10) | RPS |
+|---|------|---------|---------|---------|-----|
+| 1 | Canvas/Instructure ShinyHunters Breach | 10 | 10 | 10 | **10.0** |
+| 2 | PAN-OS CVE-2026-0300 RCE | 9 | 9 | 9 | **9.0** |
+| 3 | cPanel CVE-2026-41940 Mass Exploitation | 9 | 10 | 8 | **9.25** |
+| 4 | Linux "Dirty Frag" CVE-2026-43284/43500 | 8 | 7 | 9 | **7.85** |
+| 5 | MuddyWater/Iran False-Flag Teams Attack | 8 | 7 | 8 | **7.65** |
+| 6 | Iranian APT Escalation & OT Threats | 8 | 6 | 9 | **7.50** |
+| 7 | Windows Defender BlueHammer/RedSun/UnDefend | 7 | 8 | 7 | **7.35** |
 
-<!-- RPS LEGEND -->
-<section style="background:#fff; border-left:5px solid #22336b; margin:28px 28px 0 28px; border-radius:8px; padding:16px 24px;">
-  <strong style="font-size:0.9rem; color:#22336b;">📐 Risk Priority Score (RPS) Methodology:</strong>
-  <span style="font-size:0.88rem; color:#444; margin-left:8px;">RPS = (Severity × 0.45) + (Exploitability × 0.35) + (Exposure × 0.20) &nbsp;|&nbsp; Scale: 1–10 per dimension &nbsp;|&nbsp; Max RPS = 10.0</span>
-  <div style="margin-top:10px; display:flex; gap:16px; flex-wrap:wrap;">
-    <span style="background:#c0392b; color:#fff; border-radius:4px; padding:3px 12px; font-size:0.8rem; font-weight:700;">🔴 ACT NOW &nbsp; RPS ≥ 8.0</span>
-    <span style="background:#e67e22; color:#fff; border-radius:4px; padding:3px 12px; font-size:0.8rem; font-weight:700;">🟠 HEIGHTENED WATCH &nbsp; RPS 6.0–7.9</span>
-    <span style="background:#2980b9; color:#fff; border-radius:4px; padding:3px 12px; font-size:0.8rem; font-weight:700;">🔵 STRATEGIC WATCH &nbsp; RPS &lt; 6.0</span>
-  </div>
-</section>
+Here is the full weekly briefing:
 
-<!-- EXECUTIVE SUMMARY -->
-<section style="background:#fff; margin:20px 28px 0 28px; border-radius:8px; padding:22px 28px; border-top: 4px solid #22336b;">
-  <h2 style="margin:0 0 12px 0; font-size:1.15rem; color:#22336b; text-transform:uppercase; letter-spacing:1px;">📋 Executive Summary</h2>
-  <p style="margin:0; font-size:0.96rem; line-height:1.7; color:#222;">
-    The week of May 5–11, 2026 represents one of the most consequential seven-day threat windows of the year. Five high-to-critical severity items demand immediate leadership attention across three distinct attack surfaces: <strong>network perimeter infrastructure</strong>, <strong>Linux server estates</strong>, and <strong>enterprise SaaS/cloud platforms</strong>. 
-    <br><br>
-    The most urgent threat is <strong>CVE-2026-0300</strong>, an unpatched, actively exploited root-level RCE in Palo Alto PAN-OS firewalls — the very devices organizations rely on for perimeter defense. Simultaneously, the <strong>Instructure Canvas breach</strong> — now confirmed as the largest educational data breach in history — exposes 275 million individuals across nearly 9,000 institutions and carries material downstream phishing and credential-stuffing risk for any enterprise with affiliated academic users. Two consecutive Linux kernel LPE chains (<strong>Copy Fail</strong> and <strong>Dirty Frag</strong>) are being actively exploited in cloud and containerized environments, while the worm-capable <strong>PCPJack</strong> credential-theft framework is systematically harvesting API keys, SSH credentials, and cloud secrets from misconfigured Docker/Kubernetes deployments. The <strong>ShinyHunters</strong> threat group is prominently behind multiple high-profile incidents this week, demonstrating both breadth and operational tempo.
-    <br><br>
-    Some cybercriminal groups can break into networks and begin spreading laterally in under 30 seconds, and AI-assisted attacks are rising sharply — zero-day vulnerabilities are being exploited faster than security teams can respond. The window between disclosure and exploitation has collapsed; response capabilities must keep pace.
-  </p>
-</section>
+---
 
-<!-- TOP 3 ENTERPRISE RISKS -->
-<section style="background: #fff8f0; border-left:5px solid #c0392b; margin:20px 28px 0 28px; border-radius:8px; padding:22px 28px;">
-  <h2 style="margin:0 0 16px 0; font-size:1.15rem; color:#c0392b; text-transform:uppercase; letter-spacing:1px;">🎯 Top 3 Enterprise Risks This Week</h2>
-  <ol style="margin:0; padding-left:20px; font-size:0.95rem; line-height:1.8; color:#222;">
-    <li><strong>Perimeter Firewall RCE (CVE-2026-0300 / PAN-OS):</strong> Unauthenticated root-level code execution on internet-facing network security appliances with confirmed active exploitation, no patch until May 13, and nation-state attribution (CL-STA-1132). The firewall is the highest-trust device in most architectures — compromise equals full network visibility and credential harvesting.</li>
-    <li><strong>Linux Kernel LPE Cascade (Copy Fail + Dirty Frag):</strong> Two public, weaponized privilege escalation chains disclosed within 8 days target virtually all Linux distributions. Dirty Frag is unpatched for CVE-2026-43500 and enables container escape. Any compromise of a Linux workload — container, VM, or bare metal — should be treated as a potential root compromise.</li>
-    <li><strong>ShinyHunters Mass Data Exfiltration Campaign:</strong> The ShinyHunters group executed three major breaches this week (Canvas/Instructure, Cushman &amp; Wakefield, NVIDIA GeForce NOW partner), with a 12 May 2026 ransom deadline for Canvas. 275 million stolen education records represent a massive phishing and credential-stuffing surface targeting employees, students, and adjacent organizations.</li>
-  </ol>
-</section>
+<article style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 1100px; margin: 0 auto; color: #1a1a2e; background: #f5f7fa; padding: 0 0 40px 0; border-radius: 10px; box-shadow: 0 2px 18px rgba(0,0,0,0.10);">
 
-<!-- INTELLIGENCE ITEMS -->
-<section style="margin:24px 28px 0 28px;">
-  <h2 style="font-size:1.15rem; color:#22336b; text-transform:uppercase; letter-spacing:1px; margin-bottom:16px;">📡 Intelligence Items</h2>
-
-  <!-- ITEM 1 -->
-  <div style="background:#fff; border-radius:8px; border-left:6px solid #c0392b; margin-bottom:18px; padding:22px 26px; box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
+  <!-- HEADER -->
+  <header style="background: linear-gradient(135deg, #0d1b2a 0%, #1b2a4a 60%, #1a3a5c 100%); color: #fff; padding: 36px 48px 28px 48px; border-radius: 10px 10px 0 0;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px;">
       <div>
-        <span style="background:#c0392b; color:#fff; border-radius:4px; padding:3px 10px; font-size:0.78rem; font-weight:700; margin-right:8px;">🔴 ACT NOW</span>
-        <span style="background:#f0f0f0; color:#333; border-radius:4px; padding:3px 10px; font-size:0.78rem;">CVE-2026-0300 &nbsp;|&nbsp; CVSS 9.3</span>
+        <div style="font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#7ec8e3; font-weight:700; margin-bottom:6px;">CISO WEEKLY INTELLIGENCE BRIEFING</div>
+        <h1 style="margin:0 0 4px 0; font-size:26px; font-weight:800; letter-spacing:-0.5px;">Enterprise Threat Briefing</h1>
+        <div style="font-size:14px; color:#b0c4de;">Reporting Period: <strong>5 May – 12 May 2026</strong> &nbsp;|&nbsp; Produced: <strong>Tuesday, 12 May 2026</strong></div>
       </div>
-      <div style="font-size:0.8rem; color:#666;">Palo Alto Networks PSIRT &nbsp;|&nbsp; May 5–6, 2026</div>
-    </div>
-    <h3 style="margin:12px 0 4px 0; font-size:1.08rem; color:#1a1a2e;">PAN-OS Captive Portal Zero-Day: Unauthenticated Root RCE on Perimeter Firewalls</h3>
-    <div style="display:flex; gap:12px; flex-wrap:wrap; margin-bottom:12px;">
-      <span style="font-size:0.82rem; color:#c0392b; font-weight:700;">RPS: 9.14 &nbsp;|&nbsp; S=9.3×0.45 + E=9×0.35 + X=9×0.20</span>
-      <a href="https://security.paloaltonetworks.com/CVE-2026-0300" style="font-size:0.82rem; color:#2980b9;" target="_blank">🔗 security.paloaltonetworks.com/CVE-2026-0300</a>
-    </div>
-    <div style="background:#fff5f5; border-radius:5px; padding:10px 14px; font-size:0.83rem; color:#555; margin-bottom:12px;">
-      <strong>MITRE ATT&amp;CK:</strong> T1190 (Exploit Public-Facing Application) &nbsp;|&nbsp; T1068 (Privilege Escalation) &nbsp;|&nbsp; T1033 (System Owner Discovery) &nbsp;|&nbsp; T1003 (Credential Dumping) &nbsp;|&nbsp; T1562.001 (Impair Defenses: Disable or Modify Tools)
-    </div>
-    <p style="margin:0; font-size:0.93rem; line-height:1.7; color:#333;">
-      CVE-2026-0300 is a case of unauthenticated remote code execution carrying a CVSS score of 9.3 when the User-ID Authentication Portal is configured to enable access from the internet or any untrusted network. A buffer overflow in the Captive Portal service allows an unauthenticated attacker to execute arbitrary code with root privileges on PA-Series and VM-Series firewalls by sending specially crafted packets. Starting April 9, 2026, there were unsuccessful exploitation attempts against a PAN-OS device; a week later, attackers successfully achieved RCE and injected shellcode, then immediately conducted log cleanup by clearing crash kernel messages and removing crash core dump files, before deploying tools with root privileges and conducting Active Directory enumeration using the firewall's service account credentials. Unit 42 has attributed the observed activity to CL-STA-1132, a threat cluster likely sponsored by a nation-state, whose objective appears to be Active Directory enumeration and deployment of open-source tunneling tools after gaining root access. This represents one of the worst possible scenarios of 2026: a critical, unauthenticated RCE flaw in a perimeter firewall with confirmed active exploitation, no patch available, and a federal mitigation deadline already in effect — with Shadowserver identifying more than 5,800 PAN-OS VM-Series firewalls exposed to the public internet.
-    </p>
-  </div>
-
-  <!-- ITEM 2 -->
-  <div style="background:#fff; border-radius:8px; border-left:6px solid #c0392b; margin-bottom:18px; padding:22px 26px; box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
-      <div>
-        <span style="background:#c0392b; color:#fff; border-radius:4px; padding:3px 10px; font-size:0.78rem; font-weight:700; margin-right:8px;">🔴 ACT NOW</span>
-        <span style="background:#f0f0f0; color:#333; border-radius:4px; padding:3px 10px; font-size:0.78rem;">ShinyHunters &nbsp;|&nbsp; Mass Breach Event</span>
+      <div style="text-align:right;">
+        <div style="font-size:11px; color:#7ec8e3; letter-spacing:2px; text-transform:uppercase; margin-bottom:4px;">Classification</div>
+        <div style="background:#e53935; color:#fff; padding:4px 16px; border-radius:4px; font-weight:800; font-size:13px; letter-spacing:1px;">TLP: AMBER — RESTRICTED</div>
       </div>
-      <div style="font-size:0.8rem; color:#666;">Wikipedia / Malwarebytes / SharkStriker &nbsp;|&nbsp; May 7–8, 2026</div>
     </div>
-    <h3 style="margin:12px 0 4px 0; font-size:1.08rem; color:#1a1a2e;">ShinyHunters Canvas/Instructure Breach: 275M Records, 8,809 Institutions, Ransom Deadline May 12</h3>
-    <div style="display:flex; gap:12px; flex-wrap:wrap; margin-bottom:12px;">
-      <span style="font-size:0.82rem; color:#c0392b; font-weight:700;">RPS: 8.80 &nbsp;|&nbsp; S=9×0.45 + E=8×0.35 + X=9×0.20</span>
-      <a href="https://en.wikipedia.org/wiki/2026_Canvas_security_incident" style="font-size:0.82rem; color:#2980b9;" target="_blank">🔗 en.wikipedia.org/wiki/2026_Canvas_security_incident</a>
-    </div>
-    <div style="background:#fff5f5; border-radius:5px; padding:10px 14px; font-size:0.83rem; color:#555; margin-bottom:12px;">
-      <strong>MITRE ATT&amp;CK:</strong> T1078 (Valid Accounts) &nbsp;|&nbsp; T1530 (Data from Cloud Storage) &nbsp;|&nbsp; T1657 (Financial Theft / Extortion) &nbsp;|&nbsp; T1566 (Phishing — downstream risk) &nbsp;|&nbsp; T1486 (Data Encrypted for Impact)
-    </div>
-    <p style="margin:0; font-size:0.93rem; line-height:1.7; color:#333;">
-      The hack is considered the largest educational security breach on record as of May 8, 2026, affecting 8,809 universities, educational ministries, and other institutions worldwide, with particularly significant implications in the United States where Canvas is used by 41% of higher education institutions. The hacking group ShinyHunters claimed to have stolen 3.65 terabytes of data (approximately 275 million records), including private messages exchanged between students and teachers. ShinyHunters has set a ransom deadline of end of day May 12, 2026, threatening to leak all data if Instructure does not make contact. Canvas resumed operations several hours after investigating the unauthorized access, with the exploit confirmed to be caused by an issue related to its Free-For-Teacher accounts. Days after the first attack, ShinyHunters is applying pressure with ransom messages on school login portals. For enterprises, the primary risk is the downstream availability of 275 million verified email addresses and institutional credentials that will fuel targeted spear-phishing and credential-stuffing campaigns against corporate accounts shared with affiliated educational institutions.
-    </p>
-  </div>
+  </header>
 
-  <!-- ITEM 3 -->
-  <div style="background:#fff; border-radius:8px; border-left:6px solid #c0392b; margin-bottom:18px; padding:22px 26px; box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
-      <div>
-        <span style="background:#c0392b; color:#fff; border-radius:4px; padding:3px 10px; font-size:0.78rem; font-weight:700; margin-right:8px;">🔴 ACT NOW</span>
-        <span style="background:#f0f0f0; color:#333; border-radius:4px; padding:3px 10px; font-size:0.78rem;">CVE-2026-43284 / CVE-2026-43500 &nbsp;|&nbsp; Unpatched (partial)</span>
+  <div style="padding: 32px 48px 0 48px;">
+
+    <!-- LEGEND -->
+    <section style="margin-bottom:28px;">
+      <table style="width:100%; border-collapse:collapse; font-size:12px; background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,0.07);">
+        <thead>
+          <tr style="background:#1b2a4a; color:#fff;">
+            <th style="padding:8px 14px; text-align:left;">Classification</th>
+            <th style="padding:8px 14px; text-align:left;">RPS Range</th>
+            <th style="padding:8px 14px; text-align:left;">Meaning</th>
+            <th style="padding:8px 14px; text-align:left;">RPS Formula</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background:#fdecea;"><td style="padding:7px 14px; font-weight:800; color:#c62828;">🔴 ACT NOW</td><td style="padding:7px 14px;">8.5 – 10.0</td><td style="padding:7px 14px;">Immediate action required; critical risk to enterprise</td><td rowspan="3" style="padding:7px 14px; vertical-align:middle; font-family:monospace; font-size:11px; color:#333;">(S × 0.45) + (E × 0.35) + (X × 0.20)<br/><br/>S = Severity (1–10)<br/>E = Exploitation Likelihood (1–10)<br/>X = Exposure/Blast Radius (1–10)</td></tr>
+          <tr style="background:#fff8e1;"><td style="padding:7px 14px; font-weight:800; color:#e65100;">🟠 HEIGHTENED WATCH</td><td style="padding:7px 14px;">6.5 – 8.4</td><td style="padding:7px 14px;">Elevated risk; monitor closely, pre-position response</td></tr>
+          <tr style="background:#e8f5e9;"><td style="padding:7px 14px; font-weight:800; color:#2e7d32;">🟢 STRATEGIC WATCH</td><td style="padding:7px 14px;">1.0 – 6.4</td><td style="padding:7px 14px;">Emerging or lower-probability; track for escalation</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- EXECUTIVE SUMMARY -->
+    <section style="margin-bottom:32px;">
+      <h2 style="font-size:16px; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#1b2a4a; border-left:4px solid #1b73e8; padding-left:12px; margin-bottom:14px;">Executive Summary</h2>
+      <div style="background:#fff; border-radius:8px; padding:20px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.07); font-size:14px; line-height:1.8; color:#222;">
+        <p style="margin:0 0 10px 0;">The week of 5–12 May 2026 is defined by a convergence of mass-scale data extortion, critical infrastructure vulnerability exploitation, and escalating Iranian state-sponsored cyber operations. The <strong>ShinyHunters group's breach of Instructure Canvas</strong> — affecting up to 275 million records across nearly 9,000 educational institutions globally — is the largest educational data breach on record and demands immediate attention from any enterprise using SaaS platforms at scale. Simultaneously, a <strong>critical unauthenticated RCE in Palo Alto PAN-OS (CVE-2026-0300)</strong> remains unpatched until at least 13 May, placing perimeter firewalls directly in the crosshairs of active threat actors. The <strong>cPanel CVE-2026-41940</strong> authentication bypass has now spawned a full multi-actor exploitation ecosystem — including ransomware, botnets, and nation-state espionage — with 44,000+ IPs confirmed involved.</p>
+        <p style="margin:0;">Two successive Linux kernel privilege escalation chains (<strong>"Copy Fail" and "Dirty Frag"</strong>) targeting all major distributions have created a compounding post-compromise risk in cloud and Kubernetes environments. Iranian-aligned threat actors continue to intensify operations under the ongoing geopolitical crisis, with MuddyWater conducting sophisticated false-flag campaigns via Microsoft Teams. Security teams must treat this week as a multi-front response scenario and cascade patching, detection tuning, and incident readiness simultaneously.</p>
       </div>
-      <div style="font-size:0.8rem; color:#666;">The Hacker News / Tenable / Microsoft &nbsp;|&nbsp; May 7–9, 2026</div>
-    </div>
-    <h3 style="margin:12px 0 4px 0; font-size:1.08rem; color:#1a1a2e;">Linux "Dirty Frag": Second Universal Kernel LPE in 8 Days — Public PoC, Partial Patches, Container Escape Risk</h3>
-    <div style="display:flex; gap:12px; flex-wrap:wrap; margin-bottom:12px;">
-      <span style="font-size:0.82rem; color:#c0392b; font-weight:700;">RPS: 8.65 &nbsp;|&nbsp; S=9×0.45 + E=8×0.35 + X=8×0.20</span>
-      <a href="https://www.tenable.com/blog/dirty-frag-cve-2026-43284-cve-2026-43500-frequently-asked-questions-linux-kernel-lpe" style="font-size:0.82rem; color:#2980b9;" target="_blank">🔗 tenable.com — Dirty Frag FAQ</a>
-    </div>
-    <div style="background:#fff5f5; border-radius:5px; padding:10px 14px; font-size:0.83rem; color:#555; margin-bottom:12px;">
-      <strong>MITRE ATT&amp;CK:</strong> T1068 (Exploitation for Privilege Escalation) &nbsp;|&nbsp; T1611 (Escape to Host) &nbsp;|&nbsp; T1059.004 (Unix Shell) &nbsp;|&nbsp; T1014 (Rootkit) &nbsp;|&nbsp; T1210 (Exploitation of Remote Services — post-LPE lateral movement)
-    </div>
-    <p style="margin:0; font-size:0.93rem; line-height:1.7; color:#333;">
-      Dirty Frag is a new, local privilege escalation (LPE) vulnerability impacting the Linux kernel, described as a successor to Copy Fail (CVE-2026-31431, CVSS 7.8), a recently disclosed LPE flaw that has already come under active exploitation in the wild. CVE-2026-43284 and CVE-2026-43500 were disclosed by researcher Hyunwoo Kim on May 8, 2026, after another party broke a coordinated embargo; the pair of vulnerabilities allows an unprivileged local user to corrupt arbitrary page caches and pivot to root on many Linux distributions, with a working proof of concept published the same day before any distribution shipped patched kernels. The researcher notes that Dirty Frag can be triggered regardless of whether the algif_aead module is available — meaning systems where the Copy Fail mitigation has already been applied remain vulnerable to Dirty Frag. Dirty Frag enables escalation through vulnerable kernel networking components including esp4, esp6, and rxrpc, with public reporting indicating the exploit is designed to provide more reliable privilege escalation than traditional race-condition techniques; it may be leveraged after initial compromise through SSH access, web-shell execution, or container escape. With a working public PoC released ahead of patches and exploitation reduced to a handful of standard syscalls, defenders should assume any local foothold on an unpatched host can become root within seconds.
-    </p>
-  </div>
+    </section>
 
-  <!-- ITEM 4 -->
-  <div style="background:#fff; border-radius:8px; border-left:6px solid #c0392b; margin-bottom:18px; padding:22px 26px; box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
-      <div>
-        <span style="background:#c0392b; color:#fff; border-radius:4px; padding:3px 10px; font-size:0.78rem; font-weight:700; margin-right:8px;">🔴 ACT NOW</span>
-        <span style="background:#f0f0f0; color:#333; border-radius:4px; padding:3px 10px; font-size:0.78rem;">CVE-2026-31431 &nbsp;|&nbsp; CVSS 7.8 &nbsp;|&nbsp; CISA KEV</span>
+    <!-- TOP 3 ENTERPRISE RISKS -->
+    <section style="margin-bottom:32px;">
+      <h2 style="font-size:16px; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#1b2a4a; border-left:4px solid #e53935; padding-left:12px; margin-bottom:14px;">Top 3 Enterprise Risks This Week</h2>
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap:16px;">
+
+        <div style="background:#fdecea; border-left:5px solid #e53935; border-radius:8px; padding:18px 20px;">
+          <div style="font-size:11px; font-weight:800; color:#c62828; letter-spacing:1px; text-transform:uppercase; margin-bottom:4px;">Risk #1 — SaaS Supply Chain Extortion</div>
+          <div style="font-size:14px; font-weight:700; color:#1a1a2e; margin-bottom:6px;">ShinyHunters / Canvas LMS Mega-Breach</div>
+          <div style="font-size:13px; color:#444; line-height:1.6;">A single SaaS provider breach exposed records from 8,809 institutions. Organisations relying on third-party platforms without robust data-sharing agreements and breach notification SLAs have <em>no control</em> over their downstream exposure. Every enterprise must urgently audit SaaS vendor security posture and contractual obligations.</div>
+        </div>
+
+        <div style="background:#fdecea; border-left:5px solid #e53935; border-radius:8px; padding:18px 20px;">
+          <div style="font-size:11px; font-weight:800; color:#c62828; letter-spacing:1px; text-transform:uppercase; margin-bottom:4px;">Risk #2 — Perimeter Firewall Zero-Day (No Patch)</div>
+          <div style="font-size:14px; font-weight:700; color:#1a1a2e; margin-bottom:6px;">PAN-OS CVE-2026-0300 RCE (CVSS 9.3)</div>
+          <div style="font-size:13px; color:#444; line-height:1.6;">With 225,000+ internet-facing PAN-OS instances and no patch until 13 May, this is the single highest-priority technical remediation item. Active exploitation confirmed by Unit 42 (CL-STA-1132). Configuration hardening is the only available mitigation today.</div>
+        </div>
+
+        <div style="background:#fff3e0; border-left:5px solid #e65100; border-radius:8px; padding:18px 20px;">
+          <div style="font-size:11px; font-weight:800; color:#bf360c; letter-spacing:1px; text-transform:uppercase; margin-bottom:4px;">Risk #3 — Linux Kernel LPE Cascade</div>
+          <div style="font-size:14px; font-weight:700; color:#1a1a2e; margin-bottom:6px;">Copy Fail + Dirty Frag (CVE-2026-31431 / CVE-2026-43284/43500)</div>
+          <div style="font-size:13px; color:#444; line-height:1.6;">Two chained Linux kernel privilege escalation vulnerabilities — both with public PoC exploits — affect every major enterprise Linux distribution and all cloud/Kubernetes workloads. Dirty Frag bypasses the Copy Fail mitigation, creating a compound risk. Partial patches available; CVE-2026-43500 remains fully unpatched.</div>
+        </div>
+
       </div>
-      <div style="font-size:0.8rem; color:#666;">Microsoft Security Blog / CISA &nbsp;|&nbsp; May 1–5, 2026</div>
-    </div>
-    <h3 style="margin:12px 0 4px 0; font-size:1.08rem; color:#1a1a2e;">Linux "Copy Fail" (CVE-2026-31431): Actively Exploited Kernel LPE Targets Cloud, Kubernetes, and CI/CD Environments</h3>
-    <div style="display:flex; gap:12px; flex-wrap:wrap; margin-bottom:12px;">
-      <span style="font-size:0.82rem; color:#c0392b; font-weight:700;">RPS: 8.21 &nbsp;|&nbsp; S=8×0.45 + E=8×0.35 + X=8×0.20</span>
-      <a href="https://www.microsoft.com/en-us/security/blog/2026/05/01/cve-2026-31431-copy-fail-vulnerability-enables-linux-root-privilege-escalation/" style="font-size:0.82rem; color:#2980b9;" target="_blank">🔗 Microsoft Security Blog — Copy Fail</a>
-    </div>
-    <div style="background:#fff5f5; border-radius:5px; padding:10px 14px; font-size:0.83rem; color:#555; margin-bottom:12px;">
-      <strong>MITRE ATT&amp;CK:</strong> T1068 (Exploitation for Privilege Escalation) &nbsp;|&nbsp; T1611 (Escape to Host) &nbsp;|&nbsp; T1543 (Create or Modify System Process) &nbsp;|&nbsp; T1055 (Process Injection)
-    </div>
-    <p style="margin:0; font-size:0.93rem; line-height:1.7; color:#333;">
-      Microsoft Defender is investigating this high-severity local privilege escalation vulnerability affecting multiple major Linux distributions including Red Hat, SUSE, Ubuntu, and AWS Linux — with a working exploit already in the wild, organizations should act quickly to detect, mitigate, and reduce risk. What makes this flaw particularly alarming is its exploitability: a 732-byte Python script is all an unprivileged local user needs to reliably escalate privileges to root. Critically, exploitation requires no root privileges inside containers, no kernel modules, and no network access, making it a powerful post-exploitation tool in containerized environments including Kubernetes clusters and Docker CI runners. Successful exploitation leads to full root privilege escalation with high impact to confidentiality, integrity, and availability, and could facilitate container breakout, multi-tenant compromise, and lateral movement within shared environments — its reliability, stealth (in-memory-only modification), and cross-platform applicability make it particularly dangerous in cloud, CI/CD, and Kubernetes environments. CISA added CVE-2026-31431 to its KEV catalog on May 1, 2026, with a mandatory remediation deadline of May 15, 2026 for all federal civilian agencies.
-    </p>
-  </div>
+    </section>
 
-  <!-- ITEM 5 -->
-  <div style="background:#fff; border-radius:8px; border-left:6px solid #e67e22; margin-bottom:18px; padding:22px 26px; box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
-      <div>
-        <span style="background:#e67e22; color:#fff; border-radius:4px; padding:3px 10px; font-size:0.78rem; font-weight:700; margin-right:8px;">🟠 HEIGHTENED WATCH</span>
-        <span style="background:#f0f0f0; color:#333; border-radius:4px; padding:3px 10px; font-size:0.78rem;">PCPJack Framework &nbsp;|&nbsp; Cloud Worm</span>
+    <!-- INTELLIGENCE ITEMS -->
+    <section style="margin-bottom:32px;">
+      <h2 style="font-size:16px; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#1b2a4a; border-left:4px solid #1b73e8; padding-left:12px; margin-bottom:18px;">Intelligence Items</h2>
+
+      <!-- ITEM 1 -->
+      <div style="background:#fff; border-radius:10px; box-shadow:0 1px 6px rgba(0,0,0,0.09); margin-bottom:20px; overflow:hidden; border-left:6px solid #e53935;">
+        <div style="background:#fdecea; padding:14px 22px 10px 22px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:8px;">
+          <div>
+            <span style="background:#e53935; color:#fff; font-size:11px; font-weight:800; padding:2px 10px; border-radius:3px; letter-spacing:1px; text-transform:uppercase; margin-right:8px;">🔴 ACT NOW</span>
+            <span style="font-size:15px; font-weight:800; color:#1a1a2e;">ShinyHunters Breach of Canvas LMS (Instructure) — Largest Educational Data Breach on Record</span>
+          </div>
+          <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+            <span style="background:#e53935; color:#fff; font-size:13px; font-weight:800; padding:4px 14px; border-radius:20px;">RPS: 10.0</span>
+          </div>
+        </div>
+        <div style="padding:16px 22px 18px 22px;">
+          <table style="width:100%; font-size:12px; border-collapse:collapse; margin-bottom:12px;">
+            <tr>
+              <td style="padding:3px 8px 3px 0; color:#555; width:90px;">Source</td>
+              <td style="padding:3px 0; font-weight:600;"><a href="https://en.wikipedia.org/wiki/2026_Canvas_security_incident" style="color:#1b73e8;">Wikipedia / TechCrunch / Malwarebytes</a></td>
+              <td style="padding:3px 24px; color:#555; width:90px;">Published</td>
+              <td style="padding:3px 0; font-weight:600;">6–11 May 2026</td>
+            </tr>
+            <tr>
+              <td style="padding:3px 8px 3px 0; color:#555;">MITRE ATT&CK</td>
+              <td colspan="3" style="padding:3px 0; font-family:monospace; font-size:11px; color:#333;">T1190 (Exploit Public-Facing App) · T1657 (Financial Theft/Extortion) · T1567 (Exfiltration Over Web Service) · T1486 (Data Encrypted for Impact)</td>
+            </tr>
+            <tr>
+              <td style="padding:3px 8px 3px 0; color:#555;">Severity (S)</td>
+              <td style="padding:3px 24px; font-weight:700; color:#e53935;">10 / 10</td>
+              <td style="padding:3px 8px 3px 0; color:#555;">Exploitation (E)</td>
+              <td style="padding:3px 0; font-weight:700; color:#e53935;">10 / 10 — Confirmed; ransom paid</td>
+            </tr>
+            <tr>
+              <td style="padding:3px 8px 3px 0; color:#555;">Exposure (X)</td>
+              <td colspan="3" style="padding:3px 0; font-weight:700; color:#e53935;">10 / 10 — 8,809 institutions, ~275M records, 41% of US higher ed</td>
+            </tr>
+          </table>
+          <p style="margin:0 0 8px 0; font-size:13.5px; line-height:1.75; color:#222;">
+            The hack is considered the largest educational security breach on record as of May 8, 2026, due to its unprecedented global scale, affecting 8,809 universities, educational ministries, and other institutions worldwide — with particular impact in the United States, where Canvas is used by 41% of higher education institutions. The ShinyHunters group claimed to have stolen 3.65 terabytes of data (approximately 275 million records), including private messages exchanged between students and teachers. Despite Instructure's claim that the situation had been resolved, on May 7 Canvas was hacked again — its login page was replaced with a ransomware message by ShinyHunters, who threatened to release the data unless their ransom was paid by end of May 12. On May 11, Instructure issued an apology for their lack of transparency and announced they had reached an agreement with the hackers for an undisclosed amount and that the compromised data was destroyed. Security experts noted this breach "follows a clear pattern" of attackers moving up the data supply chain to target platforms sitting underneath thousands of institutions at once, rather than targeting individual campuses.
+          </p>
+          <div style="background:#fdecea; border-radius:6px; padding:10px 14px; font-size:12.5px; color:#c62828;"><strong>⚡ Decision Point:</strong> Enterprises with Canvas or other Instructure integrations must immediately: (1) issue staff/student phishing warnings leveraging breach data; (2) audit what data was shared with Instructure under data processing agreements; (3) assess FERPA/GDPR notification obligations. The breach is resolved per vendor, but follow-on phishing and credential stuffing attacks using the stolen PII remain a live threat.</div>
+        </div>
       </div>
-      <div style="font-size:0.8rem; color:#666;">SentinelOne Labs &nbsp;|&nbsp; May 7, 2026</div>
-    </div>
-    <h3 style="margin:12px 0 4px 0; font-size:1.08rem; color:#1a1a2e;">PCPJack: Worm-Propagating Cloud Credential Harvester Targets Docker, Kubernetes, Redis, and AI API Keys</h3>
-    <div style="display:flex; gap:12px; flex-wrap:wrap; margin-bottom:12px;">
-      <span style="font-size:0.82rem; color:#e67e22; font-weight:700;">RPS: 7.65 &nbsp;|&nbsp; S=8×0.45 + E=7×0.35 + X=7×0.20</span>
-      <a href="https://www.sentinelone.com/labs/cloud-worm-evicts-teampcp-and-steals-credentials-at-scale/" style="font-size:0.82rem; color:#2980b9;" target="_blank">🔗 sentinelone.com/labs/cloud-worm-evicts-teampcp</a>
-    </div>
-    <div style="background:#fff8f0; border-radius:5px; padding:10px 14px; font-size:0.83rem; color:#555; margin-bottom:12px;">
-      <strong>MITRE ATT&amp;CK:</strong> T1078.004 (Valid Accounts: Cloud Accounts) &nbsp;|&nbsp; T1552.001 (Credentials In Files) &nbsp;|&nbsp; T1543.003 (Create Service for Persistence) &nbsp;|&nbsp; T1021.004 (Lateral Movement: SSH) &nbsp;|&nbsp; T1041 (Exfiltration Over C2 Channel)
-    </div>
-    <p style="margin:0; font-size:0.93rem; line-height:1.7; color:#333;">
-      SentinelLABS identified PCPJack, a credential theft framework that worms across exposed cloud infrastructure and removes artifacts associated with TeamPCP, a threat actor persona who claimed several high-profile supply chain intrusions throughout early 2026; the toolset harvests credentials from cloud, container, developer, productivity, and financial services, then exfiltrates the data through attacker-controlled infrastructure while attempting to spread to additional hosts. The main orchestrator conducts local credential theft, propagates the toolset to other hosts by exploiting five known CVEs (CVE-2025-55182, CVE-2025-29927, CVE-2026-1357, CVE-2025-9501, and CVE-2025-48703), and uses Telegram for command-and-control. The malware also scans Instance Metadata Service (IMDS) endpoints, Kubernetes service accounts, and Docker instances for credentials associated with Anthropic, Digital Ocean, Discord, Google API, Grafana Cloud, HashiCorp Vault, OnePassword, and OpenAI, transmitting them to an external server. Unlike typical cloud-focused malware, PCPJack does not deploy cryptominers; the services it targets suggest monetization through credential theft, fraud, spam, extortion, or resale of stolen access. The "PCP replaced" C2 telemetry field — tracking competitive evictions from compromised hosts — indicates a highly organized, operationally-competitive threat actor operating at scale.
-    </p>
-  </div>
 
-  <!-- ITEM 6 -->
-  <div style="background:#fff; border-radius:8px; border-left:6px solid #e67e22; margin-bottom:18px; padding:22px 26px; box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-    <div style="display:flex; justify-
+      <!-- ITEM 2 -->
+      <div style="background:#fff; border-radius:10px; box-shadow:0 1px 6px rgba(0,0,0,0.09); margin-bottom:20px; overflow:hidden; border-left:6px solid #e53935;">
+        <div style="background:#fdecea; padding:14px 22px 10px 22px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:8px;">
+          <div>
+            <span style="background:#e53935; color:#fff; font-size:11px; font-weight:800; padding:2px 10px; border-radius:3px; letter-spacing:1px; text-transform:uppercase; margin-right:8px;">🔴 ACT NOW</span>
+            <span style="font-size:15px; font-weight:800; color:#1a1a2e;">CVE-2026-41940 — cPanel/WHM Authentication Bypass: Mass Exploitation, Ransomware & Nation-State Espionage</span>
+          </div>
+          <div style="display:flex; gap:10px; align-items:center;">
+            <span style="background:#e53935; color:#fff; font-size:13px; font-weight:800; padding:4px 14px; border-radius:20px;">RPS: 9.25</span>
+          </div>
+        </div>
+        <div style="padding:16px 22px 18px 22px;">
+          <table style="width:100%; font-size:12px; border-collapse:collapse; margin-bottom:12px;">
+            <tr>
+              <td style="padding:3px 8px 3px 0; color:#555; width:90px;">Source</td>
+              <td style="padding:3px 0; font-weight:600;"><a href="https://www.helpnetsecurity.com/2026/04/30/cpanel-zero-day-vulnerability-cve-2026-41940-exploited/" style="color:#1b73e8;">Help Net Security / The Hacker News / CISA KEV</a></td>
+              <td style="padding:3px 24px; color:#555; width:90px;">Published</td>
+              <td style="padding:3px 0; font-weight:600;">30 Apr – 11 May 2026</td>
+            </tr>
+            <tr>
+              <td style="padding:3px 8px 3px 0; color:#555;">CVE</td>
+              <td style="padding:3px 0; font-family:monospace; font-size:12px; font-weight:700; color:#e53935;">CVE-2026-41940 &nbsp; CVSS 9.8 (Critical)</td>
+              <td style="padding:3px 24px; color:#555;">CWE</td>
+              <td style="padding:3px 0; font-family:monospace; font-size:11px;">CWE-306 (Missing Auth for Critical Function)</td>
+            </tr>
+            <tr>
+              <td style="padding:3px 8px 3px 0; color:#555;">MITRE ATT&CK</td>
+              <td colspan="3" style="padding:3px 0; font-family:monospace; font-size:11px; color:#333;">T1190 (Exploit Public-Facing App) · T1003 (OS Credential Dumping) · T1059 (Command/Scripting Interpreter) · T1486 (Data Encrypted for Impact) · T1133 (External Remote Services)</td>
+            </tr>
+            <tr>
+              <td style="padding:3px 8px 3px 0; color:#555;">Severity (S)</td>
+              <td style="padding:3px 24px; font-weight:700; color:#e53935;">9 / 10</td>
+              <td style="padding:3px 8px 3px 0; color:#555;">Exploitation (E)</td>
+              <td style="padding:3px 0; font-weight:700; color:#e53935;">10 / 10 — Mass exploitation confirmed since Feb 23</td>
+            </tr>
+            <tr>
+              <td style="padding:3px 8px 3px 0; color:#555;">Exposure (X)</td>
+              <td colspan="3" style="padding:3px 0; font-weight:700; color:#e53935;">8 / 10 — 650K+ exposed cPanel instances; 44K+ IPs compromised</td>
+            </tr>
+          </table>
+          <p style="margin:0 0 8px 0; font-size:13.5px; line-height:1.75; color:#222;">
+            A critical authentication bypass vulnerability (CVE-2026-41940) in cPanel is being exploited in the wild — and attackers had been abusing it since at least February 23, well before the April 28 public advisory. Successful exploitation grants an attacker control over the cPanel host system, its configurations and databases, and all websites it manages, with approximately 1.5 million cPanel instances exposed to the internet. Multi-actor exploitation has now led to disrupted websites, ransomware deployment, and targeted attacks — including a Go-based Linux encryptor that encrypts files and appends the ".sorry" extension, then drops a ransom note directing victims via Tox. Over 2,000 unique IPs have been attributed to exploitation activity enabling Filemanager backdoor deployment, credential theft, and persistent access. Separate nation-state espionage activity leveraging CVE-2026-41940, detected May 2, 2026, targeted government and military domains in the Philippines and Laos, as well as MSPs and hosting providers.
+          </p>
+          <div style="background:#fdecea; border-radius:6px; padding:10px 14px; font-size:12.5px; color:#c62828;"><strong>⚡ Decision Point:</strong> If your organisation or any vendor/hosting provider runs cPanel/WHM, treat this as a potential active breach. Apply patches immediately; block ports 2083/2087/2095/2096 at the firewall. Hunt for .sorry-suffixed files and anomalous login events from unexpected IPs since February 23, 2026. Rebuild from clean backups if IOCs are present.</div>
+        </div>
+      </div>
+
+      <!-- ITEM 3 -->
+      <div style="background:#fff; border-radius:10px; box-shadow:0 1px 6px rgba(0,0,0,0.09); margin-bottom:20px; overflow:hidden; border-left:6px solid #e53935;">
+        <div style="background:#fdecea; padding:14px 22px 10px 22px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:8px;">
+          <div>
+            <span style="background:#e53935; color:#fff; font-size:11px; font-weight:800; padding:2px 10px; border-radius:3px; letter-spacing:1px; text-transform:uppercase; margin-right:8px;">🔴 ACT NOW</span>
+            <span style="font-size:15px; font-weight:800; color:#1a1a2e;">CVE-2026-0300 — Palo Alto PAN-OS Unauthenticated RCE (CVSS 9.3): Perimeter Firewall Zero-Day Under Active Exploitation</span>
+          </div>
+          <div style="display:flex; gap:10px; align-items:center;">
+            <span style="background:#e53935; color:#fff; font-size:13px; font-weight:800; padding:4px 14px; border-radius:20px;">RPS: 9.0</span>
+          </div>
+        </div>
+        <div style="padding:16px 22px 18px 22px;">
+          <table style="width:100%; font-size:12px; border-collapse:collapse; margin-bottom:12px;">
+            <tr>
+              <td style="padding:3px 8px 3px 0; color:#555; width:90px;">Source</td>
+              <td style="padding:3px 0; font-weight:600;"><a href="https://www.helpnetsecurity.com/2026/05/06/palo-alto-firewalls-vulnerability-exploited-cve-2026-0300/" style="color:#1b73e8;">Palo Alto Advisory / Help Net Security / Rapid7 / CISA KEV</a></td>
+              <td style="padding:3px 24px; color:#555; width:90px;">Published</td>
+              <td style="padding:3px 0; font-weight:600;">6 May 2026</td>
+            </tr>
+            <tr>
+              <td style="padding:3px 8px 3px 0; color:#555;">CVE</td>
+              <td style="padding:3px 0; font-family:monospace; font-size:12px; font-weight:700; color:#e53935;">CVE-2026-0300 &nbsp; CVSS 9.3 (Critical) / 8.7 (if restricted)</td>
+              <td style="padding:3px 24px; color:#555;">CWE</td>
+              <td style="padding:3px 0; font-family:monospace; font-size:11px;">CWE-787 (Out-of-Bounds Write)</td>
+            </tr>
+            <tr>
+              <td style="padding:3px 8px 3px 0; color:#555;">MITRE ATT&CK</td>
+              <td colspan="3" style="padding:3px 0; font-family:monospace; font-size:11px; color:#333;">T1190 (Exploit Public-Facing App) · T1068 (Exploitation for Privilege Escalation) · T1133 (External Remote Services) · T1021 (Remote Services) · T1059 (Command/Scripting Interpreter)</td>
+            </tr>
+            <tr>
+              <td style="padding:3px 8px 3px 0; color:#555;">Severity (S)</td>
+              <td style="padding:3px 24px; font-weight:700; color:#e53935;">9 / 10</td>
+              <td style="padding:3px 8px 3px 0; color:#555;">Exploitation (E)</td>
+              <td style="padding:3px 0; font-weight:700; color:#e53935;">9 / 10 — Confirmed active exploitation (CL-STA-1132); CISA KEV</td>
+            </tr>
+            <tr>
+              <td style="padding:3px 8px 3px 0; color:#555;">Exposure (X)</td>
+              <td colspan="3" style="padding:3px 0; font-weight:700; color:#e53935;">9 / 10 — 225,000 internet-facing PAN-OS instances (Shodan); NO PATCH until 13 May</td>
+            </tr>
+          </table>
+          <p style="margin:0 0 8px 0; font-size:13.5px; line-height:1.75; color:#222;">
+            CVE-2026-0300 allows unauthenticated attackers to achieve remote code execution with root privileges, affecting the User-ID Authentication Portal on PA-Series and VM-Series firewalls — with active exploitation confirmed, particularly where the portal is exposed to untrusted networks or the public internet. An unauthenticated remote attacker can exploit this vulnerability by sending specially crafted packets, achieving arbitrary code execution with root privileges on the affected firewall — no authentication or user interaction is required. No patches are currently available; fixed versions are expected to begin rolling out on May 13, 2026, with additional releases through May 28. Shadowserver Foundation has identified more than 5,800 PAN-OS VM-Series firewalls exposed to the public internet, and CISA has placed the bug in its Known Exploited Vulnerabilities catalog with a May 9, 2026 deadline for federal agencies. Successful exploitation grants a root shell on the firewall, enabling complete control: traffic interception, configuration changes, backdoor installation, or lateral movement into protected networks.
+          </p>
+          <div style="background:#fdecea; border-radius:6px; padding:10px 14px
 </body>
 </html>
